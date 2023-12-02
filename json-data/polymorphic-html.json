@@ -1,0 +1,447 @@
+[
+  {
+    "type": "p",
+    "data": {
+      "text": "The all-too-soon followup to the \u003Ca href=\u0022https:\/\/www.cnet.com\/tech\/computing\/m2-pro-macbook-pro-16-review-apple-peps-up-its-creative-workhorse\/\u0022\u003EEditors\u0027 Choice-earning M2 generation\u003C\/a\u003E of the 16-inch MacBook Pro is... the Editors\u0027 Choice-earning \u003Ca href=\u0022https:\/\/www.cnet.com\/news\/apples-new-m3-chips-power-refreshed-imac-macbook-pro-14-and-16\/\u0022\u003EM3 generation\u003C\/a\u003E. The hardware is getting faster all the time; I\u0027d be complaining vocally if I\u0027d bought the version from earlier this year to use for rendering work, simply because the improvements in the graphics architecture generation-over-generation deliver a big performance leap for certain types of work. And it unsurprisingly remains an excellent combination of design, performance and battery life."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "The MBP 16 has the same design as the previous model, which was launched in early 2023 and has been the same since 2021, so you\u0027ve probably already seen it. I won\u0027t rehash my thoughts on it, since they haven\u0027t changed either; if you\u0027re curious, read my review of the\u00a0\u003Ca href=\u0022https:\/\/www.cnet.com\/tech\/computing\/m2-pro-macbook-pro-16-review-apple-peps-up-its-creative-workhorse\/\u0022\u003Eearly 2023 model MacBook Pro 16\u003C\/a\u003E. What \u003Cem\u003Ehas\u003C\/em\u003E changed is the color and the performance (duh, new chip), as well as my tools for testing the display: Those will comprise the bulk of this review. \u00a0"
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "Whatever you want to call it, ultimately, the MacBook Pro is a mobile workstation. And that\u0027s the primary way to justify the price, especially for the $3,999 (\u00a34,099, AU$6,899) configuration I tested. Apple continues to stress workstation application and gaming performance -- ray tracing and mesh shaders were a couple of the big additions to the graphics processing with the M3. But there still aren\u0027t many high-profile games available and Apple\u0027s list of upcoming games doesn\u0027t impress. As a game designer, you could make a case for it, though you\u0027ll probably still design for other platforms first."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "Now that there\u0027s a 15-inch MacBook Air, though, you\u0027ve got a more reasonably priced option -- well, reasonably priced compared to the MacBook Pro 16 -- compared to the entry price of $2,499 for the MBP 16."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "The base configuration comes with the 12-core CPU\/18-core GPU version of the M3 Pro processor, with 18GB RAM and 512GB SSD. That should be fine for a lot of nonprofessional or social pro photo editing, but it\u0027s not great if you\u0027re looking for more than just a big HDR screen. If you\u0027re performing tasks that justify the outlay for the laptop, you likely need at least 1TB SSD, and would probably benefit from upping to 36GB RAM. That bumps the price to almost $3,100."
+    }
+  },
+  {
+    "type": "geekbox_chart",
+    "data": {
+      "chartName": "Apple MacBook Pro 16 (M3 Max, late 2023)",
+      "headingRows": "",
+      "chart": [
+        [
+          "Price as reviewed",
+          "$3,999,  \u00a34,099, AU$6,899"
+        ],
+        [
+          "Display",
+          "16-inch 3,456x2,234 254ppi 14:9\/16:10 aspect ratio; 500 nits SDR, 1,600 nits HDR"
+        ],
+        [
+          "CPU",
+          "Apple M3 Max 16 cores (12P\/4E)"
+        ],
+        [
+          "Memory",
+          "48GB LPDDR5"
+        ],
+        [
+          "Graphics",
+          "Apple M3 Max integrated 20 cores"
+        ],
+        [
+          "Storage",
+          "1TB Apple SSD AP1024Z, SD card slot"
+        ],
+        [
+          "Ports",
+          "USB-C\/Thunderbolt 4 x3, HDMI 2.1, 3.5mm audio"
+        ],
+        [
+          "Networking",
+          "Wi-Fi 6E (802.11ax), Bluetooth 5.3"
+        ],
+        [
+          "Operating system",
+          "MacOS Sonoma 14.1"
+        ],
+        [
+          "Weight",
+          "4.8 lbs\/2.2kg"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "Going all-out with the configuration, with an M3 Max (16 core CPU\/40 core GPU) 128GB memory and an 8TB SSD will run $7,199, which is a lot to swallow and excessive for the components, at least on paper. But yay! Apple delivered on the higher memory maximum of 128GB, which was a nitpick I had with the last model.\u003Cbr\u003E\u003Cbr\u003EOne nice thing, though, is that performance for Apple\u0027s CPUs is consistent across the lines, meaning the same chip delivers roughly comparable performance in a similarly equipped Mac Mini as it does in a MacBook Pro. On one hand, It would be nice if you got better performance on more expensive hardware, but the consistency makes buying decisions a little easier.\u00a0"
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "Two physical changes stand out. It\u0027s now available in space black instead of space gray, as well as silver, and it incorporates anodized aluminum on the cover to resist fingerprints and smudges; that\u0027s not a new idea, but it\u0027s not very common yet. It works fairly well, but it sometimes seems like it\u0027s not actually getting smudged less, but the smudges just aren\u0027t as visible from certain angles. And the keycaps still show finger oils and use printed labels, which can wear off."
+    }
+  },
+  {
+    "type": "image",
+    "data": {
+      "id": "5f07cf09-b058-4913-9635-3ec6f6edd5cb",
+      "title": null,
+      "credit": "Lori Grunin\/CNET",
+      "caption": "The silver MacBook Pro 14 on top of the space black MacBook Pro 16.",
+      "imageUrl": "https:\/\/www.cnet.com\/a\/img\/resize\/973a29977b5b5971360f75390dca1bde478ed5aa\/hub\/2023\/11\/06\/5f07cf09-b058-4913-9635-3ec6f6edd5cb\/apple-macbook-pro-14-and-16-fall-2023-5173.jpg?fit=cover\u0026height=422\u0026width=750",
+      "imageWidth": 750,
+      "imageHeight": 422
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "My other nitpicks, like the notch at the top of the screen, which interrupts the full-width menus in applications like Photoshop, and the MagSafe power connector, which routinely disconnects for me, remain. Plus, the 170-watt brick that ships with the M3 Max model still has an adversarial relationship with my outlets; while you can use USB-C charging to avoid the MagSafe, there\u0027s no getting around that block."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "To those, I\u0027ll add the webcam, which is OK but could be better. Some of that\u0027s the fault of MacOS, which provides zero control over quality and related settings. Usually, when you have no control over cameras, it\u0027s because it relies heavily on all the OS\u0027 automatic and computational processing to produce something usable. And it still lacks Face ID support."
+    }
+  },
+  {
+    "type": "h2",
+    "data": {
+      "text": "Performance"
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "The MacBook Pro has used the same screen for a while, and there\u0027s no real reason to switch -- at least with respect to image quality. It\u0027s amazingly consistent out of the box, with no more than a 100-degree Kelvin deviation not just for any of the standard D65 color spaces, but for the gray patches across different brightness levels within them. My measurements were all in the vicinity of 6700K, but if you need a tighter D65 tolerance, you can certainly tweak the calibration. (My just-noticeable-difference threshold for color is 200K.)"
+    }
+  },
+  {
+    "type": "geekbox_chart",
+    "data": {
+      "chartName": "Color measurements",
+      "headingRows": "0",
+      "chart": [
+        [
+          "\u003Cbr\u003E",
+          "Gamut (% coverage)",
+          "White point (degrees Kelvin)",
+          "Gamma",
+          "Peak brightness (nits)",
+          "Accuracy (DE2K average\/max)"
+        ],
+        [
+          "sRGB",
+          "99.7",
+          "6700K",
+          "2.21",
+          "615",
+          "1.5\/3.6"
+        ],
+        [
+          "P3-D65 (default)",
+          "99.5",
+          "6700K",
+          "2.22",
+          "611",
+          "1.5\/3.6"
+        ],
+        [
+          "Adobe RGB",
+          "88.6",
+          "6700K",
+          "2.22",
+          "611",
+          "1.9\/5.4"
+        ],
+        [
+          "P3-D65 HDR",
+          "99.5 (72% BT.2020)",
+          "6750K",
+          "n\/a",
+          "1,615 (5-25% window), 1,131 (full screen)",
+          "n\/a"
+        ]
+      ]
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "Apple boosted the peak brightness in SDR to 600 nits from 500 nits by pumping up the power driving the panel, and I wonder if that change also affected the white point in general.\u00a0"
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "It\u0027s also color-accurate across the board; the only exceptions are the saturated Adobe RGB green and cyan, which is common for displays with a native P3 color gamut since P3 is more saturated elsewhere. (All measurements are performed using the most recent version of\u00a0\u003Ca href=\u0022https:\/\/store.portrait.com\/professional-software\/calman-ultimate.html\u0022 target=\u0022_blank\u0022\u003EPortrait Display\u0027s Calman Ultimate\u003C\/a\u003E\u00a0software using a\u00a0\u003Ca href=\u0022https:\/\/affportal.bhphoto.com\/dl\/redventures\/?s=cn-__COM_CLICK_ID__-dtp\u0026u=https:\/\/www.bhphotovideo.com\/c\/product\/1770372-REG\/calibrite_ccdis3plhl_display_plus_hl.html\u0022 target=\u0022_blank\u0022\u003ECalibrite Display Plus HL\u003C\/a\u003E. For the Mac, we use the Patterns app as our pattern generator. Read more about our\u00a0\u003Ca href=\u0022https:\/\/www.cnet.com\/tech\/computing\/how-cnet-tests-monitors\/\u0022\u003Emonitor testing methodology\u003C\/a\u003E.)"
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "A lot of the performance increase I see in the M3 Max over the M2 Max is the general lift you get from increasing the core frequency, the number of cores and how they\u0027re distributed. But it also (as with everything) depends on what you\u0027re doing. No matter what you\u0027ll get a significant bump in multicore performance thanks to the individual increases in single-core speed. But, for instance, Geekbench 6 CPU tests reflect general usage, while Cinebench concentrates specifically on rendering. General-purpose GPU computation, as reflected by Geekbench\u0027s Metal test, didn\u0027t increase much, going from 38 old cores to 40 new ones. But rendering speed as measured by Cinebench more than doubled."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "For a sense of practical scale within the M3 line, the MacBook Pro 14 with the base processor took just under 20 minutes to import (with lens corrections on import) and simultaneously create full-resolution previews of around 1,000 raw+JPEG photos and videos; the MacBook 16 Pro took just over 8.5 minutes. Lightroom import and thumbnail generation is CPU and memory-bound, which explains much of the difference."
+    }
+  },
+  {
+    "type": "p",
+    "data": {
+      "text": "The MacBook Pro 16 is generally a terrific piece of hardware, matched by an operating system that makes the most of it, at least for performance. If you need the speed, it\u0027s worth the dough."
+    }
+  },
+  {
+    "type": "perf_chart",
+    "data": {
+      "chartName": "Geekbench 6 (multicore)",
+      "explanation": "Longer bars indicate better performance",
+      "tests": [
+        "Geekbench 6 Multi-Core"
+      ],
+      "products": [
+        {
+          "productName": "Apple MacBook Air 15 (M2 8C\/10C)",
+          "ratings": [
+            "9859"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M2 Pro 12C\/19C)",
+          "ratings": [
+            "10592"
+          ]
+        },
+        {
+          "productName": "Apple iMac (M3 8C\/10C)",
+          "ratings": [
+            "10697"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 14 (M3 8C\/10C)",
+          "ratings": [
+            "12049"
+          ]
+        },
+        {
+          "productName": "Mac Studio (M2 Max 12C\/38C )",
+          "ratings": [
+            "15014"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M3 Max 16C\/40C)",
+          "ratings": [
+            "21482"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "perf_chart",
+    "data": {
+      "chartName": "Cinebench 2024 CPU (multicore)",
+      "explanation": "Longer bars indicate better performance",
+      "tests": [
+        "Cinebench 2024 (multi core)"
+      ],
+      "products": [
+        {
+          "productName": "Apple iMac (M3 8C\/10C)",
+          "ratings": [
+            "651"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 14 (M3 8C\/10C)",
+          "ratings": [
+            "710"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M2 Pro 12C\/19C)",
+          "ratings": [
+            "1043"
+          ]
+        },
+        {
+          "productName": "Apple Mac Studio (M2 Max 12C\/38C )",
+          "ratings": [
+            "1048"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M3 Max 16C\/40C)",
+          "ratings": [
+            "1672"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "perf_chart",
+    "data": {
+      "chartName": "Cinebench 2024 CPU (single core)",
+      "explanation": "Longer bars indicate better performance",
+      "tests": [
+        "Cinebench 2024 (single core)"
+      ],
+      "products": [
+        {
+          "productName": "Apple MacBook Pro 14 (M3 8C\/10C)",
+          "ratings": [
+            "122"
+          ]
+        },
+        {
+          "productName": "Apple Mac Studio (M2 Max 12C\/38C )",
+          "ratings": [
+            "131"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M2 Pro 12C\/19C)",
+          "ratings": [
+            "140"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M3 Max 16C\/40C)",
+          "ratings": [
+            "140"
+          ]
+        },
+        {
+          "productName": "Apple iMac (M3 8C\/10C)",
+          "ratings": [
+            "141"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "perf_chart",
+    "data": {
+      "chartName": "Cinebench 2024 GPU",
+      "explanation": "Longer bars indicate better performance",
+      "tests": [
+        "Cinebench 2024 (GPU)"
+      ],
+      "products": [
+        {
+          "productName": "Apple MacBook Pro 14 (M3 8C\/10C)",
+          "ratings": [
+            "3327"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M2 Pro 12C\/19C)",
+          "ratings": [
+            "3395"
+          ]
+        },
+        {
+          "productName": "Apple iMac (M3 8C\/10C)",
+          "ratings": [
+            "3711"
+          ]
+        },
+        {
+          "productName": "Apple Mac Studio (M2 Max 12C\/38C )",
+          "ratings": [
+            "6144"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M3 Max 16C\/40C)",
+          "ratings": [
+            "12795"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "perf_chart",
+    "data": {
+      "chartName": "Streaming video playback battery drain test (minutes)",
+      "explanation": "Longer bars indicate better performance",
+      "tests": [
+        "battery"
+      ],
+      "products": [
+        {
+          "productName": "Apple MacBook Pro 14 (M3 8C\/10C)",
+          "ratings": [
+            "1129"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 13 (M28C\/10C)",
+          "ratings": [
+            "1253"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M3 Max 16C\/40C)",
+          "ratings": [
+            "1263"
+          ]
+        },
+        {
+          "productName": "Apple MacBook Pro 16 (M2 Pro 12C\/19C)",
+          "ratings": [
+            "1474"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "type": "geekbox_chart",
+    "data": {
+      "chartName": "Configurations of test systems",
+      "headingRows": "",
+      "chart": [
+        [
+          "Apple iMac (2023)",
+          "Apple MacOS Sonoma 14.1; Apple M3 (8-core CPU, 10-core GPU); 24GB unified memory; 1TB SSD"
+        ],
+        [
+          "Apple Mac Studio (2023)",
+          "MacOS Ventura 13.4 or Sonoma 14.1; Apple M2 Max (12-core CPU, 38-core GPU); 64GB RAM; 2TB SSD"
+        ],
+        [
+          "Apple MacBook Pro 14 (late 2023)",
+          "Apple MacOS Sonoma 14.1; Apple M3 (8-core CPU, 10-core GPU); 16GB unified memory; 1TB SSD"
+        ],
+        [
+          "Apple MacBook Pro 16 (early 2023)",
+          "Apple MacOS Ventura 13.2 or Sonoma 14.1; Apple M2 Pro (12 CPU cores, 19 GPU cores); 32GB LPDDR5 RAM; 1TB SSD"
+        ],
+        [
+          "Apple MacBook Pro 16 (late 2023)",
+          "Apple MacOS Sonoma 14.1; Apple M3 Max (16-core CPU, 20-core GPU); 48GB unified memory; 1TB SSD"
+        ]
+      ]
+    }
+  }
+]

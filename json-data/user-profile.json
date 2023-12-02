@@ -1,0 +1,27 @@
+{
+  "personal": {
+    "first_name": "Name",
+    "last_name": "Last name",
+    "email": "email@test.com",
+    "phone_number": "888777666",
+    "email_verified": true
+  },
+  "billingAddress": {
+    "post_code": "AB1 2CD",
+    "city": "Some Town",
+    "street_address": "Some street",
+    "country_code": "GB"
+  },
+  "delivery": {
+    "name": "Some name",
+    "post_code": "EF3 4GH",
+    "city": "Somewhere",
+    "street_address": "Nice Street",
+    "country_code": "GB",
+    "remarks": "On the second floor"
+  },
+  "preferences": {
+    "notifications": false
+  },
+  "active": true
+}
