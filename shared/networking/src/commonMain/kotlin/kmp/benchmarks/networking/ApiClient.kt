@@ -11,23 +11,18 @@ import io.ktor.http.ContentType
 import io.ktor.http.Url
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
-import kmp.benchmarks.networking.apiclient.ApiClient
-import kmp.benchmarks.networking.apiclient.httpClientEngine
-import kotlinx.serialization.json.Json
+import kmp.benchmarks.networking.ktorhttpclient.KtorHttpClient
+import kmp.benchmarks.networking.ktorhttpclient.httpClientEngine
 
 class ApiClient(
     engine: HttpClientEngine = httpClientEngine(),
-) : ApiClient(engine) {
+) : KtorHttpClient(engine) {
 
     private val baseUrl = Url("https://raw.githubusercontent.com/kotlin-multiplatform/benchmarks/main/json-data/user-profile.json")
 
     override val setupHttpClient: HttpClientConfig<*>.() -> Unit = {
         install(ContentNegotiation) {
-            json(
-                Json {
-                    ignoreUnknownKeys = true
-                }
-            )
+            json()
         }
 
         Logging {

@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.kotlinSerialization)
+    alias(libs.plugins.ksp)
 }
 
 kotlin {
@@ -15,9 +16,12 @@ kotlin {
 
     jvm()
 
-    iosX64()
+//    iosX64()
     iosArm64()
     iosSimulatorArm64()
+
+//    macosX64()
+    macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -25,6 +29,11 @@ kotlin {
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
+        }
+        jvmMain.dependencies {
+            api(libs.gson)
+            api(libs.moshi)
+            api(libs.moshi.adapters)
         }
     }
 }
@@ -35,4 +44,8 @@ android {
     defaultConfig {
         minSdk = 24
     }
+}
+
+dependencies {
+    add("kspJvm", libs.moshi.kotlin.codegen.get())
 }

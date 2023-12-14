@@ -12,7 +12,7 @@
       ],
       "internal": "Kodiak",
       "external": "Kodiak",
-      "announced":"2000-05-15",
+      "announced": "2000-05-15",
       "released": "2000-09-13",
       "requirements": [
         "PowerPC G3 (original PowerBook G3 not supported)",
@@ -22,7 +22,7 @@
       "releases": [
         {
           "version": "US",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "1H39",
@@ -32,7 +32,7 @@
         },
         {
           "version": "Int.",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "2E14",
@@ -50,7 +50,7 @@
       ],
       "internal": "Cheetah",
       "external": "Cheetah",
-      "announced":"2001-01-09",
+      "announced": "2001-01-09",
       "released": "2001-03-24",
       "requirements": [
         "PowerPC G3 (original PowerBook G3 not supported)",
@@ -60,7 +60,7 @@
       "releases": [
         {
           "version": "10.0",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4K78",
@@ -70,7 +70,7 @@
         },
         {
           "version": "10.0.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4L13",
@@ -80,7 +80,7 @@
         },
         {
           "version": "10.0.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4P12",
@@ -90,7 +90,7 @@
         },
         {
           "version": "10.0.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4P13",
@@ -100,7 +100,7 @@
         },
         {
           "version": "10.0.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4Q12",
@@ -110,7 +110,7 @@
         },
         {
           "version": "10.0.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "4S10",
@@ -128,7 +128,7 @@
       ],
       "internal": "Puma",
       "external": "Puma",
-      "announced":"2001-07-18",
+      "announced": "2001-07-18",
       "released": "2001-09-25",
       "requirements": [
         "PowerPC G3 (original PowerBook G3 not supported)",
@@ -138,7 +138,7 @@
       "releases": [
         {
           "version": "10.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5G64",
@@ -148,7 +148,7 @@
         },
         {
           "version": "10.1.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5M28",
@@ -158,7 +158,7 @@
         },
         {
           "version": "10.1.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5P48",
@@ -168,7 +168,7 @@
         },
         {
           "version": "10.1.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5Q45",
@@ -178,7 +178,7 @@
         },
         {
           "version": "10.1.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5Q125",
@@ -188,7 +188,7 @@
         },
         {
           "version": "10.1.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "5S60",
@@ -206,7 +206,7 @@
       ],
       "internal": "Jaguar",
       "external": "Jaguar",
-      "announced":"2002-05-06",
+      "announced": "2002-05-06",
       "released": "2002-08-24",
       "requirements": [
         "PowerPC G3 (original PowerBook G3 not supported)",
@@ -216,7 +216,7 @@
       "releases": [
         {
           "version": "10.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6C115",
@@ -226,7 +226,7 @@
         },
         {
           "version": "10.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6C115a",
@@ -236,7 +236,7 @@
         },
         {
           "version": "10.2.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6D52",
@@ -246,7 +246,7 @@
         },
         {
           "version": "10.2.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6F21",
@@ -256,7 +256,7 @@
         },
         {
           "version": "10.2.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6G30",
@@ -266,7 +266,7 @@
         },
         {
           "version": "10.2.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6G37",
@@ -276,7 +276,7 @@
         },
         {
           "version": "10.2.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6G50",
@@ -286,7 +286,7 @@
         },
         {
           "version": "10.2.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6I32",
@@ -296,7 +296,7 @@
         },
         {
           "version": "10.2.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6L29",
@@ -306,7 +306,7 @@
         },
         {
           "version": "10.2.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6L60",
@@ -316,7 +316,7 @@
         },
         {
           "version": "10.2.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6R65",
@@ -326,7 +326,7 @@
         },
         {
           "version": "10.2.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6R73",
@@ -336,7 +336,7 @@
         },
         {
           "version": "10.2.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "6S90",
@@ -354,7 +354,7 @@
       ],
       "internal": "Pinot",
       "external": "Panther",
-      "announced":"2003-06-23",
+      "announced": "2003-06-23",
       "released": "2003-10-24",
       "requirements": [
         "PowerPC G3 or later",
@@ -365,7 +365,7 @@
       "releases": [
         {
           "version": "10.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7B85",
@@ -375,7 +375,7 @@
         },
         {
           "version": "10.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7B86",
@@ -385,7 +385,7 @@
         },
         {
           "version": "10.3.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7C107",
@@ -395,7 +395,7 @@
         },
         {
           "version": "10.3.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7D24",
@@ -405,7 +405,7 @@
         },
         {
           "version": "10.3.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7D28",
@@ -415,7 +415,7 @@
         },
         {
           "version": "10.3.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7F44",
@@ -425,7 +425,7 @@
         },
         {
           "version": "10.3.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7H63",
@@ -435,7 +435,7 @@
         },
         {
           "version": "10.3.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7M34",
@@ -445,7 +445,7 @@
         },
         {
           "version": "10.3.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7R28",
@@ -455,7 +455,7 @@
         },
         {
           "version": "10.3.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7S215",
@@ -465,7 +465,7 @@
         },
         {
           "version": "10.3.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7U16",
@@ -475,7 +475,7 @@
         },
         {
           "version": "10.3.9",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "7W98",
@@ -494,7 +494,7 @@
       ],
       "internal": "Merlot (PowerPC) / Chardonnay (Intel)",
       "external": "Tiger",
-      "announced":"2004-05-04",
+      "announced": "2004-05-04",
       "released": "2005-04-29",
       "requirements": [
         "PowerPC G3 or later",
@@ -505,7 +505,7 @@
       "releases": [
         {
           "version": "10.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8A428",
@@ -515,7 +515,7 @@
         },
         {
           "version": "10.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8A432",
@@ -525,7 +525,7 @@
         },
         {
           "version": "10.4.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8B15",
@@ -535,7 +535,7 @@
         },
         {
           "version": "10.4.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8B17",
@@ -545,7 +545,7 @@
         },
         {
           "version": "10.4.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8C46",
@@ -555,7 +555,7 @@
         },
         {
           "version": "10.4.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8C47",
@@ -565,7 +565,7 @@
         },
         {
           "version": "10.4.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8E102",
@@ -575,7 +575,7 @@
         },
         {
           "version": "10.4.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8E45",
@@ -585,7 +585,7 @@
         },
         {
           "version": "10.4.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8E90",
@@ -595,7 +595,7 @@
         },
         {
           "version": "10.4.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8F46",
@@ -605,7 +605,7 @@
         },
         {
           "version": "10.4.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8G32",
@@ -615,7 +615,7 @@
         },
         {
           "version": "10.4.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8G1165",
@@ -625,7 +625,7 @@
         },
         {
           "version": "10.4.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8H14",
@@ -635,7 +635,7 @@
         },
         {
           "version": "10.4.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8G1454",
@@ -645,7 +645,7 @@
         },
         {
           "version": "10.4.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8I127",
@@ -655,7 +655,7 @@
         },
         {
           "version": "10.4.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8I1119",
@@ -665,7 +665,7 @@
         },
         {
           "version": "10.4.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8J135",
@@ -675,7 +675,7 @@
         },
         {
           "version": "10.4.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8J2135a",
@@ -685,7 +685,7 @@
         },
         {
           "version": "10.4.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8K1079",
@@ -695,7 +695,7 @@
         },
         {
           "version": "10.4.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8N5107",
@@ -705,7 +705,7 @@
         },
         {
           "version": "10.4.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8L127",
@@ -715,7 +715,7 @@
         },
         {
           "version": "10.4.8",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8L2127",
@@ -725,7 +725,7 @@
         },
         {
           "version": "10.4.9",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8P135",
@@ -735,7 +735,7 @@
         },
         {
           "version": "10.4.9",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8P2137",
@@ -745,7 +745,7 @@
         },
         {
           "version": "10.4.10",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8R218",
@@ -755,7 +755,7 @@
         },
         {
           "version": "10.4.10",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8R2218",
@@ -765,7 +765,7 @@
         },
         {
           "version": "10.4.10",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8R2232",
@@ -775,7 +775,7 @@
         },
         {
           "version": "10.4.11",
-          "platforms":  [
+          "platforms": [
             "PowerPC"
           ],
           "build": "8S165",
@@ -785,7 +785,7 @@
         },
         {
           "version": "10.4.11",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "8S2167",
@@ -804,7 +804,7 @@
       ],
       "internal": "Chablis",
       "external": "Leopard",
-      "announced":"2006-06-26",
+      "announced": "2006-06-26",
       "released": "2007-10-26",
       "requirements": [
         "Intel, PowerPC G5, or PowerPC G4 (867 MHz or faster) processor",
@@ -814,7 +814,7 @@
       "releases": [
         {
           "version": "10.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -825,7 +825,7 @@
         },
         {
           "version": "10.5.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -836,7 +836,7 @@
         },
         {
           "version": "10.5.1",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -847,7 +847,7 @@
         },
         {
           "version": "10.5.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -858,7 +858,7 @@
         },
         {
           "version": "10.5.2",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -869,7 +869,7 @@
         },
         {
           "version": "10.5.3",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -880,7 +880,7 @@
         },
         {
           "version": "10.5.4",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -891,7 +891,7 @@
         },
         {
           "version": "10.5.5",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -902,7 +902,7 @@
         },
         {
           "version": "10.5.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -913,7 +913,7 @@
         },
         {
           "version": "10.5.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -924,7 +924,7 @@
         },
         {
           "version": "10.5.6",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -935,7 +935,7 @@
         },
         {
           "version": "10.5.7",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -946,7 +946,7 @@
         },
         {
           "version": "10.5.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -957,7 +957,7 @@
         },
         {
           "version": "10.5.8",
-          "platforms":  [
+          "platforms": [
             "PowerPC",
             "Intel"
           ],
@@ -976,7 +976,7 @@
       ],
       "internal": "",
       "external": "Snow Leopard",
-      "announced":"2008-06-09",
+      "announced": "2008-06-09",
       "released": "2009-08-28",
       "requirements": [
         "Intel processor",
@@ -986,7 +986,7 @@
       "releases": [
         {
           "version": "10.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10A432",
@@ -996,7 +996,7 @@
         },
         {
           "version": "10.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10A433",
@@ -1006,7 +1006,7 @@
         },
         {
           "version": "10.6.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10B504",
@@ -1016,7 +1016,7 @@
         },
         {
           "version": "10.6.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10C540",
@@ -1026,7 +1026,7 @@
         },
         {
           "version": "10.6.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10D573",
@@ -1036,7 +1036,7 @@
         },
         {
           "version": "10.6.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10D575",
@@ -1046,7 +1046,7 @@
         },
         {
           "version": "10.6.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10D578",
@@ -1056,7 +1056,7 @@
         },
         {
           "version": "10.6.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10F569",
@@ -1066,7 +1066,7 @@
         },
         {
           "version": "10.6.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10H574",
@@ -1076,7 +1076,7 @@
         },
         {
           "version": "10.6.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10J567",
@@ -1086,7 +1086,7 @@
         },
         {
           "version": "10.6.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10J869",
@@ -1096,7 +1096,7 @@
         },
         {
           "version": "10.6.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10J3250",
@@ -1106,7 +1106,7 @@
         },
         {
           "version": "10.6.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10J4138",
@@ -1116,7 +1116,7 @@
         },
         {
           "version": "10.6.8",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10K540",
@@ -1126,7 +1126,7 @@
         },
         {
           "version": "10.6.8",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "10K549",
@@ -1144,7 +1144,7 @@
       ],
       "internal": "Barolo",
       "external": "Lion",
-      "announced":"2010-10-20",
+      "announced": "2010-10-20",
       "released": "2011-07-20",
       "requirements": [
         "Intel Core 2 Duo, Core i3, Core i5, Core i7 or Xeon processor",
@@ -1155,7 +1155,7 @@
       "releases": [
         {
           "version": "10.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11A511",
@@ -1165,7 +1165,7 @@
         },
         {
           "version": "10.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11A511s",
@@ -1175,7 +1175,7 @@
         },
         {
           "version": "10.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11A2061",
@@ -1185,7 +1185,7 @@
         },
         {
           "version": "10.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11A2063",
@@ -1195,7 +1195,7 @@
         },
         {
           "version": "10.7.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11B26",
@@ -1205,7 +1205,7 @@
         },
         {
           "version": "10.7.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11B2118",
@@ -1215,7 +1215,7 @@
         },
         {
           "version": "10.7.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11C74",
@@ -1225,7 +1225,7 @@
         },
         {
           "version": "10.7.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11D50",
@@ -1235,7 +1235,7 @@
         },
         {
           "version": "10.7.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11E53",
@@ -1245,7 +1245,7 @@
         },
         {
           "version": "10.7.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11G56",
@@ -1255,7 +1255,7 @@
         },
         {
           "version": "10.7.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "11G63",
@@ -1273,7 +1273,7 @@
       ],
       "internal": "Zinfandel",
       "external": "Mountain Lion",
-      "announced":"2012-02-16",
+      "announced": "2012-02-16",
       "released": "2012-07-25",
       "requirements": [
         "iMac (Mid 2007 or newer)",
@@ -1290,7 +1290,7 @@
       "releases": [
         {
           "version": "10.8",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12A269",
@@ -1300,7 +1300,7 @@
         },
         {
           "version": "10.8.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12B19",
@@ -1310,7 +1310,7 @@
         },
         {
           "version": "10.8.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12C54",
@@ -1320,7 +1320,7 @@
         },
         {
           "version": "10.8.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12C60",
@@ -1330,7 +1330,7 @@
         },
         {
           "version": "10.8.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12C2034",
@@ -1340,7 +1340,7 @@
         },
         {
           "version": "10.8.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12C3104",
@@ -1350,7 +1350,7 @@
         },
         {
           "version": "10.8.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12D78",
@@ -1360,7 +1360,7 @@
         },
         {
           "version": "10.8.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12E55",
@@ -1370,7 +1370,7 @@
         },
         {
           "version": "10.8.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12E3067",
@@ -1380,7 +1380,7 @@
         },
         {
           "version": "10.8.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12E4022",
@@ -1390,7 +1390,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F37",
@@ -1400,7 +1400,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F45",
@@ -1410,7 +1410,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F45",
@@ -1420,7 +1420,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F2501",
@@ -1430,7 +1430,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F2518",
@@ -1440,7 +1440,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F2542",
@@ -1450,7 +1450,7 @@
         },
         {
           "version": "10.8.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "12F2560",
@@ -1468,7 +1468,7 @@
       ],
       "internal": "Cabernet",
       "external": "Mavericks",
-      "announced":"2013-06-10",
+      "announced": "2013-06-10",
       "released": "2013-10-22",
       "requirements": [
         "iMac (Mid 2007 or newer)",
@@ -1485,7 +1485,7 @@
       "releases": [
         {
           "version": "10.9",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13A603",
@@ -1495,7 +1495,7 @@
         },
         {
           "version": "10.9.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13B42",
@@ -1505,7 +1505,7 @@
         },
         {
           "version": "10.9.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13C64",
@@ -1515,7 +1515,7 @@
         },
         {
           "version": "10.9.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13C1021",
@@ -1525,7 +1525,7 @@
         },
         {
           "version": "10.9.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13D65",
@@ -1535,7 +1535,7 @@
         },
         {
           "version": "10.9.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13E28",
@@ -1545,7 +1545,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F34",
@@ -1555,7 +1555,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F34",
@@ -1565,7 +1565,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F34",
@@ -1575,7 +1575,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1066",
@@ -1585,7 +1585,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1077",
@@ -1595,7 +1595,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1096",
@@ -1605,7 +1605,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1112",
@@ -1615,7 +1615,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1134",
@@ -1625,7 +1625,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1507",
@@ -1635,7 +1635,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1603",
@@ -1645,7 +1645,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1712",
@@ -1655,7 +1655,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1808",
@@ -1665,7 +1665,7 @@
         },
         {
           "version": "10.9.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "13F1911",
@@ -1683,7 +1683,7 @@
       ],
       "internal": "Syrah",
       "external": "Yosemite",
-      "announced":"2014-06-02",
+      "announced": "2014-06-02",
       "released": "2014-10-16",
       "requirements": [
         "Mac (Mid 2007 or newer)",
@@ -1700,7 +1700,7 @@
       "releases": [
         {
           "version": "10.10",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14A389",
@@ -1710,7 +1710,7 @@
         },
         {
           "version": "10.10.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14B25",
@@ -1720,7 +1720,7 @@
         },
         {
           "version": "10.10.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14C109",
@@ -1730,7 +1730,7 @@
         },
         {
           "version": "10.10.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14C1510",
@@ -1740,7 +1740,7 @@
         },
         {
           "version": "10.10.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14C2043",
@@ -1750,7 +1750,7 @@
         },
         {
           "version": "10.10.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14C1514",
@@ -1760,7 +1760,7 @@
         },
         {
           "version": "10.10.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14C2513",
@@ -1770,7 +1770,7 @@
         },
         {
           "version": "10.10.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14D131",
@@ -1780,7 +1780,7 @@
         },
         {
           "version": "10.10.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14D136",
@@ -1790,7 +1790,7 @@
         },
         {
           "version": "10.10.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14E46",
@@ -1800,7 +1800,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F27",
@@ -1810,7 +1810,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1021",
@@ -1820,7 +1820,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1505",
@@ -1830,7 +1830,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1509",
@@ -1840,7 +1840,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1605",
@@ -1850,7 +1850,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1713",
@@ -1860,7 +1860,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1808",
@@ -1870,7 +1870,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1909",
@@ -1880,7 +1880,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F1912",
@@ -1890,7 +1890,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F2009",
@@ -1900,7 +1900,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F2109",
@@ -1910,7 +1910,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F2315",
@@ -1920,7 +1920,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F2411",
@@ -1930,7 +1930,7 @@
         },
         {
           "version": "10.10.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "14F2511",
@@ -1948,7 +1948,7 @@
       ],
       "internal": "Gala",
       "external": "El Capitan",
-      "announced":"2015-06-08",
+      "announced": "2015-06-08",
       "released": "2015-09-30",
       "requirements": [
         "iMac (Mid 2007 or newer)",
@@ -1965,7 +1965,7 @@
       "releases": [
         {
           "version": "10.11",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15A284",
@@ -1975,7 +1975,7 @@
         },
         {
           "version": "10.11.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15B42",
@@ -1985,7 +1985,7 @@
         },
         {
           "version": "10.11.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15C50",
@@ -1995,7 +1995,7 @@
         },
         {
           "version": "10.11.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15D21",
@@ -2005,7 +2005,7 @@
         },
         {
           "version": "10.11.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15E65",
@@ -2015,7 +2015,7 @@
         },
         {
           "version": "10.11.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15F34",
@@ -2025,7 +2025,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G31",
@@ -2035,7 +2035,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1004",
@@ -2045,7 +2045,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1011",
@@ -2055,7 +2055,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1108",
@@ -2065,7 +2065,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1212",
@@ -2075,7 +2075,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1217",
@@ -2085,7 +2085,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1421",
@@ -2095,7 +2095,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1510",
@@ -2105,7 +2105,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G1611",
@@ -2115,7 +2115,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G17023",
@@ -2125,7 +2125,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G18013",
@@ -2135,7 +2135,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G19009",
@@ -2145,7 +2145,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G20015",
@@ -2155,7 +2155,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G21013",
@@ -2165,7 +2165,7 @@
         },
         {
           "version": "10.11.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "15G22010",
@@ -2183,7 +2183,7 @@
       ],
       "internal": "Fuji",
       "external": "Sierra",
-      "announced":"2016-06-13",
+      "announced": "2016-06-13",
       "released": "2016-09-20",
       "requirements": [
         "iMac (Late 2009 or newer)",
@@ -2199,7 +2199,7 @@
       "releases": [
         {
           "version": "10.12",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16A323",
@@ -2209,7 +2209,7 @@
         },
         {
           "version": "10.12.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16B2555",
@@ -2219,7 +2219,7 @@
         },
         {
           "version": "10.12.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16B2657",
@@ -2229,7 +2229,7 @@
         },
         {
           "version": "10.12.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16C67",
@@ -2239,7 +2239,7 @@
         },
         {
           "version": "10.12.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16C68",
@@ -2249,7 +2249,7 @@
         },
         {
           "version": "10.12.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16D32",
@@ -2259,7 +2259,7 @@
         },
         {
           "version": "10.12.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16E195",
@@ -2269,7 +2269,7 @@
         },
         {
           "version": "10.12.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16F73",
@@ -2279,7 +2279,7 @@
         },
         {
           "version": "10.12.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16F2073",
@@ -2289,7 +2289,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G29",
@@ -2299,7 +2299,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1036",
@@ -2309,7 +2309,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1114",
@@ -2319,7 +2319,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1212",
@@ -2329,7 +2329,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1314",
@@ -2339,7 +2339,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1408",
@@ -2349,7 +2349,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1510",
@@ -2359,7 +2359,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1618",
@@ -2369,7 +2369,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1710",
@@ -2379,7 +2379,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1815",
@@ -2389,7 +2389,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1917",
@@ -2399,7 +2399,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G1918",
@@ -2409,7 +2409,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G2016",
@@ -2419,7 +2419,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G2127",
@@ -2429,7 +2429,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G2128",
@@ -2439,7 +2439,7 @@
         },
         {
           "version": "10.12.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "16G2136",
@@ -2457,7 +2457,7 @@
       ],
       "internal": "Lobo",
       "external": "High Sierra",
-      "announced":"2017-06-05",
+      "announced": "2017-06-05",
       "released": "2017-09-25",
       "requirements": [
         "iMac (Late 2009 or newer)",
@@ -2473,7 +2473,7 @@
       "releases": [
         {
           "version": "10.13",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17A365",
@@ -2483,7 +2483,7 @@
         },
         {
           "version": "10.13",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17A405",
@@ -2493,7 +2493,7 @@
         },
         {
           "version": "10.13.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17B48",
@@ -2503,7 +2503,7 @@
         },
         {
           "version": "10.13.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17B1002",
@@ -2513,7 +2513,7 @@
         },
         {
           "version": "10.13.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17B1003",
@@ -2523,7 +2523,7 @@
         },
         {
           "version": "10.13.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17C88",
@@ -2533,7 +2533,7 @@
         },
         {
           "version": "10.13.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17C205",
@@ -2543,7 +2543,7 @@
         },
         {
           "version": "10.13.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17C2205",
@@ -2553,7 +2553,7 @@
         },
         {
           "version": "10.13.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17D47",
@@ -2563,7 +2563,7 @@
         },
         {
           "version": "10.13.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17D102",
@@ -2573,7 +2573,7 @@
         },
         {
           "version": "10.13.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17D2102",
@@ -2583,7 +2583,7 @@
         },
         {
           "version": "10.13.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17E199",
@@ -2593,7 +2593,7 @@
         },
         {
           "version": "10.13.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17E202",
@@ -2603,7 +2603,7 @@
         },
         {
           "version": "10.13.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17F77",
@@ -2613,7 +2613,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G65",
@@ -2623,7 +2623,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G2208",
@@ -2633,7 +2633,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G2307",
@@ -2643,7 +2643,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G3025",
@@ -2653,7 +2653,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G4015",
@@ -2663,7 +2663,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G5019",
@@ -2673,7 +2673,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G6029",
@@ -2683,7 +2683,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G6030",
@@ -2693,7 +2693,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G7024",
@@ -2703,7 +2703,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G8029",
@@ -2713,7 +2713,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G8030",
@@ -2723,7 +2723,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G8037",
@@ -2733,7 +2733,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G9016",
@@ -2743,7 +2743,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G10021",
@@ -2753,7 +2753,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G11023",
@@ -2763,7 +2763,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G12034",
@@ -2773,7 +2773,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G13033",
@@ -2783,7 +2783,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G13035",
@@ -2793,7 +2793,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G14019",
@@ -2803,7 +2803,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G14033",
@@ -2813,7 +2813,7 @@
         },
         {
           "version": "10.13.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "17G14042",
@@ -2831,7 +2831,7 @@
       ],
       "internal": "Liberty",
       "external": "Mojave",
-      "announced":"2018-06-04",
+      "announced": "2018-06-04",
       "released": "2018-09-24",
       "requirements": [
         "iMac (Late 2012 or newer)",
@@ -2848,7 +2848,7 @@
       "releases": [
         {
           "version": "10.14",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18A391",
@@ -2858,7 +2858,7 @@
         },
         {
           "version": "10.14.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18B75",
@@ -2868,7 +2868,7 @@
         },
         {
           "version": "10.14.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18B2107",
@@ -2878,7 +2878,7 @@
         },
         {
           "version": "10.14.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18B3094",
@@ -2888,7 +2888,7 @@
         },
         {
           "version": "10.14.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18C54",
@@ -2898,7 +2898,7 @@
         },
         {
           "version": "10.14.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18D42",
@@ -2908,7 +2908,7 @@
         },
         {
           "version": "10.14.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18D43",
@@ -2918,7 +2918,7 @@
         },
         {
           "version": "10.14.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18D109",
@@ -2928,7 +2928,7 @@
         },
         {
           "version": "10.14.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18E226",
@@ -2938,7 +2938,7 @@
         },
         {
           "version": "10.14.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18E227",
@@ -2948,7 +2948,7 @@
         },
         {
           "version": "10.14.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18F132",
@@ -2958,7 +2958,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G84",
@@ -2968,7 +2968,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G87",
@@ -2978,7 +2978,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G95",
@@ -2988,7 +2988,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G103",
@@ -2998,7 +2998,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G1012",
@@ -3008,7 +3008,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G2022",
@@ -3018,7 +3018,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G3020",
@@ -3028,7 +3028,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G4032",
@@ -3038,7 +3038,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G5033",
@@ -3048,7 +3048,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G6020",
@@ -3058,7 +3058,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G6032",
@@ -3068,7 +3068,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G6032",
@@ -3078,7 +3078,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G6042",
@@ -3088,7 +3088,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G7016",
@@ -3098,7 +3098,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G8012",
@@ -3108,7 +3108,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G8022",
@@ -3118,7 +3118,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G9028",
@@ -3128,7 +3128,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G9216",
@@ -3138,7 +3138,7 @@
         },
         {
           "version": "10.14.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "18G9323",
@@ -3156,7 +3156,7 @@
       ],
       "internal": "Jazz",
       "external": "Catalina",
-      "announced":"2019-06-03",
+      "announced": "2019-06-03",
       "released": "2019-10-07",
       "requirements": [
         "iMac (Late 2012 or newer)",
@@ -3173,7 +3173,7 @@
       "releases": [
         {
           "version": "10.15",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19A583",
@@ -3183,7 +3183,7 @@
         },
         {
           "version": "10.15",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19A602",
@@ -3193,7 +3193,7 @@
         },
         {
           "version": "10.15",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19A603",
@@ -3203,7 +3203,7 @@
         },
         {
           "version": "10.15.1",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19B88",
@@ -3213,7 +3213,7 @@
         },
         {
           "version": "10.15.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19C57",
@@ -3223,7 +3223,7 @@
         },
         {
           "version": "10.15.2",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19C58",
@@ -3233,7 +3233,7 @@
         },
         {
           "version": "10.15.3",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19D76",
@@ -3243,7 +3243,7 @@
         },
         {
           "version": "10.15.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19E266",
@@ -3253,7 +3253,7 @@
         },
         {
           "version": "10.15.4",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19E287",
@@ -3263,7 +3263,7 @@
         },
         {
           "version": "10.15.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19F96",
@@ -3273,7 +3273,7 @@
         },
         {
           "version": "10.15.5",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19F101",
@@ -3283,7 +3283,7 @@
         },
         {
           "version": "10.15.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19G73",
@@ -3293,7 +3293,7 @@
         },
         {
           "version": "10.15.6",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19G2021",
@@ -3303,7 +3303,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H2",
@@ -3313,7 +3313,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H4",
@@ -3323,7 +3323,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H15",
@@ -3333,7 +3333,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H114",
@@ -3343,7 +3343,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H512",
@@ -3353,7 +3353,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H524",
@@ -3363,7 +3363,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1030",
@@ -3373,7 +3373,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1217",
@@ -3383,7 +3383,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1323",
@@ -3393,7 +3393,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1417",
@@ -3403,7 +3403,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1419",
@@ -3413,7 +3413,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1519",
@@ -3423,7 +3423,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1615",
@@ -3433,7 +3433,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1713",
@@ -3443,7 +3443,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1715",
@@ -3453,7 +3453,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1824",
@@ -3463,7 +3463,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H1922",
@@ -3473,7 +3473,7 @@
         },
         {
           "version": "10.15.7",
-          "platforms":  [
+          "platforms": [
             "Intel"
           ],
           "build": "19H2026",
@@ -3492,7 +3492,7 @@
       ],
       "internal": "Golden Gate",
       "external": "Big Sur",
-      "announced":"2020-06-22",
+      "announced": "2020-06-22",
       "released": "2020-11-12",
       "requirements": [
         "iMac (Mid 2014 or newer)",
@@ -3508,7 +3508,7 @@
       "releases": [
         {
           "version": "11.0",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3519,7 +3519,7 @@
         },
         {
           "version": "11.0.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3530,7 +3530,7 @@
         },
         {
           "version": "11.0.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3541,7 +3541,7 @@
         },
         {
           "version": "11.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3552,7 +3552,7 @@
         },
         {
           "version": "11.2",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3563,7 +3563,7 @@
         },
         {
           "version": "11.2.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3574,7 +3574,7 @@
         },
         {
           "version": "11.2.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3585,7 +3585,7 @@
         },
         {
           "version": "11.2.2",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3596,7 +3596,7 @@
         },
         {
           "version": "11.2.3",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3607,7 +3607,7 @@
         },
         {
           "version": "11.3",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3618,7 +3618,7 @@
         },
         {
           "version": "11.3.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3629,7 +3629,7 @@
         },
         {
           "version": "11.4",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3640,7 +3640,7 @@
         },
         {
           "version": "11.5",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3651,7 +3651,7 @@
         },
         {
           "version": "11.5.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3662,7 +3662,7 @@
         },
         {
           "version": "11.5.2",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3673,7 +3673,7 @@
         },
         {
           "version": "11.6",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3684,7 +3684,7 @@
         },
         {
           "version": "11.6.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3695,7 +3695,7 @@
         },
         {
           "version": "11.6.2",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3706,7 +3706,7 @@
         },
         {
           "version": "11.6.3",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3717,7 +3717,7 @@
         },
         {
           "version": "11.6.4",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3728,7 +3728,7 @@
         },
         {
           "version": "11.6.5",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3739,7 +3739,7 @@
         },
         {
           "version": "11.6.6",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3750,7 +3750,7 @@
         },
         {
           "version": "11.6.7",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3761,7 +3761,7 @@
         },
         {
           "version": "11.6.8",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3772,7 +3772,7 @@
         },
         {
           "version": "11.7",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3783,7 +3783,7 @@
         },
         {
           "version": "11.7.1",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3794,7 +3794,7 @@
         },
         {
           "version": "11.7.2",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3805,7 +3805,7 @@
         },
         {
           "version": "11.7.3",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3816,7 +3816,7 @@
         },
         {
           "version": "11.7.4",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3827,7 +3827,7 @@
         },
         {
           "version": "11.7.5",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3838,7 +3838,7 @@
         },
         {
           "version": "11.7.6",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3849,7 +3849,7 @@
         },
         {
           "version": "11.7.7",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3860,7 +3860,7 @@
         },
         {
           "version": "11.7.8",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3871,7 +3871,7 @@
         },
         {
           "version": "11.7.9",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3882,7 +3882,7 @@
         },
         {
           "version": "11.7.10",
-          "platforms":  [
+          "platforms": [
             "x86-64",
             "ARM64"
           ],
@@ -3902,7 +3902,7 @@
       ],
       "internal": "Star",
       "external": "Monterey",
-      "announced":"2021-06-07",
+      "announced": "2021-06-07",
       "released": "2021-10-25",
       "requirements": [
         "iMac (Late 2015 and newer)",
@@ -3916,7 +3916,7 @@
       "releases": [
         {
           "version": "12.0",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3927,7 +3927,7 @@
         },
         {
           "version": "12.0.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3938,7 +3938,7 @@
         },
         {
           "version": "12.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3949,7 +3949,7 @@
         },
         {
           "version": "12.2",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3960,7 +3960,7 @@
         },
         {
           "version": "12.2.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3971,7 +3971,7 @@
         },
         {
           "version": "12.3",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3982,7 +3982,7 @@
         },
         {
           "version": "12.3.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -3993,7 +3993,7 @@
         },
         {
           "version": "12.4",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4004,7 +4004,7 @@
         },
         {
           "version": "12.4",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4015,7 +4015,7 @@
         },
         {
           "version": "12.5",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4026,7 +4026,7 @@
         },
         {
           "version": "12.6",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4037,7 +4037,7 @@
         },
         {
           "version": "12.6.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4048,7 +4048,7 @@
         },
         {
           "version": "12.6.2",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4059,7 +4059,7 @@
         },
         {
           "version": "12.6.3",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4070,7 +4070,7 @@
         },
         {
           "version": "12.6.4",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4081,7 +4081,7 @@
         },
         {
           "version": "12.6.5",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4092,7 +4092,7 @@
         },
         {
           "version": "12.6.6",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4103,7 +4103,7 @@
         },
         {
           "version": "12.6.7",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4114,7 +4114,7 @@
         },
         {
           "version": "12.6.8",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4125,7 +4125,7 @@
         },
         {
           "version": "12.6.9",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4136,7 +4136,7 @@
         },
         {
           "version": "12.7",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4156,7 +4156,7 @@
       ],
       "internal": "Rome",
       "external": "Ventura",
-      "announced":"2022-06-06",
+      "announced": "2022-06-06",
       "released": "2022-10-24",
       "requirements": [
         "iMac (2017) and later",
@@ -4171,7 +4171,7 @@
       "releases": [
         {
           "version": "13.0",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4182,7 +4182,7 @@
         },
         {
           "version": "13.0.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4193,7 +4193,7 @@
         },
         {
           "version": "13.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4204,7 +4204,7 @@
         },
         {
           "version": "13.2",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4215,7 +4215,7 @@
         },
         {
           "version": "13.2.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4226,7 +4226,7 @@
         },
         {
           "version": "13.3",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4237,7 +4237,7 @@
         },
         {
           "version": "13.3.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4248,7 +4248,7 @@
         },
         {
           "version": "13.3.1a",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4259,7 +4259,7 @@
         },
         {
           "version": "13.4",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4270,7 +4270,7 @@
         },
         {
           "version": "13.4.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4281,7 +4281,7 @@
         },
         {
           "version": "13.4.1a",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4292,7 +4292,7 @@
         },
         {
           "version": "13.4.1c",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4303,7 +4303,7 @@
         },
         {
           "version": "13.5",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4314,7 +4314,7 @@
         },
         {
           "version": "13.5.1",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4325,7 +4325,7 @@
         },
         {
           "version": "13.5.2",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4336,7 +4336,7 @@
         },
         {
           "version": "13.6",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],
@@ -4356,7 +4356,7 @@
       ],
       "internal": "Sunburst",
       "external": "Sonoma",
-      "announced":"2023-06-05",
+      "announced": "2023-06-05",
       "released": "2023-09-26",
       "requirements": [
         "iMac (2019) and later",
@@ -4370,7 +4370,7 @@
       "releases": [
         {
           "version": "14.0",
-          "platforms":  [
+          "platforms": [
             "Intel",
             "ARM64"
           ],

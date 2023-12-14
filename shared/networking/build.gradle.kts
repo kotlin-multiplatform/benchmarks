@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.goncalossilvaResources)
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.kotlinxSerialization)
 }
 
 kotlin {
@@ -16,9 +15,12 @@ kotlin {
 
     jvm()
 
-    iosX64()
+//    iosX64()
     iosArm64()
     iosSimulatorArm64()
+
+//    macosX64()
+    macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -28,7 +30,7 @@ kotlin {
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization.core)
             implementation(libs.kotlinx.serialization.json)
-            implementation(projects.shared.networking.apiClient)
+            implementation(projects.shared.networking.ktorHttpClient)
             implementation(projects.shared.serialization.model)
         }
         commonTest.dependencies {
