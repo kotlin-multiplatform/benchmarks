@@ -15,10 +15,9 @@ import kmp.benchmarks.networking.ktorhttpclient.KtorHttpClient
 import kmp.benchmarks.networking.ktorhttpclient.httpClientEngine
 
 class ApiClient(
+    baseUrl: Url = Url("https://raw.githubusercontent.com/"),
     engine: HttpClientEngine = httpClientEngine(),
 ) : KtorHttpClient(engine) {
-
-    private val baseUrl = Url("https://raw.githubusercontent.com/kotlin-multiplatform/benchmarks/main/json-data/user-profile.json")
 
     override val setupHttpClient: HttpClientConfig<*>.() -> Unit = {
         install(ContentNegotiation) {

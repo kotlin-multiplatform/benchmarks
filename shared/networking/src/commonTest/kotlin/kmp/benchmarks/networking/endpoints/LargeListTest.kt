@@ -5,6 +5,7 @@ import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
+import io.ktor.http.Url
 import io.ktor.http.headersOf
 import io.ktor.utils.io.ByteReadChannel
 import io.ktor.utils.io.core.use
@@ -22,6 +23,7 @@ class LargeListTest {
         val jsonString = Resource("src/commonTest/resources/large-list.json").readText()
 
         val apiClient = ApiClient(
+            baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
                     request.url.encodedPath.matches(Regex("""/kotlin-multiplatform/benchmarks/main/json-data/large-list.json""")) -> {
