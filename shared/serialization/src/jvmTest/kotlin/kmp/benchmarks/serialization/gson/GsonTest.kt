@@ -52,13 +52,13 @@ class GsonTest {
         assertTrue(data.isNotEmpty())
     }
 
-//    @Test
-//    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it doesnt fail`() {
-//        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
-//
-//        val data: List<GeoJSONObject> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
-//        assertEquals(expectedJsonString, gson.toJson(data))
-//    }
+    @Test
+    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it doesnt fail`() {
+        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
+
+        val data: List<GeoJSONObject> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
+        assertEquals(expectedJsonString, gson.toJson(data, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type))
+    }
 
     @Test
     fun `GIVEN polymorphic html json data WHEN fromJson is invoked THEN it doesnt fail`() {
@@ -68,13 +68,13 @@ class GsonTest {
         assertTrue(data.isNotEmpty())
     }
 
-//    @Test
-//    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it doesnt fail`() {
-//        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
-//
-//        val data: List<HtmlChunk> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
-//        assertEquals(expectedJsonString, gson.toJson(data))
-//    }
+    @Test
+    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it doesnt fail`() {
+        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
+
+        val data: List<HtmlChunk> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
+        assertEquals(expectedJsonString, gson.toJson(data, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type))
+    }
 
     @Test
     fun `GIVEN user profile json data WHEN fromJson is invoked THEN it doesnt fail`() {
