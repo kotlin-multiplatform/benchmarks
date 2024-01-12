@@ -1,11 +1,11 @@
-package kmp.benchmarks.serialization
+package kmp.benchmarks.serialization.kotlinxserialization
 
 import com.goncalossilva.resources.Resource
-import kmp.benchmarks.serialization.model.GeoJSONObject
-import kmp.benchmarks.serialization.model.GithubPush
-import kmp.benchmarks.serialization.model.HtmlChunk
-import kmp.benchmarks.serialization.model.MacOsReleases
-import kmp.benchmarks.serialization.model.UserProfile
+import kmp.benchmarks.serialization.model.kotlinxserialization.GeoJSONObject
+import kmp.benchmarks.serialization.model.kotlinxserialization.GithubPush
+import kmp.benchmarks.serialization.model.kotlinxserialization.HtmlChunk
+import kmp.benchmarks.serialization.model.kotlinxserialization.MacOsReleases
+import kmp.benchmarks.serialization.model.kotlinxserialization.UserProfile
 import kotlinx.serialization.encodeToString
 import kotlin.test.Test
 import kotlin.test.assertEquals

@@ -1,4 +1,4 @@
-package kmp.benchmarks.networking
+package kmp.benchmarks.networking.ktor
 
 import io.ktor.client.HttpClientConfig
 import io.ktor.client.engine.HttpClientEngine

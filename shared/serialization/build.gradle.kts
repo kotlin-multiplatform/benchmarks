@@ -25,7 +25,7 @@ kotlin {
     iosSimulatorArm64()
 
 //    macosX64()
-//    macosArm64()
+    macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -77,6 +77,6 @@ benchmark {
             jmhVersion = "1.37"
         }
 //        register("iosArm64Test")
-//        register("macosArm64Test")
+        register("macosArm64Test")
     }
 }

@@ -1,4 +1,4 @@
-package kmp.benchmarks.serialization
+package kmp.benchmarks.serialization.kotlinxserialization
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json

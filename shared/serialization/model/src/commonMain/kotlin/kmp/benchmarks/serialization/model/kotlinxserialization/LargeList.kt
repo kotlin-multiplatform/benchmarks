@@ -1,4 +1,4 @@
-package kmp.benchmarks.serialization.model
+package kmp.benchmarks.serialization.model.kotlinxserialization
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
