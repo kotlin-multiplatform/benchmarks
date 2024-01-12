@@ -1,3 +1,5 @@
+import kotlinx.benchmark.gradle.JvmBenchmarkTarget
+
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.goncalossilvaResources)
@@ -23,7 +25,7 @@ kotlin {
     iosSimulatorArm64()
 
 //    macosX64()
-    macosArm64()
+//    macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -53,10 +55,10 @@ allOpen {
 benchmark {
     configurations {
         getByName("main") {
-            warmups = 20
+            warmups = 10
             iterations = 10
-            iterationTime = 3
-            iterationTimeUnit = "us"
+            iterationTime = 500
+            iterationTimeUnit = "ms"
             outputTimeUnit = "ms"
             mode = "AverageTime"
             advanced("jvmForks", "definedByJmh")
@@ -70,8 +72,11 @@ benchmark {
     }
 
     targets {
-        register("jvmTest")
+        register("jvmTest") {
+            this as JvmBenchmarkTarget
+            jmhVersion = "1.37"
+        }
 //        register("iosArm64Test")
-        register("macosArm64Test")
+//        register("macosArm64Test")
     }
 }

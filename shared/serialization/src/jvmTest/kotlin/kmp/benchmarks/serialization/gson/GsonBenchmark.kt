@@ -21,32 +21,32 @@ class GsonBenchmark {
     private val userProfileJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
     @Benchmark
-    fun largeListBenchmark() {
+    fun `large list json data`() {
         gson.fromJson(largeListJsonString, TypeToken.getParameterized(List::class.java, GithubPush::class.java))
     }
 
     @Benchmark
-    fun macosReleasesBenchmark() {
+    fun `macos releases json data`() {
         gson.fromJson(macosReleasesJsonString, MacOsReleases::class.java)
     }
 
     @Benchmark
-    fun polymorphicGeoBenchmark() {
+    fun `polymorphic geo json data`() {
         gson.fromJson(polymorphicGeoJsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java))
     }
 
     @Benchmark
-    fun polymorphicHtmlBenchmark() {
+    fun `polymorphic html json data`() {
         gson.fromJson(polymorphicHtmlJsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java))
     }
 
     @Benchmark
-    fun userProfileBenchmark() {
+    fun `user profile json data`() {
         gson.fromJson(userProfileJsonString, UserProfile::class.java)
     }
 
     @Benchmark
-    fun combinedBenchmark() {
+    fun combined() {
         gson.fromJson(largeListJsonString, TypeToken.getParameterized(List::class.java, GithubPush::class.java))
         gson.fromJson(macosReleasesJsonString, MacOsReleases::class.java)
         gson.fromJson(polymorphicGeoJsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java))

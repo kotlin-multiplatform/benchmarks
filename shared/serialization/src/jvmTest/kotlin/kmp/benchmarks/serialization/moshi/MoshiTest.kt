@@ -14,7 +14,7 @@ import kotlin.test.assertTrue
 @OptIn(ExperimentalStdlibApi::class)
 class MoshiTest {
     @Test
-    fun `GIVEN large list json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN large list json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/large-list.json").readText()
 
         val data: List<GithubPush> = moshi.adapter<List<GithubPush>>().fromJson(jsonString)!!
@@ -22,7 +22,7 @@ class MoshiTest {
     }
 
 //    @Test
-//    fun `GIVEN large list json data WHEN toJson is invoked THEN it doesnt fail`() {
+//    fun `GIVEN large list json data WHEN toJson is invoked THEN it does not fail`() {
 //        val expectedJsonString = Resource("src/commonTest/resources/large-list.json").readText()
 //
 //        val adapter = moshi.adapter<List<GithubPush>>().indent("  ").serializeNulls()
@@ -32,7 +32,7 @@ class MoshiTest {
 //    }
 
     @Test
-    fun `GIVEN macos releases json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN macos releases json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
 
         val data: MacOsReleases = moshi.adapter<MacOsReleases>().fromJson(jsonString)!!
@@ -40,7 +40,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN macos releases json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN macos releases json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
 
         val adapter = moshi.adapter<MacOsReleases>().indent("  ").serializeNulls()
@@ -50,7 +50,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic geo json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
 
         val data: List<GeoJSONObject> = moshi.adapter<List<GeoJSONObject>>().fromJson(jsonString)!!
@@ -58,7 +58,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
 
         val adapter = moshi.adapter<List<GeoJSONObject>>().indent("  ").serializeNulls()
@@ -68,7 +68,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic html json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
 
         val data: List<HtmlChunk> = moshi.adapter<List<HtmlChunk>>().fromJson(jsonString)!!
@@ -76,7 +76,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
 
         val adapter = moshi.adapter<List<HtmlChunk>>().indent("  ").serializeNulls()
@@ -86,7 +86,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN user profile json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
         val data: UserProfile = moshi.adapter<UserProfile>().fromJson(jsonString)!!
@@ -94,7 +94,7 @@ class MoshiTest {
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN user profile json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
         val adapter = moshi.adapter<UserProfile>().indent("  ").serializeNulls()

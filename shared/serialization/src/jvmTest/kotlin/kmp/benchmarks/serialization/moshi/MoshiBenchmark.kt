@@ -22,32 +22,32 @@ class MoshiBenchmark {
     private val userProfileJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
     @Benchmark
-    fun largeListBenchmark() {
+    fun `large list json data`() {
         moshi.adapter<List<GithubPush>>().fromJson(largeListJsonString)!!
     }
 
     @Benchmark
-    fun macosReleasesBenchmark() {
+    fun `macos releases json data`() {
         moshi.adapter<MacOsReleases>().fromJson(macosReleasesJsonString)!!
     }
 
     @Benchmark
-    fun polymorphicGeoBenchmark() {
+    fun `polymorphic geo json data`() {
         moshi.adapter<List<GeoJSONObject>>().fromJson(polymorphicGeoJsonString)!!
     }
 
     @Benchmark
-    fun polymorphicHtmlBenchmark() {
+    fun `polymorphic html json data`() {
         moshi.adapter<List<HtmlChunk>>().fromJson(polymorphicHtmlJsonString)!!
     }
 
     @Benchmark
-    fun userProfileBenchmark() {
+    fun `user profile json data`() {
         moshi.adapter<UserProfile>().fromJson(userProfileJsonString)!!
     }
 
     @Benchmark
-    fun combinedBenchmark() {
+    fun combined() {
         moshi.adapter<List<GithubPush>>().fromJson(largeListJsonString)!!
         moshi.adapter<MacOsReleases>().fromJson(macosReleasesJsonString)!!
         moshi.adapter<List<GeoJSONObject>>().fromJson(polymorphicGeoJsonString)!!

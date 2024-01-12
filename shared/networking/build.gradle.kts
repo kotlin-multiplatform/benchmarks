@@ -20,7 +20,7 @@ kotlin {
     iosSimulatorArm64()
 
 //    macosX64()
-    macosArm64()
+//    macosArm64()
 
     sourceSets {
         commonMain.dependencies {
@@ -31,7 +31,7 @@ kotlin {
             implementation(libs.kotlinx.serialization.core)
             implementation(libs.kotlinx.serialization.json)
             implementation(projects.shared.networking.ktorHttpClient)
-            implementation(projects.shared.serialization.model)
+            implementation(projects.shared.serialization)
         }
         commonTest.dependencies {
             implementation(libs.goncalossilva.resources)

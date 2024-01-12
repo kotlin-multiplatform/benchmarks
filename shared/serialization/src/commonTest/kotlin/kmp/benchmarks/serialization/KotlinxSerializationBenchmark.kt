@@ -20,32 +20,32 @@ class KotlinxSerializationBenchmark {
     private val userProfileJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
     @Benchmark
-    fun largeListBenchmark() {
+    fun `large list json data`() {
         kotlinxSerializationJson.decodeFromString<List<GithubPush>>(largeListJsonString)
     }
 
     @Benchmark
-    fun macosReleasesBenchmark() {
+    fun `macos releases json data`() {
         kotlinxSerializationJson.decodeFromString<MacOsReleases>(macosReleasesJsonString)
     }
 
     @Benchmark
-    fun polymorphicGeoBenchmark() {
+    fun `polymorphic geo json data`() {
         kotlinxSerializationJson.decodeFromString<List<GeoJSONObject>>(polymorphicGeoJsonString)
     }
 
     @Benchmark
-    fun polymorphicHtmlBenchmark() {
+    fun `polymorphic html json data`() {
         kotlinxSerializationJson.decodeFromString<List<HtmlChunk>>(polymorphicHtmlJsonString)
     }
 
     @Benchmark
-    fun userProfileBenchmark() {
+    fun `user profile json data`() {
         kotlinxSerializationJson.decodeFromString<UserProfile>(userProfileJsonString)
     }
 
     @Benchmark
-    fun combinedBenchmark() {
+    fun combined() {
         kotlinxSerializationJson.decodeFromString<List<GithubPush>>(largeListJsonString)
         kotlinxSerializationJson.decodeFromString<MacOsReleases>(macosReleasesJsonString)
         kotlinxSerializationJson.decodeFromString<List<GeoJSONObject>>(polymorphicGeoJsonString)

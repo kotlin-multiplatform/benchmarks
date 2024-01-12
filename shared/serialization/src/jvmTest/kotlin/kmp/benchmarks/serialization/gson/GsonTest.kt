@@ -13,7 +13,7 @@ import kotlin.test.assertTrue
 
 class GsonTest {
     @Test
-    fun `GIVEN large list json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN large list json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/large-list.json").readText()
 
         val data: List<GithubPush> = gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, GithubPush::class.java).type)
@@ -21,7 +21,7 @@ class GsonTest {
     }
 
 //    @Test
-//    fun `GIVEN large list json data WHEN toJson is invoked THEN it doesnt fail`() {
+//    fun `GIVEN large list json data WHEN toJson is invoked THEN it does not fail`() {
 //        val expectedJsonString = Resource("src/commonTest/resources/large-list.json").readText()
 //
 //        val data: List<GithubPush> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, GithubPush::class.java).type)
@@ -29,7 +29,7 @@ class GsonTest {
 //    }
 
     @Test
-    fun `GIVEN macos releases json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN macos releases json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
 
         val data: MacOsReleases = gson.fromJson(jsonString, MacOsReleases::class.java)
@@ -37,7 +37,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN macos releases json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN macos releases json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
 
         val data: MacOsReleases = gson.fromJson(expectedJsonString, MacOsReleases::class.java)
@@ -45,7 +45,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic geo json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
 
         val data: List<GeoJSONObject> = gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
@@ -53,7 +53,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic geo json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
 
         val data: List<GeoJSONObject> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
@@ -61,7 +61,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic html json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
 
         val data: List<HtmlChunk> = gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
@@ -69,7 +69,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN polymorphic html json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
 
         val data: List<HtmlChunk> = gson.fromJson(expectedJsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
@@ -77,7 +77,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN fromJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN user profile json data WHEN fromJson is invoked THEN it does not fail`() {
         val jsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
         val data: UserProfile = gson.fromJson(jsonString, UserProfile::class.java)
@@ -85,7 +85,7 @@ class GsonTest {
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN toJson is invoked THEN it doesnt fail`() {
+    fun `GIVEN user profile json data WHEN toJson is invoked THEN it does not fail`() {
         val expectedJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
         val data: UserProfile = gson.fromJson(expectedJsonString, UserProfile::class.java)
