@@ -21,6 +21,16 @@
 		E933BAFC2B1BE2F2008915BE /* benchmarks_standaloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BAFB2B1BE2F2008915BE /* benchmarks_standaloneTests.swift */; };
 		E933BB062B1BE2F2008915BE /* benchmarks_standaloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */; };
 		E933BB082B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */; };
+		E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */; };
+		E9ADBBD12B51F2EB00E383E2 /* large-list.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD02B51F2EB00E383E2 /* large-list.json */; };
+		E9ADBBDA2B51F31000E383E2 /* macos-releases-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */; };
+		E9ADBBDB2B51F31000E383E2 /* user-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD32B51F31000E383E2 /* user-profile.json */; };
+		E9ADBBDC2B51F31000E383E2 /* user-profile-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD42B51F31000E383E2 /* user-profile-min.json */; };
+		E9ADBBDD2B51F31000E383E2 /* polymorphic-html.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */; };
+		E9ADBBDE2B51F31000E383E2 /* polymorphic-geo-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */; };
+		E9ADBBDF2B51F31000E383E2 /* polymorphic-html-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */; };
+		E9ADBBE02B51F31000E383E2 /* polymorphic-geo.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */; };
+		E9ADBBE12B51F31000E383E2 /* macos-releases.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD92B51F31000E383E2 /* macos-releases.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +87,16 @@
 		E933BB012B1BE2F2008915BE /* standaloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = standaloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITests.swift; sourceTree = "<group>"; };
 		E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationTests.swift; sourceTree = "<group>"; };
+		E9ADBBD02B51F2EB00E383E2 /* large-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "large-list.json"; path = "../../json-data/large-list.json"; sourceTree = "<group>"; };
+		E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases-min.json"; path = "../../json-data/macos-releases-min.json"; sourceTree = "<group>"; };
+		E9ADBBD32B51F31000E383E2 /* user-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile.json"; path = "../../json-data/user-profile.json"; sourceTree = "<group>"; };
+		E9ADBBD42B51F31000E383E2 /* user-profile-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile-min.json"; path = "../../json-data/user-profile-min.json"; sourceTree = "<group>"; };
+		E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html.json"; path = "../../json-data/polymorphic-html.json"; sourceTree = "<group>"; };
+		E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo-min.json"; path = "../../json-data/polymorphic-geo-min.json"; sourceTree = "<group>"; };
+		E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html-min.json"; path = "../../json-data/polymorphic-html-min.json"; sourceTree = "<group>"; };
+		E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo.json"; path = "../../json-data/polymorphic-geo.json"; sourceTree = "<group>"; };
+		E9ADBBD92B51F31000E383E2 /* macos-releases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases.json"; path = "../../json-data/macos-releases.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +202,17 @@
 		E933BACB2B1BE268008915BE /* multiplatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9ADBBD02B51F2EB00E383E2 /* large-list.json */,
+				E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */,
+				E9ADBBD92B51F31000E383E2 /* macos-releases.json */,
+				E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */,
+				E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */,
+				E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */,
+				E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */,
+				E9ADBBD42B51F31000E383E2 /* user-profile-min.json */,
+				E9ADBBD32B51F31000E383E2 /* user-profile.json */,
 				E933BACC2B1BE268008915BE /* benchmarks_multiplatformTests.swift */,
+				E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */,
 			);
 			path = multiplatformTests;
 			sourceTree = "<group>";
@@ -352,7 +382,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = KMPBM;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = kmp;
 				TargetAttributes = {
 					E933BAB72B1BE267008915BE = {
@@ -416,6 +446,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9ADBBDB2B51F31000E383E2 /* user-profile.json in Resources */,
+				E9ADBBDF2B51F31000E383E2 /* polymorphic-html-min.json in Resources */,
+				E9ADBBE02B51F31000E383E2 /* polymorphic-geo.json in Resources */,
+				E9ADBBDE2B51F31000E383E2 /* polymorphic-geo-min.json in Resources */,
+				E9ADBBE12B51F31000E383E2 /* macos-releases.json in Resources */,
+				E9ADBBDA2B51F31000E383E2 /* macos-releases-min.json in Resources */,
+				E9ADBBD12B51F2EB00E383E2 /* large-list.json in Resources */,
+				E9ADBBDD2B51F31000E383E2 /* polymorphic-html.json in Resources */,
+				E9ADBBDC2B51F31000E383E2 /* user-profile-min.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */,
 				E933BACD2B1BE268008915BE /* benchmarks_multiplatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -615,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -676,6 +718,7 @@
 				CODE_SIGN_ENTITLEMENTS = multiplatform/benchmarks_multiplatform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"multiplatform/Preview Content\"";
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
@@ -698,7 +741,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -730,6 +773,7 @@
 				CODE_SIGN_ENTITLEMENTS = multiplatform/benchmarks_multiplatform.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"multiplatform/Preview Content\"";
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -751,7 +795,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
@@ -781,15 +825,25 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../app-shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					BenchmarksShared,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kmp.benchmarks.benchmarks-multiplatformTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -798,7 +852,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/benchmarks-multiplatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/benchmarks-multiplatform";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/multiplatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/multiplatform";
 			};
 			name = Debug;
 		};
@@ -811,14 +865,24 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../app-shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					BenchmarksShared,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kmp.benchmarks.benchmarks-multiplatformTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -826,7 +890,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/benchmarks-multiplatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/benchmarks-multiplatform";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/multiplatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/multiplatform";
 			};
 			name = Release;
 		};
@@ -838,6 +902,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -867,6 +932,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -896,6 +962,7 @@
 				CODE_SIGN_ENTITLEMENTS = standalone/benchmarks_standalone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"standalone/Preview Content\"";
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
@@ -941,6 +1008,7 @@
 				CODE_SIGN_ENTITLEMENTS = standalone/benchmarks_standalone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"standalone/Preview Content\"";
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -983,6 +1051,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1000,7 +1069,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/benchmarks-standalone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/benchmarks-standalone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/standalone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/standalone";
 			};
 			name = Debug;
 		};
@@ -1013,6 +1082,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -1028,7 +1098,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/benchmarks-standalone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/benchmarks-standalone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/standalone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/standalone";
 			};
 			name = Release;
 		};
@@ -1040,6 +1110,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -1069,6 +1140,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = Y958SVCHZ8;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;

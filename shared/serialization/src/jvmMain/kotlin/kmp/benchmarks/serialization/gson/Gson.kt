@@ -2,11 +2,15 @@ package kmp.benchmarks.serialization.gson
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 import kmp.benchmarks.serialization.gson.typeadapters.RuntimeTypeAdapterFactory
 import kmp.benchmarks.serialization.model.gson.GeoJSONObject
 import kmp.benchmarks.serialization.model.gson.HtmlChunk
+import kmp.benchmarks.serialization.model.gson.GithubPush
+import kmp.benchmarks.serialization.model.gson.MacOsReleases
+import kmp.benchmarks.serialization.model.gson.UserProfile
 
-val gson: Gson = GsonBuilder()
+private val gson: Gson = GsonBuilder()
     .registerTypeAdapterFactory(
         RuntimeTypeAdapterFactory.of(GeoJSONObject::class.java, "type")
             .registerSubtype(GeoJSONObject.Point::class.java, "Point")
@@ -29,3 +33,33 @@ val gson: Gson = GsonBuilder()
     .serializeNulls()
     .disableHtmlEscaping()
     .create()
+
+fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
+    gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, GithubPush::class.java).type)
+
+fun encodeLargeListToString(value: List<GithubPush>): String =
+    gson.toJson(value)
+
+fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =
+    gson.fromJson(jsonString, MacOsReleases::class.java)
+
+fun encodeMacOsReleasesToString(value: MacOsReleases): String =
+    gson.toJson(value)
+
+fun decodePolymorphicGeoFromString(jsonString: String): List<GeoJSONObject> =
+    gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
+
+fun encodePolymorphicGeoToString(value: List<GeoJSONObject>): String =
+    gson.toJson(value, TypeToken.getParameterized(List::class.java, GeoJSONObject::class.java).type)
+
+fun decodePolymorphicHtmlFromString(jsonString: String): List<HtmlChunk> =
+    gson.fromJson(jsonString, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
+
+fun encodePolymorphicHtmlToString(value: List<HtmlChunk>): String =
+    gson.toJson(value, TypeToken.getParameterized(List::class.java, HtmlChunk::class.java).type)
+
+fun decodeUserProfileFromString(jsonString: String): UserProfile =
+    gson.fromJson(jsonString, UserProfile::class.java)
+
+fun encodeUserProfileToString(value: UserProfile): String =
+    gson.toJson(value)

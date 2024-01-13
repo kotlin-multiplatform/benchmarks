@@ -1,13 +1,6 @@
 package kmp.benchmarks.serialization.moshi
 
 import com.goncalossilva.resources.Resource
-import com.squareup.moshi.adapter
-import kmp.benchmarks.serialization.model.moshi.GeoJSONObject
-import kmp.benchmarks.serialization.model.moshi.GithubPush
-import kmp.benchmarks.serialization.model.moshi.HtmlChunk
-import kmp.benchmarks.serialization.model.moshi.MacOsReleases
-import kmp.benchmarks.serialization.model.moshi.UserProfile
-import kmp.benchmarks.serialization.moshi.moshi
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -22,36 +15,36 @@ class MoshiBenchmark {
     private val userProfileJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
     @Benchmark
-    fun `large list json data`() {
-        moshi.adapter<List<GithubPush>>().fromJson(largeListJsonString)!!
+    fun decodeLargeListFromString() {
+        decodeLargeListFromString(largeListJsonString)
     }
 
     @Benchmark
-    fun `macos releases json data`() {
-        moshi.adapter<MacOsReleases>().fromJson(macosReleasesJsonString)!!
+    fun decodeMacOsReleasesFromString() {
+        decodeMacOsReleasesFromString(macosReleasesJsonString)
     }
 
     @Benchmark
-    fun `polymorphic geo json data`() {
-        moshi.adapter<List<GeoJSONObject>>().fromJson(polymorphicGeoJsonString)!!
+    fun decodePolymorphicGeoFromString() {
+        decodePolymorphicGeoFromString(polymorphicGeoJsonString)
     }
 
     @Benchmark
-    fun `polymorphic html json data`() {
-        moshi.adapter<List<HtmlChunk>>().fromJson(polymorphicHtmlJsonString)!!
+    fun decodePolymorphicHtmlFromString() {
+        decodePolymorphicHtmlFromString(polymorphicHtmlJsonString)
     }
 
     @Benchmark
-    fun `user profile json data`() {
-        moshi.adapter<UserProfile>().fromJson(userProfileJsonString)!!
+    fun decodeUserProfileFromString() {
+        decodeUserProfileFromString(userProfileJsonString)
     }
 
     @Benchmark
     fun combined() {
-        moshi.adapter<List<GithubPush>>().fromJson(largeListJsonString)!!
-        moshi.adapter<MacOsReleases>().fromJson(macosReleasesJsonString)!!
-        moshi.adapter<List<GeoJSONObject>>().fromJson(polymorphicGeoJsonString)!!
-        moshi.adapter<List<HtmlChunk>>().fromJson(polymorphicHtmlJsonString)!!
-        moshi.adapter<UserProfile>().fromJson(userProfileJsonString)!!
+        decodeLargeListFromString(largeListJsonString)
+        decodeMacOsReleasesFromString(macosReleasesJsonString)
+        decodePolymorphicGeoFromString(polymorphicGeoJsonString)
+        decodePolymorphicHtmlFromString(polymorphicHtmlJsonString)
+        decodeUserProfileFromString(userProfileJsonString)
     }
 }

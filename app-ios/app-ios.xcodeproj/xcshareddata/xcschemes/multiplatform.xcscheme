@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E933BAE62B1BE2F1008915BE"
-               BuildableName = "standalone.app"
-               BlueprintName = "standalone"
+               BlueprintIdentifier = "E933BAB72B1BE267008915BE"
+               BuildableName = "multiplatform.app"
+               BlueprintName = "multiplatform"
                ReferencedContainer = "container:app-ios.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,9 +34,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E933BAF62B1BE2F2008915BE"
-               BuildableName = "standaloneTests.xctest"
-               BlueprintName = "standaloneTests"
+               BlueprintIdentifier = "E933BAC72B1BE268008915BE"
+               BuildableName = "multiplatformTests.xctest"
+               BlueprintName = "multiplatformTests"
                ReferencedContainer = "container:app-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -45,9 +45,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E933BB002B1BE2F2008915BE"
-               BuildableName = "standaloneUITests.xctest"
-               BlueprintName = "standaloneUITests"
+               BlueprintIdentifier = "E933BAD12B1BE268008915BE"
+               BuildableName = "multiplatformUITests.xctest"
+               BlueprintName = "multiplatformUITests"
                ReferencedContainer = "container:app-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -67,9 +67,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E933BAE62B1BE2F1008915BE"
-            BuildableName = "standalone.app"
-            BlueprintName = "standalone"
+            BlueprintIdentifier = "E933BAB72B1BE267008915BE"
+            BuildableName = "multiplatform.app"
+            BlueprintName = "multiplatform"
             ReferencedContainer = "container:app-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +84,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E933BAE62B1BE2F1008915BE"
-            BuildableName = "standalone.app"
-            BlueprintName = "standalone"
+            BlueprintIdentifier = "E933BAB72B1BE267008915BE"
+            BuildableName = "multiplatform.app"
+            BlueprintName = "multiplatform"
             ReferencedContainer = "container:app-ios.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
