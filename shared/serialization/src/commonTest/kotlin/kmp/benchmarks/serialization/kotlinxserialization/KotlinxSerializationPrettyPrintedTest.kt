@@ -1,6 +1,8 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
 import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.model.kotlinxserialization.GeoJSONObject
+import kmp.benchmarks.serialization.model.kotlinxserialization.HtmlChunk
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -9,7 +11,8 @@ class KotlinxSerializationPrettyPrintedTest {
     @Test
     fun decodeLargeListFromString() {
         val data = KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
-        assertTrue(data.isNotEmpty())
+        assertEquals("2489651045", data.first().id)
+        assertEquals("CreateEvent", data.first().type)
     }
 
 //    @Test
@@ -21,7 +24,8 @@ class KotlinxSerializationPrettyPrintedTest {
     @Test
     fun decodeMacOsReleasesFromString() {
         val data = KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
-        assertTrue(data.versions.isNotEmpty())
+        assertEquals("Kodiak", data.versions.first().internal)
+        assertEquals("US", data.versions.first().releases.first().version)
     }
 
     @Test
@@ -33,7 +37,8 @@ class KotlinxSerializationPrettyPrintedTest {
     @Test
     fun decodePolymorphicGeoFromString() {
         val data = KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
-        assertTrue(data.isNotEmpty())
+        assertTrue(data.first() is GeoJSONObject.Point)
+        assertEquals(listOf(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
     }
 
     @Test
@@ -45,7 +50,8 @@ class KotlinxSerializationPrettyPrintedTest {
     @Test
     fun decodePolymorphicHtmlFromString() {
         val data = KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
-        assertTrue(data.isNotEmpty())
+        assertTrue(data.first() is HtmlChunk.Paragraph)
+        assertTrue((data.first() as HtmlChunk.Paragraph).data.text.isNotEmpty())
     }
 
     @Test

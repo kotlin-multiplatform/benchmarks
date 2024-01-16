@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E911C3122B5610FF0051B7A7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBC012B5603FD00E383E2 /* Resources.swift */; };
+		E911C31E2B56113C0051B7A7 /* polymorphic-geo.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3142B56113B0051B7A7 /* polymorphic-geo.json */; };
+		E911C31F2B56113C0051B7A7 /* user-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3152B56113B0051B7A7 /* user-profile.json */; };
+		E911C3202B56113C0051B7A7 /* polymorphic-html-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3162B56113C0051B7A7 /* polymorphic-html-min.json */; };
+		E911C3212B56113C0051B7A7 /* polymorphic-geo-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3172B56113C0051B7A7 /* polymorphic-geo-min.json */; };
+		E911C3222B56113C0051B7A7 /* large-list.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3182B56113C0051B7A7 /* large-list.json */; };
+		E911C3232B56113C0051B7A7 /* macos-releases-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3192B56113C0051B7A7 /* macos-releases-min.json */; };
+		E911C3242B56113C0051B7A7 /* macos-releases.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31A2B56113C0051B7A7 /* macos-releases.json */; };
+		E911C3252B56113C0051B7A7 /* polymorphic-html.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31B2B56113C0051B7A7 /* polymorphic-html.json */; };
+		E911C3262B56113C0051B7A7 /* user-profile-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31C2B56113C0051B7A7 /* user-profile-min.json */; };
+		E911C3272B56113C0051B7A7 /* large-list-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31D2B56113C0051B7A7 /* large-list-min.json */; };
+		E911C3282B5611640051B7A7 /* user-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3152B56113B0051B7A7 /* user-profile.json */; };
+		E911C3292B5611640051B7A7 /* user-profile-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31C2B56113C0051B7A7 /* user-profile-min.json */; };
+		E911C32A2B5611640051B7A7 /* macos-releases-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3192B56113C0051B7A7 /* macos-releases-min.json */; };
+		E911C32B2B5611640051B7A7 /* polymorphic-html.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31B2B56113C0051B7A7 /* polymorphic-html.json */; };
+		E911C32C2B5611640051B7A7 /* polymorphic-geo-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3172B56113C0051B7A7 /* polymorphic-geo-min.json */; };
+		E911C32D2B5611640051B7A7 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBC012B5603FD00E383E2 /* Resources.swift */; };
+		E911C32E2B5611640051B7A7 /* large-list.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3182B56113C0051B7A7 /* large-list.json */; };
+		E911C32F2B5611640051B7A7 /* macos-releases.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31A2B56113C0051B7A7 /* macos-releases.json */; };
+		E911C3302B5611640051B7A7 /* large-list-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31D2B56113C0051B7A7 /* large-list-min.json */; };
+		E911C3312B5611640051B7A7 /* polymorphic-geo.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3142B56113B0051B7A7 /* polymorphic-geo.json */; };
+		E911C3322B5611640051B7A7 /* polymorphic-html-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3162B56113C0051B7A7 /* polymorphic-html-min.json */; };
+		E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */; };
+		E911C3362B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3352B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift */; };
+		E911C3382B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3372B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift */; };
 		E933BABB2B1BE267008915BE /* benchmarks_multiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BABA2B1BE267008915BE /* benchmarks_multiplatformApp.swift */; };
 		E933BABD2B1BE267008915BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BABC2B1BE267008915BE /* ContentView.swift */; };
 		E933BABF2B1BE268008915BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E933BABE2B1BE268008915BE /* Assets.xcassets */; };
@@ -22,15 +47,14 @@
 		E933BB062B1BE2F2008915BE /* benchmarks_standaloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */; };
 		E933BB082B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */; };
 		E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */; };
-		E9ADBBD12B51F2EB00E383E2 /* large-list.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD02B51F2EB00E383E2 /* large-list.json */; };
-		E9ADBBDA2B51F31000E383E2 /* macos-releases-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */; };
-		E9ADBBDB2B51F31000E383E2 /* user-profile.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD32B51F31000E383E2 /* user-profile.json */; };
-		E9ADBBDC2B51F31000E383E2 /* user-profile-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD42B51F31000E383E2 /* user-profile-min.json */; };
-		E9ADBBDD2B51F31000E383E2 /* polymorphic-html.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */; };
-		E9ADBBDE2B51F31000E383E2 /* polymorphic-geo-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */; };
-		E9ADBBDF2B51F31000E383E2 /* polymorphic-html-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */; };
-		E9ADBBE02B51F31000E383E2 /* polymorphic-geo.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */; };
-		E9ADBBE12B51F31000E383E2 /* macos-releases.json in Resources */ = {isa = PBXBuildFile; fileRef = E9ADBBD92B51F31000E383E2 /* macos-releases.json */; };
+		E9ADBBEE2B5213AD00E383E2 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBED2B5213AD00E383E2 /* UserProfile.swift */; };
+		E9ADBBF02B52164600E383E2 /* CodableSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBEF2B52164600E383E2 /* CodableSerialization.swift */; };
+		E9ADBBF22B52180C00E383E2 /* CodableSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */; };
+		E9ADBBF42B5220C500E383E2 /* LargeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF32B5220C500E383E2 /* LargeList.swift */; };
+		E9ADBBF62B52A2FF00E383E2 /* MacOsReleases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF52B52A2FF00E383E2 /* MacOsReleases.swift */; };
+		E9ADBBF82B52A32100E383E2 /* PolymorphicGeo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF72B52A32100E383E2 /* PolymorphicGeo.swift */; };
+		E9ADBBFA2B52A33800E383E2 /* PolymorphicHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF92B52A33800E383E2 /* PolymorphicHtml.swift */; };
+		E9ADBBFC2B52B02000E383E2 /* PolymorphicSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBFB2B52B02000E383E2 /* PolymorphicSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +89,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E911C3142B56113B0051B7A7 /* polymorphic-geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo.json"; path = "../../../json-data/polymorphic-geo.json"; sourceTree = "<group>"; };
+		E911C3152B56113B0051B7A7 /* user-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile.json"; path = "../../../json-data/user-profile.json"; sourceTree = "<group>"; };
+		E911C3162B56113C0051B7A7 /* polymorphic-html-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html-min.json"; path = "../../../json-data/polymorphic-html-min.json"; sourceTree = "<group>"; };
+		E911C3172B56113C0051B7A7 /* polymorphic-geo-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo-min.json"; path = "../../../json-data/polymorphic-geo-min.json"; sourceTree = "<group>"; };
+		E911C3182B56113C0051B7A7 /* large-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "large-list.json"; path = "../../../json-data/large-list.json"; sourceTree = "<group>"; };
+		E911C3192B56113C0051B7A7 /* macos-releases-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases-min.json"; path = "../../../json-data/macos-releases-min.json"; sourceTree = "<group>"; };
+		E911C31A2B56113C0051B7A7 /* macos-releases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases.json"; path = "../../../json-data/macos-releases.json"; sourceTree = "<group>"; };
+		E911C31B2B56113C0051B7A7 /* polymorphic-html.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html.json"; path = "../../../json-data/polymorphic-html.json"; sourceTree = "<group>"; };
+		E911C31C2B56113C0051B7A7 /* user-profile-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile-min.json"; path = "../../../json-data/user-profile-min.json"; sourceTree = "<group>"; };
+		E911C31D2B56113C0051B7A7 /* large-list-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "large-list-min.json"; path = "../../../json-data/large-list-min.json"; sourceTree = "<group>"; };
+		E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationPrettyPrintedTest.swift; sourceTree = "<group>"; };
+		E911C3352B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationPrettyPrinted.swift; sourceTree = "<group>"; };
+		E911C3372B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationPrettyPrintedTests.swift; sourceTree = "<group>"; };
 		E933BAB82B1BE267008915BE /* multiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933BABA2B1BE267008915BE /* benchmarks_multiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_multiplatformApp.swift; sourceTree = "<group>"; };
 		E933BABC2B1BE267008915BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,15 +125,15 @@
 		E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITests.swift; sourceTree = "<group>"; };
 		E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationTests.swift; sourceTree = "<group>"; };
-		E9ADBBD02B51F2EB00E383E2 /* large-list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "large-list.json"; path = "../../json-data/large-list.json"; sourceTree = "<group>"; };
-		E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases-min.json"; path = "../../json-data/macos-releases-min.json"; sourceTree = "<group>"; };
-		E9ADBBD32B51F31000E383E2 /* user-profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile.json"; path = "../../json-data/user-profile.json"; sourceTree = "<group>"; };
-		E9ADBBD42B51F31000E383E2 /* user-profile-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile-min.json"; path = "../../json-data/user-profile-min.json"; sourceTree = "<group>"; };
-		E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html.json"; path = "../../json-data/polymorphic-html.json"; sourceTree = "<group>"; };
-		E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo-min.json"; path = "../../json-data/polymorphic-geo-min.json"; sourceTree = "<group>"; };
-		E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html-min.json"; path = "../../json-data/polymorphic-html-min.json"; sourceTree = "<group>"; };
-		E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-geo.json"; path = "../../json-data/polymorphic-geo.json"; sourceTree = "<group>"; };
-		E9ADBBD92B51F31000E383E2 /* macos-releases.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "macos-releases.json"; path = "../../json-data/macos-releases.json"; sourceTree = "<group>"; };
+		E9ADBBED2B5213AD00E383E2 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E9ADBBEF2B52164600E383E2 /* CodableSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerialization.swift; sourceTree = "<group>"; };
+		E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationTests.swift; sourceTree = "<group>"; };
+		E9ADBBF32B5220C500E383E2 /* LargeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeList.swift; sourceTree = "<group>"; };
+		E9ADBBF52B52A2FF00E383E2 /* MacOsReleases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOsReleases.swift; sourceTree = "<group>"; };
+		E9ADBBF72B52A32100E383E2 /* PolymorphicGeo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphicGeo.swift; sourceTree = "<group>"; };
+		E9ADBBF92B52A33800E383E2 /* PolymorphicHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphicHtml.swift; sourceTree = "<group>"; };
+		E9ADBBFB2B52B02000E383E2 /* PolymorphicSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphicSupport.swift; sourceTree = "<group>"; };
+		E9ADBC012B5603FD00E383E2 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +216,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E911C3132B5611270051B7A7 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E911C31D2B56113C0051B7A7 /* large-list-min.json */,
+				E911C3182B56113C0051B7A7 /* large-list.json */,
+				E911C3192B56113C0051B7A7 /* macos-releases-min.json */,
+				E911C31A2B56113C0051B7A7 /* macos-releases.json */,
+				E911C3172B56113C0051B7A7 /* polymorphic-geo-min.json */,
+				E911C3142B56113B0051B7A7 /* polymorphic-geo.json */,
+				E911C3162B56113C0051B7A7 /* polymorphic-html-min.json */,
+				E911C31B2B56113C0051B7A7 /* polymorphic-html.json */,
+				E911C31C2B56113C0051B7A7 /* user-profile-min.json */,
+				E911C3152B56113B0051B7A7 /* user-profile.json */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
 		E933BAB92B1BE267008915BE /* multiplatform */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,17 +256,8 @@
 		E933BACB2B1BE268008915BE /* multiplatformTests */ = {
 			isa = PBXGroup;
 			children = (
-				E9ADBBD02B51F2EB00E383E2 /* large-list.json */,
-				E9ADBBD22B51F31000E383E2 /* macos-releases-min.json */,
-				E9ADBBD92B51F31000E383E2 /* macos-releases.json */,
-				E9ADBBD62B51F31000E383E2 /* polymorphic-geo-min.json */,
-				E9ADBBD82B51F31000E383E2 /* polymorphic-geo.json */,
-				E9ADBBD72B51F31000E383E2 /* polymorphic-html-min.json */,
-				E9ADBBD52B51F31000E383E2 /* polymorphic-html.json */,
-				E9ADBBD42B51F31000E383E2 /* user-profile-min.json */,
-				E9ADBBD32B51F31000E383E2 /* user-profile.json */,
+				E9ADBBFF2B56034600E383E2 /* serialization */,
 				E933BACC2B1BE268008915BE /* benchmarks_multiplatformTests.swift */,
-				E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */,
 			);
 			path = multiplatformTests;
 			sourceTree = "<group>";
@@ -229,11 +274,15 @@
 		E933BAE82B1BE2F1008915BE /* standalone */ = {
 			isa = PBXGroup;
 			children = (
+				E9ADBC032B56042300E383E2 /* serialization */,
 				E933BAE92B1BE2F1008915BE /* benchmarks_standaloneApp.swift */,
 				E933BAEB2B1BE2F1008915BE /* ContentView.swift */,
 				E933BAED2B1BE2F1008915BE /* Assets.xcassets */,
 				E933BAEF2B1BE2F1008915BE /* benchmarks_standalone.entitlements */,
 				E933BAF02B1BE2F1008915BE /* Preview Content */,
+				E9ADBBEF2B52164600E383E2 /* CodableSerialization.swift */,
+				E911C3352B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift */,
+				E9ADBBFB2B52B02000E383E2 /* PolymorphicSupport.swift */,
 			);
 			path = standalone;
 			sourceTree = "<group>";
@@ -249,6 +298,7 @@
 		E933BAFA2B1BE2F2008915BE /* standaloneTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9ADBC042B56044600E383E2 /* serialization */,
 				E933BAFB2B1BE2F2008915BE /* benchmarks_standaloneTests.swift */,
 			);
 			path = standaloneTests;
@@ -261,6 +311,46 @@
 				E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */,
 			);
 			path = standaloneUITests;
+			sourceTree = "<group>";
+		};
+		E9ADBBEC2B52137D00E383E2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E9ADBBF32B5220C500E383E2 /* LargeList.swift */,
+				E9ADBBF52B52A2FF00E383E2 /* MacOsReleases.swift */,
+				E9ADBBF72B52A32100E383E2 /* PolymorphicGeo.swift */,
+				E9ADBBF92B52A33800E383E2 /* PolymorphicHtml.swift */,
+				E9ADBBED2B5213AD00E383E2 /* UserProfile.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E9ADBBFF2B56034600E383E2 /* serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */,
+				E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */,
+			);
+			path = serialization;
+			sourceTree = "<group>";
+		};
+		E9ADBC032B56042300E383E2 /* serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E9ADBBEC2B52137D00E383E2 /* model */,
+			);
+			path = serialization;
+			sourceTree = "<group>";
+		};
+		E9ADBC042B56044600E383E2 /* serialization */ = {
+			isa = PBXGroup;
+			children = (
+				E911C3132B5611270051B7A7 /* resources */,
+				E9ADBC012B5603FD00E383E2 /* Resources.swift */,
+				E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */,
+				E911C3372B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift */,
+			);
+			path = serialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,15 +536,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9ADBBDB2B51F31000E383E2 /* user-profile.json in Resources */,
-				E9ADBBDF2B51F31000E383E2 /* polymorphic-html-min.json in Resources */,
-				E9ADBBE02B51F31000E383E2 /* polymorphic-geo.json in Resources */,
-				E9ADBBDE2B51F31000E383E2 /* polymorphic-geo-min.json in Resources */,
-				E9ADBBE12B51F31000E383E2 /* macos-releases.json in Resources */,
-				E9ADBBDA2B51F31000E383E2 /* macos-releases-min.json in Resources */,
-				E9ADBBD12B51F2EB00E383E2 /* large-list.json in Resources */,
-				E9ADBBDD2B51F31000E383E2 /* polymorphic-html.json in Resources */,
-				E9ADBBDC2B51F31000E383E2 /* user-profile-min.json in Resources */,
+				E911C3302B5611640051B7A7 /* large-list-min.json in Resources */,
+				E911C3312B5611640051B7A7 /* polymorphic-geo.json in Resources */,
+				E911C32C2B5611640051B7A7 /* polymorphic-geo-min.json in Resources */,
+				E911C32A2B5611640051B7A7 /* macos-releases-min.json in Resources */,
+				E911C3322B5611640051B7A7 /* polymorphic-html-min.json in Resources */,
+				E911C32B2B5611640051B7A7 /* polymorphic-html.json in Resources */,
+				E911C3282B5611640051B7A7 /* user-profile.json in Resources */,
+				E911C32F2B5611640051B7A7 /* macos-releases.json in Resources */,
+				E911C3292B5611640051B7A7 /* user-profile-min.json in Resources */,
+				E911C32E2B5611640051B7A7 /* large-list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +569,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E911C3262B56113C0051B7A7 /* user-profile-min.json in Resources */,
+				E911C3232B56113C0051B7A7 /* macos-releases-min.json in Resources */,
+				E911C3272B56113C0051B7A7 /* large-list-min.json in Resources */,
+				E911C3202B56113C0051B7A7 /* polymorphic-html-min.json in Resources */,
+				E911C31F2B56113C0051B7A7 /* user-profile.json in Resources */,
+				E911C31E2B56113C0051B7A7 /* polymorphic-geo.json in Resources */,
+				E911C3242B56113C0051B7A7 /* macos-releases.json in Resources */,
+				E911C3252B56113C0051B7A7 /* polymorphic-html.json in Resources */,
+				E911C3222B56113C0051B7A7 /* large-list.json in Resources */,
+				E911C3212B56113C0051B7A7 /* polymorphic-geo-min.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,8 +625,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E911C32D2B5611640051B7A7 /* Resources.swift in Sources */,
 				E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */,
 				E933BACD2B1BE268008915BE /* benchmarks_multiplatformTests.swift in Sources */,
+				E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +646,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E933BAEC2B1BE2F1008915BE /* ContentView.swift in Sources */,
+				E9ADBBF02B52164600E383E2 /* CodableSerialization.swift in Sources */,
+				E911C3362B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift in Sources */,
+				E9ADBBF42B5220C500E383E2 /* LargeList.swift in Sources */,
+				E9ADBBFC2B52B02000E383E2 /* PolymorphicSupport.swift in Sources */,
+				E9ADBBFA2B52A33800E383E2 /* PolymorphicHtml.swift in Sources */,
 				E933BAEA2B1BE2F1008915BE /* benchmarks_standaloneApp.swift in Sources */,
+				E9ADBBEE2B5213AD00E383E2 /* UserProfile.swift in Sources */,
+				E9ADBBF62B52A2FF00E383E2 /* MacOsReleases.swift in Sources */,
+				E9ADBBF82B52A32100E383E2 /* PolymorphicGeo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +662,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E911C3382B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift in Sources */,
+				E911C3122B5610FF0051B7A7 /* Resources.swift in Sources */,
 				E933BAFC2B1BE2F2008915BE /* benchmarks_standaloneTests.swift in Sources */,
+				E9ADBBF22B52180C00E383E2 /* CodableSerializationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
