@@ -1,94 +1,68 @@
 package kmp.benchmarks.serialization.gson
 
-import com.goncalossilva.resources.Resource
-import com.google.gson.reflect.TypeToken
-import kmp.benchmarks.serialization.model.gson.GeoJSONObject
-import kmp.benchmarks.serialization.model.gson.GithubPush
-import kmp.benchmarks.serialization.model.gson.HtmlChunk
-import kmp.benchmarks.serialization.model.gson.MacOsReleases
-import kmp.benchmarks.serialization.model.gson.UserProfile
+import kmp.benchmarks.serialization.Resources
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class GsonTest {
     @Test
-    fun `GIVEN large list json data WHEN decodeLargeListFromString is invoked THEN it does not fail`() {
-        val jsonString = Resource("src/commonTest/resources/large-list.json").readText()
-
-        val data = decodeLargeListFromString(jsonString)
+    fun decodeLargeListFromString() {
+        val data = Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
         assertTrue(data.isNotEmpty())
     }
 
 //    @Test
-//    fun `GIVEN large list json data WHEN encodeLargeListToString is invoked THEN it does not fail`() {
-//        val expectedJsonString = Resource("src/commonTest/resources/large-list.json").readText()
-//
-//        val data = decodeLargeListFromString(expectedJsonString)
-//        assertEquals(expectedJsonString, encodeLargeListToString(data))
+//    fun encodeLargeListToString() {
+//        val data = Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+//        assertEquals(Resources.Minimised.largeListJsonString, Gson.encodeLargeListToString(data))
 //    }
 
     @Test
-    fun `GIVEN macos releases json data WHEN decodeMacOsReleasesFromString is invoked THEN it does not fail`() {
-        val jsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
-
-        val data = decodeMacOsReleasesFromString(jsonString)
+    fun decodeMacOsReleasesFromString() {
+        val data = Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
         assertTrue(data.versions.isNotEmpty())
     }
 
     @Test
-    fun `GIVEN macos releases json data WHEN encodeMacOsReleasesToString is invoked THEN it does not fail`() {
-        val expectedJsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
-
-        val data = decodeMacOsReleasesFromString(expectedJsonString)
-        assertEquals(expectedJsonString, encodeMacOsReleasesToString(data))
+    fun encodeMacOsReleasesToString() {
+        val data = Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
+        assertEquals(Resources.Minimised.macosReleasesJsonString, Gson.encodeMacOsReleasesToString(data))
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN decodePolymorphicGeoFromString is invoked THEN it does not fail`() {
-        val jsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
-
-        val data = decodePolymorphicGeoFromString(jsonString)
+    fun decodePolymorphicGeoFromString() {
+        val data = Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
         assertTrue(data.isNotEmpty())
     }
 
     @Test
-    fun `GIVEN polymorphic geo json data WHEN encodePolymorphicGeoToString is invoked THEN it does not fail`() {
-        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
-
-        val data = decodePolymorphicGeoFromString(expectedJsonString)
-        assertEquals(expectedJsonString, encodePolymorphicGeoToString(data))
+    fun encodePolymorphicGeoToString() {
+        val data = Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
+        assertEquals(Resources.Minimised.polymorphicGeoJsonString, Gson.encodePolymorphicGeoToString(data))
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN decodePolymorphicHtmlFromString is invoked THEN it does not fail`() {
-        val jsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
-
-        val data = decodePolymorphicHtmlFromString(jsonString)
+    fun decodePolymorphicHtmlFromString() {
+        val data = Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
         assertTrue(data.isNotEmpty())
     }
 
     @Test
-    fun `GIVEN polymorphic html json data WHEN encodePolymorphicHtmlToString is invoked THEN it does not fail`() {
-        val expectedJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
-
-        val data = decodePolymorphicHtmlFromString(expectedJsonString)
-        assertEquals(expectedJsonString, encodePolymorphicHtmlToString(data))
+    fun encodePolymorphicHtmlToString() {
+        val data = Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
+        assertEquals(Resources.Minimised.polymorphicHtmlJsonString, Gson.encodePolymorphicHtmlToString(data))
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN decodeUserProfileFromString is invoked THEN it does not fail`() {
-        val jsonString = Resource("src/commonTest/resources/user-profile.json").readText()
-
-        val data = decodeUserProfileFromString(jsonString)
+    fun decodeUserProfileFromString() {
+        val data = Gson.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
         assertTrue(data.personal.firstName.isNotEmpty())
     }
 
     @Test
-    fun `GIVEN user profile json data WHEN encodeUserProfileToString is invoked THEN it does not fail`() {
-        val expectedJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
-
-        val data = decodeUserProfileFromString(expectedJsonString)
-        assertEquals(expectedJsonString, encodeUserProfileToString(data))
+    fun encodeUserProfileToString() {
+        val data = Gson.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
+        assertEquals(Resources.Minimised.userProfileJsonString, Gson.encodeUserProfileToString(data))
     }
 }

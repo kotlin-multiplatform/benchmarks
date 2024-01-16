@@ -10,7 +10,7 @@ import kmp.benchmarks.serialization.model.moshi.MacOsReleases
 import kmp.benchmarks.serialization.model.moshi.UserProfile
 
 @OptIn(ExperimentalStdlibApi::class)
-object Moshi {
+object MoshiPrettyPrinted {
     private val moshi: Moshi = Moshi.Builder()
         .add(
             PolymorphicJsonAdapterFactory.of(GeoJSONObject::class.java, "type")
@@ -36,29 +36,29 @@ object Moshi {
         moshi.adapter<List<GithubPush>>().fromJson(jsonString)!!
 
     fun encodeLargeListToString(value: List<GithubPush>): String =
-        moshi.adapter<List<GithubPush>>().toJson(value)
+        moshi.adapter<List<GithubPush>>().indent("  ").toJson(value)
 
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =
         moshi.adapter<MacOsReleases>().fromJson(jsonString)!!
 
     fun encodeMacOsReleasesToString(value: MacOsReleases): String =
-        moshi.adapter<MacOsReleases>().toJson(value)
+        moshi.adapter<MacOsReleases>().indent("  ").toJson(value)
 
     fun decodePolymorphicGeoFromString(jsonString: String): List<GeoJSONObject> =
         moshi.adapter<List<GeoJSONObject>>().fromJson(jsonString)!!
 
     fun encodePolymorphicGeoToString(value: List<GeoJSONObject>): String =
-        moshi.adapter<List<GeoJSONObject>>().toJson(value)
+        moshi.adapter<List<GeoJSONObject>>().indent("  ").toJson(value)
 
     fun decodePolymorphicHtmlFromString(jsonString: String): List<HtmlChunk> =
         moshi.adapter<List<HtmlChunk>>().fromJson(jsonString)!!
 
     fun encodePolymorphicHtmlToString(value: List<HtmlChunk>): String =
-        moshi.adapter<List<HtmlChunk>>().serializeNulls().toJson(value)
+        moshi.adapter<List<HtmlChunk>>().indent("  ").serializeNulls().toJson(value)
 
     fun decodeUserProfileFromString(jsonString: String): UserProfile =
         moshi.adapter<UserProfile>().fromJson(jsonString)!!
 
     fun encodeUserProfileToString(value: UserProfile): String =
-        moshi.adapter<UserProfile>().toJson(value)
+        moshi.adapter<UserProfile>().indent("  ").toJson(value)
 }

@@ -10,7 +10,7 @@ import kmp.benchmarks.serialization.model.gson.GithubPush
 import kmp.benchmarks.serialization.model.gson.MacOsReleases
 import kmp.benchmarks.serialization.model.gson.UserProfile
 
-object Gson {
+object GsonPrettyPrinted {
     private val gson: Gson = GsonBuilder()
         .registerTypeAdapterFactory(
             RuntimeTypeAdapterFactory.of(GeoJSONObject::class.java, "type")
@@ -31,6 +31,7 @@ object Gson {
                 .registerSubtype(HtmlChunk.PerfChart::class.java, "perf_chart")
         )
         .serializeNulls()
+        .setPrettyPrinting()
         .disableHtmlEscaping()
         .create()
 

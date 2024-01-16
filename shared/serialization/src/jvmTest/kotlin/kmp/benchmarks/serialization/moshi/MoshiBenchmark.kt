@@ -1,50 +1,44 @@
 package kmp.benchmarks.serialization.moshi
 
-import com.goncalossilva.resources.Resource
+import kmp.benchmarks.serialization.Resources
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
 
-@OptIn(ExperimentalStdlibApi::class)
 @State(Scope.Benchmark)
 class MoshiBenchmark {
-    private val largeListJsonString = Resource("src/commonTest/resources/large-list.json").readText()
-    private val macosReleasesJsonString = Resource("src/commonTest/resources/macos-releases.json").readText()
-    private val polymorphicGeoJsonString = Resource("src/commonTest/resources/polymorphic-geo.json").readText()
-    private val polymorphicHtmlJsonString = Resource("src/commonTest/resources/polymorphic-html.json").readText()
-    private val userProfileJsonString = Resource("src/commonTest/resources/user-profile.json").readText()
 
     @Benchmark
     fun decodeLargeListFromString() {
-        decodeLargeListFromString(largeListJsonString)
+        Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        decodeMacOsReleasesFromString(macosReleasesJsonString)
+        Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        decodePolymorphicGeoFromString(polymorphicGeoJsonString)
+        Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        decodePolymorphicHtmlFromString(polymorphicHtmlJsonString)
+        Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        decodeUserProfileFromString(userProfileJsonString)
+        Moshi.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
     }
 
     @Benchmark
     fun combined() {
-        decodeLargeListFromString(largeListJsonString)
-        decodeMacOsReleasesFromString(macosReleasesJsonString)
-        decodePolymorphicGeoFromString(polymorphicGeoJsonString)
-        decodePolymorphicHtmlFromString(polymorphicHtmlJsonString)
-        decodeUserProfileFromString(userProfileJsonString)
+        Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
+        Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
+        Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
+        Moshi.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
     }
 }

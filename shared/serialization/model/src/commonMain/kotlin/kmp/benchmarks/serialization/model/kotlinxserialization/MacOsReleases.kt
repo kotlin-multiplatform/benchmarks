@@ -27,7 +27,7 @@ data class MacOsReleases(
             val build: String,
             val darwin: String,
             val kernel: String,
-            val released: String,
+            val released: String
         )
     }
 }

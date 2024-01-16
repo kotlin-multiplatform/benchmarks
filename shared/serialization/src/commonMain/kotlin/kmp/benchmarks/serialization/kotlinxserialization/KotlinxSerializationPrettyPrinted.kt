@@ -10,8 +10,13 @@ import kotlinx.serialization.SerializationException
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
-object KotlinxSerialization {
-    private val kotlinxSerializationJson: Json = Json
+object KotlinxSerializationPrettyPrinted {
+
+    @OptIn(ExperimentalSerializationApi::class)
+    private val kotlinxSerializationJson: Json = Json {
+        prettyPrint = true
+        prettyPrintIndent = "  "
+    }
 
     @Throws(SerializationException::class, IllegalArgumentException::class)
     fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
