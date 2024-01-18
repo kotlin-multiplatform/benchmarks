@@ -35,13 +35,22 @@ object GsonPrettyPrinted {
         .disableHtmlEscaping()
         .create()
 
-    fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
+    fun decodeLargeListFromString(jsonString: String): List<GithubPush.Normal> =
         gson.fromJson(
             jsonString,
-            TypeToken.getParameterized(List::class.java, GithubPush::class.java).type
+            TypeToken.getParameterized(List::class.java, GithubPush.Normal::class.java).type
         )
 
-    fun encodeLargeListToString(value: List<GithubPush>): String =
+    fun encodeLargeListToString(value: List<GithubPush.Normal>): String =
+        gson.toJson(value)
+
+    fun decodeLargeListCompactFromString(jsonString: String): List<GithubPush.Compact> =
+        gson.fromJson(
+            jsonString,
+            TypeToken.getParameterized(List::class.java, GithubPush.Compact::class.java).type
+        )
+
+    fun encodeLargeListCompactToString(value: List<GithubPush.Compact>): String =
         gson.toJson(value)
 
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =

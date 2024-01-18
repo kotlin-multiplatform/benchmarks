@@ -18,13 +18,28 @@ object KotlinxSerializationPrettyPrinted {
         prettyPrintIndent = "  "
     }
 
+    @OptIn(ExperimentalSerializationApi::class)
+    private val kotlinxSerializationJsonIgnoreKeys: Json = Json {
+        ignoreUnknownKeys = true
+        prettyPrint = true
+        prettyPrintIndent = "  "
+    }
+
     @Throws(SerializationException::class, IllegalArgumentException::class)
-    fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
+    fun decodeLargeListFromString(jsonString: String): List<GithubPush.Normal> =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
     @Throws(SerializationException::class, IllegalArgumentException::class)
-    fun encodeLargeListToString(value: List<GithubPush>): String =
+    fun encodeLargeListToString(value: List<GithubPush.Normal>): String =
         kotlinxSerializationJson.encodeToString(value)
+
+    @Throws(SerializationException::class, IllegalArgumentException::class)
+    fun decodeLargeListCompactFromString(jsonString: String): List<GithubPush.Compact> =
+        kotlinxSerializationJsonIgnoreKeys.decodeFromString(jsonString)
+
+    @Throws(SerializationException::class, IllegalArgumentException::class)
+    fun encodeLargeListCompactToString(value: List<GithubPush.Compact>): String =
+        kotlinxSerializationJsonIgnoreKeys.encodeToString(value)
 
     @Throws(SerializationException::class, IllegalArgumentException::class)
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =

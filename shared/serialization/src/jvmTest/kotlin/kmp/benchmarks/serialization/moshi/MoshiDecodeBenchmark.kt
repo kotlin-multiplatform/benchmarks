@@ -6,11 +6,15 @@ import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
 
 @State(Scope.Benchmark)
-class MoshiBenchmark {
-
+class MoshiDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
         Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+    }
+
+    @Benchmark
+    fun decodeLargeListCompactFromString() {
+        Moshi.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
     }
 
     @Benchmark
@@ -36,6 +40,7 @@ class MoshiBenchmark {
     @Benchmark
     fun combined() {
         Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        Moshi.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
         Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
         Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
         Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)

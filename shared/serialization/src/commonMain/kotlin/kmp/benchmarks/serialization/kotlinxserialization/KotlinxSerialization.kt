@@ -5,7 +5,6 @@ import kmp.benchmarks.serialization.model.kotlinxserialization.GithubPush
 import kmp.benchmarks.serialization.model.kotlinxserialization.HtmlChunk
 import kmp.benchmarks.serialization.model.kotlinxserialization.MacOsReleases
 import kmp.benchmarks.serialization.model.kotlinxserialization.UserProfile
-import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -13,13 +12,25 @@ import kotlinx.serialization.json.Json
 object KotlinxSerialization {
     private val kotlinxSerializationJson: Json = Json
 
+    private val kotlinxSerializationJsonIgnoreKeys: Json = Json {
+        ignoreUnknownKeys = true
+    }
+
     @Throws(SerializationException::class, IllegalArgumentException::class)
-    fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
+    fun decodeLargeListFromString(jsonString: String): List<GithubPush.Normal> =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
     @Throws(SerializationException::class, IllegalArgumentException::class)
-    fun encodeLargeListToString(value: List<GithubPush>): String =
+    fun encodeLargeListToString(value: List<GithubPush.Normal>): String =
         kotlinxSerializationJson.encodeToString(value)
+
+    @Throws(SerializationException::class, IllegalArgumentException::class)
+    fun decodeLargeListCompactFromString(jsonString: String): List<GithubPush.Compact> =
+        kotlinxSerializationJsonIgnoreKeys.decodeFromString(jsonString)
+
+    @Throws(SerializationException::class, IllegalArgumentException::class)
+    fun encodeLargeListCompactToString(value: List<GithubPush.Compact>): String =
+        kotlinxSerializationJsonIgnoreKeys.encodeToString(value)
 
     @Throws(SerializationException::class, IllegalArgumentException::class)
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =

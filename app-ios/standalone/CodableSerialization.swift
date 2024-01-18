@@ -9,13 +9,25 @@
 import Foundation
 
 public struct CodableSerialization {
-    public static func decodeLargeListFromString(jsonString: String) -> [GithubPush] {
+    public static func decodeLargeListFromString(jsonString: String) -> [GithubPush.Normal] {
         let decoder = JSONDecoder()
         
-        return try! decoder.decode([GithubPush].self, from: Data(jsonString.utf8))
+        return try! decoder.decode([GithubPush.Normal].self, from: Data(jsonString.utf8))
     }
     
-    public static func encodeLargeListToString(value: [GithubPush]) -> String {
+    public static func encodeLargeListToString(value: [GithubPush.Normal]) -> String {
+        let encoder = JSONEncoder()
+        
+        return String(decoding: try! encoder.encode(value), as: UTF8.self)
+    }
+    
+    public static func decodeLargeListCompactFromString(jsonString: String) -> [GithubPush.Compact] {
+        let decoder = JSONDecoder()
+        
+        return try! decoder.decode([GithubPush.Compact].self, from: Data(jsonString.utf8))
+    }
+    
+    public static func encodeLargeListCompactToString(value: [GithubPush.Compact]) -> String {
         let encoder = JSONEncoder()
         
         return String(decoding: try! encoder.encode(value), as: UTF8.self)

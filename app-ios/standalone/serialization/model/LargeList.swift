@@ -9,5 +9,11 @@
 import Foundation
 
 public struct GithubPush: Codable {
+    public struct Normal: Codable {
+        
+    }
     
+    public struct Compact: Codable {
+        
+    }
 }

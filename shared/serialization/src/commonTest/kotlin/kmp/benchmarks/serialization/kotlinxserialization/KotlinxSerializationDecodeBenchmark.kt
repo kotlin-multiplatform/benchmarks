@@ -6,10 +6,15 @@ import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
 
 @State(Scope.Benchmark)
-class KotlinxSerializationBenchmark {
+class KotlinxSerializationDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
         KotlinxSerialization.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+    }
+
+    @Benchmark
+    fun decodeLargeListCompactFromString() {
+        KotlinxSerialization.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
     }
 
     @Benchmark
@@ -35,6 +40,7 @@ class KotlinxSerializationBenchmark {
     @Benchmark
     fun combined() {
         KotlinxSerialization.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        KotlinxSerialization.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
         KotlinxSerialization.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
         KotlinxSerialization.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
         KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)

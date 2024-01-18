@@ -6,11 +6,15 @@ import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
 
 @State(Scope.Benchmark)
-class GsonBenchmark {
-
+class GsonDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
         Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+    }
+
+    @Benchmark
+    fun decodeLargeListCompactFromString() {
+        Gson.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
     }
 
     @Benchmark
@@ -36,6 +40,7 @@ class GsonBenchmark {
     @Benchmark
     fun combined() {
         Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        Gson.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
         Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
         Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
         Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)

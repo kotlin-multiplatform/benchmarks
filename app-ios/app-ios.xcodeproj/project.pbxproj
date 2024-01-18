@@ -29,9 +29,13 @@
 		E911C3302B5611640051B7A7 /* large-list-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C31D2B56113C0051B7A7 /* large-list-min.json */; };
 		E911C3312B5611640051B7A7 /* polymorphic-geo.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3142B56113B0051B7A7 /* polymorphic-geo.json */; };
 		E911C3322B5611640051B7A7 /* polymorphic-html-min.json in Resources */ = {isa = PBXBuildFile; fileRef = E911C3162B56113C0051B7A7 /* polymorphic-html-min.json */; };
-		E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */; };
+		E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedDecodeTests.swift */; };
 		E911C3362B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3352B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift */; };
 		E911C3382B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3372B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift */; };
+		E911C33A2B58714D0051B7A7 /* KotlinxSerializationEncodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C3392B58714D0051B7A7 /* KotlinxSerializationEncodeTest.swift */; };
+		E911C33C2B5871F50051B7A7 /* KotlinxSerializationPrettyPrintedEncodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C33B2B5871F50051B7A7 /* KotlinxSerializationPrettyPrintedEncodeTests.swift */; };
+		E911C33F2B59CCE70051B7A7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C33D2B59CC890051B7A7 /* StringExtensions.swift */; };
+		E911C3402B59CCE80051B7A7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911C33D2B59CC890051B7A7 /* StringExtensions.swift */; };
 		E933BABB2B1BE267008915BE /* benchmarks_multiplatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BABA2B1BE267008915BE /* benchmarks_multiplatformApp.swift */; };
 		E933BABD2B1BE267008915BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BABC2B1BE267008915BE /* ContentView.swift */; };
 		E933BABF2B1BE268008915BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E933BABE2B1BE268008915BE /* Assets.xcassets */; };
@@ -46,7 +50,7 @@
 		E933BAFC2B1BE2F2008915BE /* benchmarks_standaloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BAFB2B1BE2F2008915BE /* benchmarks_standaloneTests.swift */; };
 		E933BB062B1BE2F2008915BE /* benchmarks_standaloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */; };
 		E933BB082B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */; };
-		E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */; };
+		E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationDecodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationDecodeTest.swift */; };
 		E9ADBBEE2B5213AD00E383E2 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBED2B5213AD00E383E2 /* UserProfile.swift */; };
 		E9ADBBF02B52164600E383E2 /* CodableSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBEF2B52164600E383E2 /* CodableSerialization.swift */; };
 		E9ADBBF22B52180C00E383E2 /* CodableSerializationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */; };
@@ -99,9 +103,12 @@
 		E911C31B2B56113C0051B7A7 /* polymorphic-html.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "polymorphic-html.json"; path = "../../../json-data/polymorphic-html.json"; sourceTree = "<group>"; };
 		E911C31C2B56113C0051B7A7 /* user-profile-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "user-profile-min.json"; path = "../../../json-data/user-profile-min.json"; sourceTree = "<group>"; };
 		E911C31D2B56113C0051B7A7 /* large-list-min.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "large-list-min.json"; path = "../../../json-data/large-list-min.json"; sourceTree = "<group>"; };
-		E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationPrettyPrintedTest.swift; sourceTree = "<group>"; };
+		E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedDecodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationPrettyPrintedDecodeTests.swift; sourceTree = "<group>"; };
 		E911C3352B5617650051B7A7 /* CodableSerializationPrettyPrinted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationPrettyPrinted.swift; sourceTree = "<group>"; };
 		E911C3372B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationPrettyPrintedTests.swift; sourceTree = "<group>"; };
+		E911C3392B58714D0051B7A7 /* KotlinxSerializationEncodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationEncodeTest.swift; sourceTree = "<group>"; };
+		E911C33B2B5871F50051B7A7 /* KotlinxSerializationPrettyPrintedEncodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationPrettyPrintedEncodeTests.swift; sourceTree = "<group>"; };
+		E911C33D2B59CC890051B7A7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E933BAB82B1BE267008915BE /* multiplatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiplatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933BABA2B1BE267008915BE /* benchmarks_multiplatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_multiplatformApp.swift; sourceTree = "<group>"; };
 		E933BABC2B1BE267008915BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,7 +131,7 @@
 		E933BB012B1BE2F2008915BE /* standaloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = standaloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E933BB052B1BE2F2008915BE /* benchmarks_standaloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITests.swift; sourceTree = "<group>"; };
 		E933BB072B1BE2F2008915BE /* benchmarks_standaloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmarks_standaloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationTests.swift; sourceTree = "<group>"; };
+		E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationDecodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotlinxSerializationDecodeTest.swift; sourceTree = "<group>"; };
 		E9ADBBED2B5213AD00E383E2 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		E9ADBBEF2B52164600E383E2 /* CodableSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerialization.swift; sourceTree = "<group>"; };
 		E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSerializationTests.swift; sourceTree = "<group>"; };
@@ -328,8 +335,10 @@
 		E9ADBBFF2B56034600E383E2 /* serialization */ = {
 			isa = PBXGroup;
 			children = (
-				E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift */,
-				E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationTests.swift */,
+				E9ADBBCE2B51ECD900E383E2 /* KotlinxSerializationDecodeTest.swift */,
+				E911C3392B58714D0051B7A7 /* KotlinxSerializationEncodeTest.swift */,
+				E911C3332B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedDecodeTests.swift */,
+				E911C33B2B5871F50051B7A7 /* KotlinxSerializationPrettyPrintedEncodeTests.swift */,
 			);
 			path = serialization;
 			sourceTree = "<group>";
@@ -345,6 +354,7 @@
 		E9ADBC042B56044600E383E2 /* serialization */ = {
 			isa = PBXGroup;
 			children = (
+				E911C33D2B59CC890051B7A7 /* StringExtensions.swift */,
 				E911C3132B5611270051B7A7 /* resources */,
 				E9ADBC012B5603FD00E383E2 /* Resources.swift */,
 				E9ADBBF12B52180C00E383E2 /* CodableSerializationTests.swift */,
@@ -626,9 +636,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E911C32D2B5611640051B7A7 /* Resources.swift in Sources */,
-				E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationTests.swift in Sources */,
+				E911C33A2B58714D0051B7A7 /* KotlinxSerializationEncodeTest.swift in Sources */,
+				E9ADBBCF2B51ECD900E383E2 /* KotlinxSerializationDecodeTest.swift in Sources */,
+				E911C3402B59CCE80051B7A7 /* StringExtensions.swift in Sources */,
 				E933BACD2B1BE268008915BE /* benchmarks_multiplatformTests.swift in Sources */,
-				E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedTest.swift in Sources */,
+				E911C3342B5614B10051B7A7 /* KotlinxSerializationPrettyPrintedDecodeTests.swift in Sources */,
+				E911C33C2B5871F50051B7A7 /* KotlinxSerializationPrettyPrintedEncodeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +677,7 @@
 			files = (
 				E911C3382B561DA50051B7A7 /* CodableSerializationPrettyPrintedTests.swift in Sources */,
 				E911C3122B5610FF0051B7A7 /* Resources.swift in Sources */,
+				E911C33F2B59CCE70051B7A7 /* StringExtensions.swift in Sources */,
 				E933BAFC2B1BE2F2008915BE /* benchmarks_standaloneTests.swift in Sources */,
 				E9ADBBF22B52180C00E383E2 /* CodableSerializationTests.swift in Sources */,
 			);

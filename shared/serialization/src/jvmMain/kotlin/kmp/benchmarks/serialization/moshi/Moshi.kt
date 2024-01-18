@@ -32,11 +32,17 @@ object Moshi {
         )
         .build()
 
-    fun decodeLargeListFromString(jsonString: String): List<GithubPush> =
-        moshi.adapter<List<GithubPush>>().fromJson(jsonString)!!
+    fun decodeLargeListFromString(jsonString: String): List<GithubPush.Normal> =
+        moshi.adapter<List<GithubPush.Normal>>().fromJson(jsonString)!!
 
-    fun encodeLargeListToString(value: List<GithubPush>): String =
-        moshi.adapter<List<GithubPush>>().toJson(value)
+    fun encodeLargeListToString(value: List<GithubPush.Normal>): String =
+        moshi.adapter<List<GithubPush.Normal>>().toJson(value)
+
+    fun decodeLargeListCompactFromString(jsonString: String): List<GithubPush.Compact> =
+        moshi.adapter<List<GithubPush.Compact>>().fromJson(jsonString)!!
+
+    fun encodeLargeListCompactToString(value: List<GithubPush.Compact>): String =
+        moshi.adapter<List<GithubPush.Compact>>().toJson(value)
 
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =
         moshi.adapter<MacOsReleases>().fromJson(jsonString)!!
