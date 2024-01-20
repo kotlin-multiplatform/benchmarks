@@ -10,7 +10,6 @@ import BenchmarksShared
 import XCTest
 
 final class KotlinxSerializationPrettyPrintedDecodeTests: XCTestCase {
-
     func testDecodeLargeListFromString() throws {
         let data = try! KotlinxSerializationPrettyPrinted().decodeLargeListFromString(jsonString: Resources.PrettyPrinted.largeListJsonString)
         XCTAssertEqual("2489651045", data.first!.id)

@@ -3,7 +3,6 @@ package kmp.benchmarks.serialization.gson
 import kmp.benchmarks.serialization.Resources
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertTrue
 
 class GsonPrettyPrintedEncodeTest {
 //    @Test

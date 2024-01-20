@@ -10,7 +10,6 @@ import BenchmarksShared
 import XCTest
 
 final class KotlinxSerializationEncodeTest: XCTestCase {
-
 //    func testEncodeLargeListToString() throws {
 //        let data = try! KotlinxSerialization().decodeLargeListFromString(jsonString: Resources.Minimised.largeListJsonString)
 //        XCTAssertEqual(Resources.Minimised.largeListJsonString, try! KotlinxSerialization().encodeLargeListToString(value: data))
