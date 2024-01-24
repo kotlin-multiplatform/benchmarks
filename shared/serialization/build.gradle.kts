@@ -57,7 +57,7 @@ benchmark {
         getByName("main") {
             warmups = 10
             iterations = 10
-            iterationTime = 500
+            iterationTime = 250
             iterationTimeUnit = "ms"
             outputTimeUnit = "ms"
             mode = "AverageTime"

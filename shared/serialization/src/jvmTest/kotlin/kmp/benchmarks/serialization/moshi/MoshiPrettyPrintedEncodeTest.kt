@@ -7,37 +7,49 @@ import kotlin.test.assertEquals
 class MoshiPrettyPrintedEncodeTest {
 //    @Test
 //    fun encodeLargeListToString() {
-//        val data = MoshiPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
-//        assertEquals(Resources.PrettyPrinted.largeListJsonString, MoshiPrettyPrinted.encodeLargeListToString(data))
+//        assertEquals(
+//            Resources.PrettyPrintedJsonString.largeList,
+//            MoshiPrettyPrinted.encodeLargeListToString(Data.largeList)
+//        )
 //    }
-
+//
 //    @Test
 //    fun encodeLargeListCompactToString() {
-//        val data = MoshiPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrinted.largeListJsonString)
-//        assertEquals(Resources.PrettyPrinted.largeListJsonString, MoshiPrettyPrinted.encodeLargeListCompactToString(data))
+//        assertEquals(
+//            Resources.PrettyPrintedJsonString.largeList,
+//            MoshiPrettyPrinted.encodeLargeListCompactToString(Data.largeListCompact)
+//        )
 //    }
 
     @Test
     fun encodeMacOsReleasesToString() {
-        val data = MoshiPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
-        assertEquals(Resources.PrettyPrinted.macosReleasesJsonString, MoshiPrettyPrinted.encodeMacOsReleasesToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.macosReleases,
+            MoshiPrettyPrinted.encodeMacOsReleasesToString(Data.macosReleases)
+        )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
-        val data = MoshiPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
-        assertEquals(Resources.PrettyPrinted.polymorphicGeoJsonString, MoshiPrettyPrinted.encodePolymorphicGeoToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.polymorphicGeo,
+            MoshiPrettyPrinted.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
-        val data = MoshiPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
-        assertEquals(Resources.PrettyPrinted.polymorphicHtmlJsonString, MoshiPrettyPrinted.encodePolymorphicHtmlToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.polymorphicHtml,
+            MoshiPrettyPrinted.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        )
     }
 
     @Test
     fun encodeUserProfileToString() {
-        val data = MoshiPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrinted.userProfileJsonString)
-        assertEquals(Resources.PrettyPrinted.userProfileJsonString, MoshiPrettyPrinted.encodeUserProfileToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.userProfile,
+            MoshiPrettyPrinted.encodeUserProfileToString(Data.userProfile)
+        )
     }
 }

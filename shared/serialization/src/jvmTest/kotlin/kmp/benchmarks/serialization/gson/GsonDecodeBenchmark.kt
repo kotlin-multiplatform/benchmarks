@@ -9,41 +9,41 @@ import kotlinx.benchmark.State
 class GsonDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        Gson.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        Gson.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
+        Gson.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
+        Gson.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
+        Gson.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
+        Gson.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        Gson.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
+        Gson.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
     }
 
-    @Benchmark
-    fun combined() {
-        Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-        Gson.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-        Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        Gson.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-    }
+//    @Benchmark
+//    fun combined() {
+//        Gson.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
+//        Gson.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
+//        Gson.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
+//        Gson.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
+//        Gson.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
+//        Gson.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
+//    }
 }

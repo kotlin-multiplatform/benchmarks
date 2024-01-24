@@ -9,41 +9,41 @@ import kotlinx.benchmark.State
 class KotlinxSerializationPrettyPrintedDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
+        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrinted.largeListJsonString)
+        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
+        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
+        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
+        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrinted.userProfileJsonString)
+        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
     }
 
-    @Benchmark
-    fun combined() {
-        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
-        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrinted.largeListJsonString)
-        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
-        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
-        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
-        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrinted.userProfileJsonString)
-    }
+//    @Benchmark
+//    fun combined() {
+//        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
+//        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
+//        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
+//        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
+//        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
+//        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
+//    }
 }

@@ -7,37 +7,49 @@ import kotlin.test.assertEquals
 class GsonEncodeTest {
 //    @Test
 //    fun encodeLargeListToString() {
-//        val data = Gson.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, Gson.encodeLargeListToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            Gson.encodeLargeListToString(Data.largeList)
+//        )
 //    }
-
+//
 //    @Test
 //    fun encodeLargeListCompactToString() {
-//        val data = Gson.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, Gson.encodeLargeListCompactToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            Gson.encodeLargeListCompactToString(Data.largeListCompact)
+//        )
 //    }
 
     @Test
     fun encodeMacOsReleasesToString() {
-        val data = Gson.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        assertEquals(Resources.Minimised.macosReleasesJsonString, Gson.encodeMacOsReleasesToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.macosReleases,
+            Gson.encodeMacOsReleasesToString(Data.macosReleases)
+        )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
-        val data = Gson.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        assertEquals(Resources.Minimised.polymorphicGeoJsonString, Gson.encodePolymorphicGeoToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicGeo,
+            Gson.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
-        val data = Gson.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        assertEquals(Resources.Minimised.polymorphicHtmlJsonString, Gson.encodePolymorphicHtmlToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicHtml,
+            Gson.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        )
     }
 
     @Test
     fun encodeUserProfileToString() {
-        val data = Gson.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-        assertEquals(Resources.Minimised.userProfileJsonString, Gson.encodeUserProfileToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.userProfile,
+            Gson.encodeUserProfileToString(Data.userProfile)
+        )
     }
 }

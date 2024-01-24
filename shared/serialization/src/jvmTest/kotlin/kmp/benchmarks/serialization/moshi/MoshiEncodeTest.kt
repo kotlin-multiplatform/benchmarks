@@ -7,37 +7,49 @@ import kotlin.test.assertEquals
 class MoshiEncodeTest {
 //    @Test
 //    fun encodeLargeListToString() {
-//        val data = Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, Moshi.encodeLargeListToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            Moshi.encodeLargeListToString(Data.largeList)
+//        )
 //    }
-
+//
 //    @Test
 //    fun encodeLargeListCompactToString() {
-//        val data = Moshi.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, Moshi.encodeLargeListCompactToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            Moshi.encodeLargeListCompactToString(Data.largeListCompact)
+//        )
 //    }
 
     @Test
     fun encodeMacOsReleasesToString() {
-        val data = Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        assertEquals(Resources.Minimised.macosReleasesJsonString, Moshi.encodeMacOsReleasesToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.macosReleases,
+            Moshi.encodeMacOsReleasesToString(Data.macosReleases)
+        )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
-        val data = Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        assertEquals(Resources.Minimised.polymorphicGeoJsonString, Moshi.encodePolymorphicGeoToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicGeo,
+            Moshi.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
-        val data = Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        assertEquals(Resources.Minimised.polymorphicHtmlJsonString, Moshi.encodePolymorphicHtmlToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicHtml,
+            Moshi.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        )
     }
 
     @Test
     fun encodeUserProfileToString() {
-        val data = Moshi.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-        assertEquals(Resources.Minimised.userProfileJsonString, Moshi.encodeUserProfileToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.userProfile,
+            Moshi.encodeUserProfileToString(Data.userProfile)
+        )
     }
 }

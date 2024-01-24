@@ -9,41 +9,41 @@ import kotlinx.benchmark.State
 class MoshiDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        Moshi.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        Moshi.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
+        Moshi.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
+        Moshi.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
+        Moshi.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
+        Moshi.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        Moshi.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
+        Moshi.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
     }
 
-    @Benchmark
-    fun combined() {
-        Moshi.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-        Moshi.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-        Moshi.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        Moshi.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        Moshi.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        Moshi.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-    }
+//    @Benchmark
+//    fun combined() {
+//        Moshi.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
+//        Moshi.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
+//        Moshi.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
+//        Moshi.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
+//        Moshi.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
+//        Moshi.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
+//    }
 }

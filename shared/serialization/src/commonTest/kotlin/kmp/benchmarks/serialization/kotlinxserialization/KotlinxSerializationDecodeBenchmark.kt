@@ -9,41 +9,41 @@ import kotlinx.benchmark.State
 class KotlinxSerializationDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        KotlinxSerialization.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
+        KotlinxSerialization.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        KotlinxSerialization.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
+        KotlinxSerialization.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
+        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
+        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
+        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        KotlinxSerialization.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
+        KotlinxSerialization.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
     }
 
-    @Benchmark
-    fun combined() {
-        KotlinxSerialization.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-        KotlinxSerialization.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        KotlinxSerialization.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-    }
+//    @Benchmark
+//    fun combined() {
+//        KotlinxSerialization.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
+//        KotlinxSerialization.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
+//        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
+//        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
+//        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
+//        KotlinxSerialization.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
+//    }
 }

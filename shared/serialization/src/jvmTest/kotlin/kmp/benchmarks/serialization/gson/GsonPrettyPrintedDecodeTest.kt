@@ -10,42 +10,42 @@ import kotlin.test.assertTrue
 class GsonPrettyPrintedDecodeTest {
     @Test
     fun decodeLargeListFromString() {
-        val data = GsonPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
+        val data = GsonPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
         assertEquals("2489651045", data.first().id)
         assertEquals("https://avatars.githubusercontent.com/u/665991?", data.first().actor.avatarUrl)
     }
 
     @Test
     fun decodeLargeListCompactFromString() {
-        val data = GsonPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrinted.largeListJsonString)
+        val data = GsonPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
         assertEquals("2489651045", data.first().id)
         assertEquals("https://avatars.githubusercontent.com/u/665991?", data.first().actor.avatarUrl)
     }
 
     @Test
     fun decodeMacOsReleasesFromString() {
-        val data = GsonPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
+        val data = GsonPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
         assertEquals("Kodiak", data.versions.first().internal)
         assertEquals("US", data.versions.first().releases.first().version)
     }
 
     @Test
     fun decodePolymorphicGeoFromString() {
-        val data = GsonPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
+        val data = GsonPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
         assertTrue(data.first() is GeoJSONObject.Point)
         assertEquals(listOf(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
     }
 
     @Test
     fun decodePolymorphicHtmlFromString() {
-        val data = GsonPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
+        val data = GsonPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
         assertTrue(data.first() is HtmlChunk.Paragraph)
         assertTrue((data.first() as HtmlChunk.Paragraph).data.text.isNotBlank())
     }
 
     @Test
     fun decodeUserProfileFromString() {
-        val data = GsonPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrinted.userProfileJsonString)
+        val data = GsonPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
         assertTrue(data.personal.firstName.isNotBlank())
     }
 }

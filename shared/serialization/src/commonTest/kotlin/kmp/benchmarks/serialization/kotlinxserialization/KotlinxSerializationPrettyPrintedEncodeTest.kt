@@ -7,37 +7,49 @@ import kotlin.test.assertEquals
 class KotlinxSerializationPrettyPrintedEncodeTest {
 //    @Test
 //    fun encodeLargeListToString() {
-//        val data = KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrinted.largeListJsonString)
-//        assertEquals(Resources.PrettyPrinted.largeListJsonString, KotlinxSerializationPrettyPrinted.encodeLargeListToString(data))
+//        assertEquals(
+//            Resources.PrettyPrintedJsonString.largeList,
+//            KotlinxSerializationPrettyPrinted.encodeLargeListToString(Data.largeList)
+//        )
 //    }
-
+//
 //    @Test
 //    fun encodeLargeListCompactToString() {
-//        val data = KotlinxSerialization.decodeLargeListCompactFromString(Resources.PrettyPrinted.largeListJsonString)
-//        assertEquals(Resources.PrettyPrinted.largeListJsonString, KotlinxSerialization.encodeLargeListCompactToString(data))
+//        assertEquals(
+//            Resources.PrettyPrintedJsonString.largeList,
+//            KotlinxSerializationPrettyPrinted.encodeLargeListCompactToString(Data.largeListCompact)
+//        )
 //    }
 
     @Test
     fun encodeMacOsReleasesToString() {
-        val data = KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrinted.macosReleasesJsonString)
-        assertEquals(Resources.PrettyPrinted.macosReleasesJsonString, KotlinxSerializationPrettyPrinted.encodeMacOsReleasesToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.macosReleases,
+            KotlinxSerializationPrettyPrinted.encodeMacOsReleasesToString(Data.macosReleases)
+        )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
-        val data = KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrinted.polymorphicGeoJsonString)
-        assertEquals(Resources.PrettyPrinted.polymorphicGeoJsonString, KotlinxSerializationPrettyPrinted.encodePolymorphicGeoToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.polymorphicGeo,
+            KotlinxSerializationPrettyPrinted.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
-        val data = KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrinted.polymorphicHtmlJsonString)
-        assertEquals(Resources.PrettyPrinted.polymorphicHtmlJsonString, KotlinxSerializationPrettyPrinted.encodePolymorphicHtmlToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.polymorphicHtml,
+            KotlinxSerializationPrettyPrinted.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        )
     }
 
     @Test
     fun encodeUserProfileToString() {
-        val data = KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrinted.userProfileJsonString)
-        assertEquals(Resources.PrettyPrinted.userProfileJsonString, KotlinxSerializationPrettyPrinted.encodeUserProfileToString(data))
+        assertEquals(
+            Resources.PrettyPrintedJsonString.userProfile,
+            KotlinxSerializationPrettyPrinted.encodeUserProfileToString(Data.userProfile)
+        )
     }
 }

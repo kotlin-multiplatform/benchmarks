@@ -25,51 +25,51 @@ object KotlinxSerializationPrettyPrinted {
         prettyPrintIndent = "  "
     }
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodeLargeListFromString(jsonString: String): List<GithubPush.Normal> =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodeLargeListToString(value: List<GithubPush.Normal>): String =
         kotlinxSerializationJson.encodeToString(value)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodeLargeListCompactFromString(jsonString: String): List<GithubPush.Compact> =
         kotlinxSerializationJsonIgnoreKeys.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodeLargeListCompactToString(value: List<GithubPush.Compact>): String =
         kotlinxSerializationJsonIgnoreKeys.encodeToString(value)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodeMacOsReleasesFromString(jsonString: String): MacOsReleases =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodeMacOsReleasesToString(value: MacOsReleases): String =
         kotlinxSerializationJson.encodeToString(value)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodePolymorphicGeoFromString(jsonString: String): List<GeoJSONObject> =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodePolymorphicGeoToString(value: List<GeoJSONObject>): String =
         kotlinxSerializationJson.encodeToString(value)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodePolymorphicHtmlFromString(jsonString: String): List<HtmlChunk> =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodePolymorphicHtmlToString(value: List<HtmlChunk>): String =
         kotlinxSerializationJson.encodeToString(value)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun decodeUserProfileFromString(jsonString: String): UserProfile =
         kotlinxSerializationJson.decodeFromString(jsonString)
 
-    @Throws(SerializationException::class, IllegalArgumentException::class)
+    @Throws(SerializationException::class)
     fun encodeUserProfileToString(value: UserProfile): String =
         kotlinxSerializationJson.encodeToString(value)
 }

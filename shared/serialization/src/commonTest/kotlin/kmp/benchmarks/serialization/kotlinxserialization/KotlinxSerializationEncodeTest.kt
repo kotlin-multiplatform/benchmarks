@@ -7,37 +7,49 @@ import kotlin.test.assertEquals
 class KotlinxSerializationEncodeTest {
 //    @Test
 //    fun encodeLargeListToString() {
-//        val data = KotlinxSerialization.decodeLargeListFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, KotlinxSerialization.encodeLargeListToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            KotlinxSerialization.encodeLargeListToString(Data.largeList)
+//        )
 //    }
-
+//
 //    @Test
 //    fun encodeLargeListCompactToString() {
-//        val data = KotlinxSerialization.decodeLargeListCompactFromString(Resources.Minimised.largeListJsonString)
-//        assertEquals(Resources.Minimised.largeListJsonString, KotlinxSerialization.encodeLargeListCompactToString(data))
+//        assertEquals(
+//            Resources.MinimisedJsonString.largeList,
+//            KotlinxSerialization.encodeLargeListCompactToString(Data.largeListCompact)
+//        )
 //    }
 
     @Test
     fun encodeMacOsReleasesToString() {
-        val data = KotlinxSerialization.decodeMacOsReleasesFromString(Resources.Minimised.macosReleasesJsonString)
-        assertEquals(Resources.Minimised.macosReleasesJsonString, KotlinxSerialization.encodeMacOsReleasesToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.macosReleases,
+            KotlinxSerialization.encodeMacOsReleasesToString(Data.macosReleases)
+        )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
-        val data = KotlinxSerialization.decodePolymorphicGeoFromString(Resources.Minimised.polymorphicGeoJsonString)
-        assertEquals(Resources.Minimised.polymorphicGeoJsonString, KotlinxSerialization.encodePolymorphicGeoToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicGeo,
+            KotlinxSerialization.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
-        val data = KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.Minimised.polymorphicHtmlJsonString)
-        assertEquals(Resources.Minimised.polymorphicHtmlJsonString, KotlinxSerialization.encodePolymorphicHtmlToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.polymorphicHtml,
+            KotlinxSerialization.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        )
     }
 
     @Test
     fun encodeUserProfileToString() {
-        val data = KotlinxSerialization.decodeUserProfileFromString(Resources.Minimised.userProfileJsonString)
-        assertEquals(Resources.Minimised.userProfileJsonString, KotlinxSerialization.encodeUserProfileToString(data))
+        assertEquals(
+            Resources.MinimisedJsonString.userProfile,
+            KotlinxSerialization.encodeUserProfileToString(Data.userProfile)
+        )
     }
 }
