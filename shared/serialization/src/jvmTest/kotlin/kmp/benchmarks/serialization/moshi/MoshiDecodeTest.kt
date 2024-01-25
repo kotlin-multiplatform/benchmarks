@@ -1,8 +1,10 @@
 package kmp.benchmarks.serialization.moshi
 
 import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.model.moshi.Coordinates
 import kmp.benchmarks.serialization.model.moshi.GeoJSONObject
 import kmp.benchmarks.serialization.model.moshi.HtmlChunk
+import kmp.benchmarks.serialization.model.moshi.MacOsReleases
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -25,7 +27,7 @@ class MoshiDecodeTest {
     @Test
     fun decodeMacOsReleasesFromString() {
         val data = Moshi.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
-        assertEquals("Kodiak", data.versions.first().internal)
+        assertEquals(MacOsReleases.External.KODIAK, data.versions.first().external)
         assertEquals("US", data.versions.first().releases.first().version)
     }
 
@@ -33,7 +35,7 @@ class MoshiDecodeTest {
     fun decodePolymorphicGeoFromString() {
         val data = Moshi.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
         assertTrue(data.first() is GeoJSONObject.Point)
-        assertEquals(listOf(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
+        assertEquals(Coordinates(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
     }
 
     @Test

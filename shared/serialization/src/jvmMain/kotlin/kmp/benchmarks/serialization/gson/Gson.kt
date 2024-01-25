@@ -4,14 +4,21 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import kmp.benchmarks.serialization.gson.typeadapters.RuntimeTypeAdapterFactory
+import kmp.benchmarks.serialization.model.gson.Coordinates
+import kmp.benchmarks.serialization.model.gson.CoordinatesAdapter
+import kmp.benchmarks.serialization.model.gson.ExternalAdapter
 import kmp.benchmarks.serialization.model.gson.GeoJSONObject
 import kmp.benchmarks.serialization.model.gson.HtmlChunk
 import kmp.benchmarks.serialization.model.gson.GithubPush
+import kmp.benchmarks.serialization.model.gson.LocalDateAdapter
 import kmp.benchmarks.serialization.model.gson.MacOsReleases
 import kmp.benchmarks.serialization.model.gson.UserProfile
+import kotlinx.datetime.LocalDate
 
 object Gson {
     private val gson: Gson = GsonBuilder()
+        .registerTypeAdapter(LocalDate::class.java, LocalDateAdapter())
+        .registerTypeAdapter(MacOsReleases.External::class.java, ExternalAdapter())
         .registerTypeAdapterFactory(
             RuntimeTypeAdapterFactory.of(GeoJSONObject::class.java, "type")
                 .registerSubtype(GeoJSONObject.Point::class.java, "Point")
@@ -22,6 +29,7 @@ object Gson {
                 .registerSubtype(GeoJSONObject.MultiPolygon::class.java, "MultiPolygon")
                 .registerSubtype(GeoJSONObject.GeometryCollection::class.java, "GeometryCollection")
         )
+        .registerTypeAdapter(Coordinates::class.java, CoordinatesAdapter())
         .registerTypeAdapterFactory(
             RuntimeTypeAdapterFactory.of(HtmlChunk::class.java, "type")
                 .registerSubtype(HtmlChunk.Paragraph::class.java, "p")

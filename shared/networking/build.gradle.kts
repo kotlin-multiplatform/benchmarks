@@ -28,7 +28,6 @@ kotlin {
             implementation(libs.ktor.client.logging)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.kotlinx.datetime)
-            implementation(libs.kotlinx.serialization.core)
             implementation(libs.kotlinx.serialization.json)
             implementation(projects.shared.networking.ktorHttpClient)
             implementation(projects.shared.serialization)

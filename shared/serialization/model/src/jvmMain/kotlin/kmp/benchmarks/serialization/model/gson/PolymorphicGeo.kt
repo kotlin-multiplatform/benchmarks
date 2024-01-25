@@ -1,5 +1,10 @@
 package kmp.benchmarks.serialization.model.gson
 
+import com.google.gson.TypeAdapter
+import com.google.gson.stream.JsonReader
+import com.google.gson.stream.JsonToken
+import com.google.gson.stream.JsonWriter
+
 /**
  * https://datatracker.ietf.org/doc/html/rfc7946
  */
@@ -33,10 +38,38 @@ sealed interface GeoJSONObject {
     ) : GeoJSONObject
 }
 
-typealias Coordinates = List<Double>
+//typealias Coordinates = List<Double>
 
-//@JsonClass(generateAdapter = true)
-//data class Coordinates(
-//    val longitude: Double,
-//    val latitude: Double
-//)
+data class Coordinates(
+    val longitude: Double,
+    val latitude: Double
+)
+
+class CoordinatesAdapter : TypeAdapter<Coordinates>() {
+    override fun write(out: JsonWriter?, value: Coordinates?) {
+        out?.run {
+            value?.let { coordinates ->
+                beginArray()
+                value(coordinates.longitude)
+                value(coordinates.latitude)
+                endArray()
+            }
+        }
+    }
+
+    override fun read(`in`: JsonReader?): Coordinates {
+        var longitude: Double = -1.0
+        var latitude: Double = -1.0
+
+        `in`?.run {
+            beginArray()
+
+            longitude = nextDouble()
+            latitude = nextDouble()
+
+            endArray()
+        }
+
+        return Coordinates(longitude, latitude)
+    }
+}

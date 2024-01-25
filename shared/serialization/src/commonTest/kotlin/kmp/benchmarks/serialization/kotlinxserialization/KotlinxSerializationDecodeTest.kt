@@ -1,8 +1,10 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
 import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.model.kotlinxserialization.Coordinates
 import kmp.benchmarks.serialization.model.kotlinxserialization.GeoJSONObject
 import kmp.benchmarks.serialization.model.kotlinxserialization.HtmlChunk
+import kmp.benchmarks.serialization.model.kotlinxserialization.MacOsReleases
 import kotlinx.serialization.SerializationException
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -56,7 +58,7 @@ class KotlinxSerializationDecodeTest {
     fun decodeMacOsReleasesFromString() {
         val data = KotlinxSerialization.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
 
-        assertEquals("Kodiak", data.versions.first().internal)
+        assertEquals(MacOsReleases.Version.External.KODIAK, data.versions.first().external)
         assertEquals("US", data.versions.first().releases.first().version)
     }
 
@@ -78,7 +80,7 @@ class KotlinxSerializationDecodeTest {
         val data = KotlinxSerialization.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
 
         assertTrue(data.first() is GeoJSONObject.Point)
-        assertEquals(listOf(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
+        assertEquals(Coordinates(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
     }
 
     @Test

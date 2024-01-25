@@ -1,8 +1,10 @@
 package kmp.benchmarks.serialization.gson
 
 import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.model.gson.Coordinates
 import kmp.benchmarks.serialization.model.gson.GeoJSONObject
 import kmp.benchmarks.serialization.model.gson.HtmlChunk
+import kmp.benchmarks.serialization.model.gson.MacOsReleases
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -25,7 +27,7 @@ class GsonPrettyPrintedDecodeTest {
     @Test
     fun decodeMacOsReleasesFromString() {
         val data = GsonPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
-        assertEquals("Kodiak", data.versions.first().internal)
+        assertEquals(MacOsReleases.External.KODIAK, data.versions.first().external)
         assertEquals("US", data.versions.first().releases.first().version)
     }
 
@@ -33,7 +35,7 @@ class GsonPrettyPrintedDecodeTest {
     fun decodePolymorphicGeoFromString() {
         val data = GsonPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
         assertTrue(data.first() is GeoJSONObject.Point)
-        assertEquals(listOf(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
+        assertEquals(Coordinates(100.0, 0.0), (data.first() as GeoJSONObject.Point).coordinates)
     }
 
     @Test

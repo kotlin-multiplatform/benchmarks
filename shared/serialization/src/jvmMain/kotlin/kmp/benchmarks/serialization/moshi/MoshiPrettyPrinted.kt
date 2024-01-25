@@ -3,15 +3,20 @@ package kmp.benchmarks.serialization.moshi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapter
 import com.squareup.moshi.adapters.PolymorphicJsonAdapterFactory
+import kmp.benchmarks.serialization.model.moshi.CoordinatesAdapter
+import kmp.benchmarks.serialization.model.moshi.ExternalAdapter
 import kmp.benchmarks.serialization.model.moshi.GeoJSONObject
 import kmp.benchmarks.serialization.model.moshi.GithubPush
 import kmp.benchmarks.serialization.model.moshi.HtmlChunk
+import kmp.benchmarks.serialization.model.moshi.LocalDateAdapter
 import kmp.benchmarks.serialization.model.moshi.MacOsReleases
 import kmp.benchmarks.serialization.model.moshi.UserProfile
 
 @OptIn(ExperimentalStdlibApi::class)
 object MoshiPrettyPrinted {
     private val moshi: Moshi = Moshi.Builder()
+        .add(LocalDateAdapter())
+        .add(ExternalAdapter())
         .add(
             PolymorphicJsonAdapterFactory.of(GeoJSONObject::class.java, "type")
                 .withSubtype(GeoJSONObject.Point::class.java, "Point")
@@ -22,6 +27,7 @@ object MoshiPrettyPrinted {
                 .withSubtype(GeoJSONObject.MultiPolygon::class.java, "MultiPolygon")
                 .withSubtype(GeoJSONObject.GeometryCollection::class.java, "GeometryCollection")
         )
+        .add(CoordinatesAdapter())
         .add(
             PolymorphicJsonAdapterFactory.of(HtmlChunk::class.java, "type")
                 .withSubtype(HtmlChunk.Paragraph::class.java, "p")

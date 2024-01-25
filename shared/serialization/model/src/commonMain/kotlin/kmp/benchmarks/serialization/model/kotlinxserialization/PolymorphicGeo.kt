@@ -1,7 +1,15 @@
 package kmp.benchmarks.serialization.model.kotlinxserialization
 
+import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.KSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.builtins.ArraySerializer
+import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.builtins.serializer
+import kotlinx.serialization.descriptors.SerialDescriptor
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
 
 /**
  * https://datatracker.ietf.org/doc/html/rfc7946
@@ -51,10 +59,31 @@ sealed interface GeoJSONObject {
     ) : GeoJSONObject
 }
 
-typealias Coordinates = List<Double>
+//typealias Coordinates = List<Double>
 
-//@Serializable
-//data class Coordinates(
-//    val longitude: Double,
-//    val latitude: Double
-//)
+@Serializable(with = CoordinatesSerializer::class)
+data class Coordinates(
+    val longitude: Double,
+    val latitude: Double
+)
+
+@OptIn(ExperimentalSerializationApi::class)
+object CoordinatesSerializer : KSerializer<Coordinates> {
+    private val delegateSerializer = ListSerializer(Double.serializer())
+    override val descriptor: SerialDescriptor = SerialDescriptor("Coordinates", delegateSerializer.descriptor)
+
+    override fun deserialize(decoder: Decoder): Coordinates =
+        decoder.decodeSerializableValue(delegateSerializer).let { (longitude, latitude) ->
+            Coordinates(longitude, latitude)
+        }
+
+    override fun serialize(encoder: Encoder, value: Coordinates) {
+        encoder.encodeSerializableValue(
+            delegateSerializer,
+            listOf(
+                value.longitude,
+                value.latitude
+            )
+        )
+    }
+}

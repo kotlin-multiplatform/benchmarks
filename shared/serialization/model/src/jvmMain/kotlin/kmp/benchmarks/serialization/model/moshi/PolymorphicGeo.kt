@@ -1,6 +1,8 @@
 package kmp.benchmarks.serialization.model.moshi
 
+import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonClass
+import com.squareup.moshi.ToJson
 
 /**
  * https://datatracker.ietf.org/doc/html/rfc7946
@@ -42,10 +44,23 @@ sealed interface GeoJSONObject {
     ) : GeoJSONObject
 }
 
-typealias Coordinates = List<Double>
+//typealias Coordinates = List<Double>
 
-//@JsonClass(generateAdapter = true)
-//data class Coordinates(
-//    val longitude: Double,
-//    val latitude: Double
-//)
+@JsonClass(generateAdapter = true)
+data class Coordinates(
+    val longitude: Double,
+    val latitude: Double
+)
+
+class CoordinatesAdapter {
+    @ToJson
+    fun toJson(value: Coordinates): List<Double> = listOf(
+        value.longitude,
+        value.latitude
+    )
+
+    @FromJson
+    fun fromJson(values: List<Double>): Coordinates = values.let { (longitude, latitude) ->
+        Coordinates(longitude, latitude)
+    }
+}
