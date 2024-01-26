@@ -1,6 +1,5 @@
 package kmp.benchmarks.serialization.moshi
 
-import kmp.benchmarks.serialization.Resources
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +8,32 @@ import kotlinx.benchmark.State
 class MoshiEncodeBenchmark {
     @Benchmark
     fun encodeLargeListToString() {
-        Moshi.encodeLargeListToString(Data.largeList)
+        Moshi.encodeLargeListToString(JsonData.largeList)
     }
 
     @Benchmark
     fun encodeLargeListCompactToString() {
-        Moshi.encodeLargeListCompactToString(Data.largeListCompact)
+        Moshi.encodeLargeListCompactToString(JsonData.largeListCompact)
     }
 
     @Benchmark
     fun encodeMacOsReleasesToString() {
-        Moshi.encodeMacOsReleasesToString(Data.macosReleases)
+        Moshi.encodeMacOsReleasesToString(JsonData.macosReleases)
     }
 
     @Benchmark
     fun encodePolymorphicGeoToString() {
-        Moshi.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        Moshi.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
     }
 
     @Benchmark
     fun encodePolymorphicHtmlToString() {
-        Moshi.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        Moshi.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
     }
 
     @Benchmark
     fun encodeUserProfileToString() {
-        Moshi.encodeUserProfileToString(Data.userProfile)
+        Moshi.encodeUserProfileToString(JsonData.userProfile)
     }
 
 //    @Benchmark

@@ -34,6 +34,7 @@ data class MacOsReleases(
         YOSEMITE("Yosemite");
 
         companion object {
+            @Throws(NoSuchElementException::class)
             fun fromString(value: String): External = entries.first { it.stringValue == value }
         }
 

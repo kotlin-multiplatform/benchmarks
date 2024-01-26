@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +9,32 @@ import kotlinx.benchmark.State
 class KotlinxSerializationDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        KotlinxSerialization.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
+        KotlinxSerialization.decodeLargeListFromString(JsonStrings.Minimised.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        KotlinxSerialization.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
+        KotlinxSerialization.decodeLargeListCompactFromString(JsonStrings.Minimised.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
+        KotlinxSerialization.decodeMacOsReleasesFromString(JsonStrings.Minimised.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
+        KotlinxSerialization.decodePolymorphicGeoFromString(JsonStrings.Minimised.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
+        KotlinxSerialization.decodePolymorphicHtmlFromString(JsonStrings.Minimised.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        KotlinxSerialization.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
+        KotlinxSerialization.decodeUserProfileFromString(JsonStrings.Minimised.userProfile)
     }
 
 //    @Benchmark

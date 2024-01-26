@@ -1,6 +1,5 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
-import kmp.benchmarks.serialization.Resources
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +8,32 @@ import kotlinx.benchmark.State
 class KotlinxSerializationEncodeBenchmark {
     @Benchmark
     fun encodeLargeListToString() {
-        KotlinxSerialization.encodeLargeListToString(Data.largeList)
+        KotlinxSerialization.encodeLargeListToString(JsonData.largeList)
     }
 
     @Benchmark
     fun encodeLargeListCompactToString() {
-        KotlinxSerialization.encodeLargeListCompactToString(Data.largeListCompact)
+        KotlinxSerialization.encodeLargeListCompactToString(JsonData.largeListCompact)
     }
 
     @Benchmark
     fun encodeMacOsReleasesToString() {
-        KotlinxSerialization.encodeMacOsReleasesToString(Data.macosReleases)
+        KotlinxSerialization.encodeMacOsReleasesToString(JsonData.macosReleases)
     }
 
     @Benchmark
     fun encodePolymorphicGeoToString() {
-        KotlinxSerialization.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        KotlinxSerialization.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
     }
 
     @Benchmark
     fun encodePolymorphicHtmlToString() {
-        KotlinxSerialization.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        KotlinxSerialization.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
     }
 
     @Benchmark
     fun encodeUserProfileToString() {
-        KotlinxSerialization.encodeUserProfileToString(Data.userProfile)
+        KotlinxSerialization.encodeUserProfileToString(JsonData.userProfile)
     }
 
 //    @Benchmark

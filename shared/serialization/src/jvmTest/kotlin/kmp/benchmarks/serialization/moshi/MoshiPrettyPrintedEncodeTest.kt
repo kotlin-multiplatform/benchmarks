@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.moshi
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -24,32 +24,32 @@ class MoshiPrettyPrintedEncodeTest {
     @Test
     fun encodeMacOsReleasesToString() {
         assertEquals(
-            Resources.PrettyPrintedJsonString.macosReleases,
-            MoshiPrettyPrinted.encodeMacOsReleasesToString(Data.macosReleases)
+            JsonStrings.PrettyPrinted.macosReleases,
+            MoshiPrettyPrinted.encodeMacOsReleasesToString(JsonData.macosReleases)
         )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
         assertEquals(
-            Resources.PrettyPrintedJsonString.polymorphicGeo,
-            MoshiPrettyPrinted.encodePolymorphicGeoToString(Data.polymorphicGeo)
+            JsonStrings.PrettyPrinted.polymorphicGeo,
+            MoshiPrettyPrinted.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
         )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
         assertEquals(
-            Resources.PrettyPrintedJsonString.polymorphicHtml,
-            MoshiPrettyPrinted.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+            JsonStrings.PrettyPrinted.polymorphicHtml,
+            MoshiPrettyPrinted.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
         )
     }
 
     @Test
     fun encodeUserProfileToString() {
         assertEquals(
-            Resources.PrettyPrintedJsonString.userProfile,
-            MoshiPrettyPrinted.encodeUserProfileToString(Data.userProfile)
+            JsonStrings.PrettyPrinted.userProfile,
+            MoshiPrettyPrinted.encodeUserProfileToString(JsonData.userProfile)
         )
     }
 }

@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.moshi
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +9,32 @@ import kotlinx.benchmark.State
 class MoshiPrettyPrintedDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        MoshiPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
+        MoshiPrettyPrinted.decodeLargeListFromString(JsonStrings.PrettyPrinted.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        MoshiPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
+        MoshiPrettyPrinted.decodeLargeListCompactFromString(JsonStrings.PrettyPrinted.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        MoshiPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
+        MoshiPrettyPrinted.decodeMacOsReleasesFromString(JsonStrings.PrettyPrinted.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        MoshiPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
+        MoshiPrettyPrinted.decodePolymorphicGeoFromString(JsonStrings.PrettyPrinted.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        MoshiPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
+        MoshiPrettyPrinted.decodePolymorphicHtmlFromString(JsonStrings.PrettyPrinted.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        MoshiPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
+        MoshiPrettyPrinted.decodeUserProfileFromString(JsonStrings.PrettyPrinted.userProfile)
     }
 
 //    @Benchmark

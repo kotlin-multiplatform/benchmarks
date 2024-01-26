@@ -1,6 +1,5 @@
 package kmp.benchmarks.serialization.gson
 
-import kmp.benchmarks.serialization.Resources
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +8,32 @@ import kotlinx.benchmark.State
 class GsonEncodeBenchmark {
     @Benchmark
     fun encodeLargeListToString() {
-        Gson.encodeLargeListToString(Data.largeList)
+        Gson.encodeLargeListToString(JsonData.largeList)
     }
 
     @Benchmark
     fun encodeLargeListCompactToString() {
-        Gson.encodeLargeListCompactToString(Data.largeListCompact)
+        Gson.encodeLargeListCompactToString(JsonData.largeListCompact)
     }
 
     @Benchmark
     fun encodeMacOsReleasesToString() {
-        Gson.encodeMacOsReleasesToString(Data.macosReleases)
+        Gson.encodeMacOsReleasesToString(JsonData.macosReleases)
     }
 
     @Benchmark
     fun encodePolymorphicGeoToString() {
-        Gson.encodePolymorphicGeoToString(Data.polymorphicGeo)
+        Gson.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
     }
 
     @Benchmark
     fun encodePolymorphicHtmlToString() {
-        Gson.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+        Gson.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
     }
 
     @Benchmark
     fun encodeUserProfileToString() {
-        Gson.encodeUserProfileToString(Data.userProfile)
+        Gson.encodeUserProfileToString(JsonData.userProfile)
     }
 
 //    @Benchmark

@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.gson
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -24,32 +24,32 @@ class GsonEncodeTest {
     @Test
     fun encodeMacOsReleasesToString() {
         assertEquals(
-            Resources.MinimisedJsonString.macosReleases,
-            Gson.encodeMacOsReleasesToString(Data.macosReleases)
+            JsonStrings.Minimised.macosReleases,
+            Gson.encodeMacOsReleasesToString(JsonData.macosReleases)
         )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicGeo,
-            Gson.encodePolymorphicGeoToString(Data.polymorphicGeo)
+            JsonStrings.Minimised.polymorphicGeo,
+            Gson.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
         )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicHtml,
-            Gson.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+            JsonStrings.Minimised.polymorphicHtml,
+            Gson.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
         )
     }
 
     @Test
     fun encodeUserProfileToString() {
         assertEquals(
-            Resources.MinimisedJsonString.userProfile,
-            Gson.encodeUserProfileToString(Data.userProfile)
+            JsonStrings.Minimised.userProfile,
+            Gson.encodeUserProfileToString(JsonData.userProfile)
         )
     }
 }

@@ -23,7 +23,7 @@ final class CodableSerializationPrettyPrintedDecodeTests: XCTestCase {
 //    }
     
     func testDecodeMacOsReleasesFromString() throws {
-        let data = CodableSerializationPrettyPrinted.decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrinted.macosReleasesJsonString)
+        let data = CodableSerializationPrettyPrinted.decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrintedJsonString.macosReleases)
         XCTAssertEqual("Kodiak", data.versions.first!.internal)
         XCTAssertEqual("US", data.versions.first!.releases.first!.version)
     }
@@ -41,7 +41,7 @@ final class CodableSerializationPrettyPrintedDecodeTests: XCTestCase {
 //    }
 
     func testDecodeUserProfileFromString() throws {
-        let data = CodableSerializationPrettyPrinted.decodeUserProfileFromString(jsonString: Resources.PrettyPrinted.userProfileJsonString)
+        let data = CodableSerializationPrettyPrinted.decodeUserProfileFromString(jsonString: Resources.PrettyPrintedJsonString.userProfile)
         XCTAssertTrue(!data.personal.firstName.isEmpty)
     }
 }

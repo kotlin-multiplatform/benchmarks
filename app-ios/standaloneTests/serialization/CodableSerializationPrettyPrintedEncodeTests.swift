@@ -16,8 +16,8 @@ final class CodableSerializationPrettyPrintedEncodeTests: XCTestCase {
 //    }
 
     func testEncodeMacOsReleasesToString() throws {
-        let data = CodableSerializationPrettyPrinted.decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrinted.macosReleasesJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.macosReleasesJsonString, CodableSerializationPrettyPrinted.encodeMacOsReleasesToString(value: data))
+        let data = CodableSerializationPrettyPrinted.decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrintedJsonString.macosReleases)
+        XCTAssertEqual(Resources.PrettyPrintedJsonString.macosReleases, CodableSerializationPrettyPrinted.encodeMacOsReleasesToString(value: data))
 
 //        let decodedData = CodableSerializationPrettyPrinted.decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrinted.macosReleasesJsonString)
 //        let encodedJsonString = CodableSerializationPrettyPrinted.encodeMacOsReleasesToString(value: decodedData)
@@ -39,8 +39,8 @@ final class CodableSerializationPrettyPrintedEncodeTests: XCTestCase {
 //    }
 
     func testEncodeUserProfileToString() throws {
-        let data = CodableSerializationPrettyPrinted.decodeUserProfileFromString(jsonString: Resources.PrettyPrinted.userProfileJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.userProfileJsonString, CodableSerializationPrettyPrinted.encodeUserProfileToString(value: data))
+        let data = CodableSerializationPrettyPrinted.decodeUserProfileFromString(jsonString: Resources.PrettyPrintedJsonString.userProfile)
+        XCTAssertEqual(Resources.PrettyPrintedJsonString.userProfile, CodableSerializationPrettyPrinted.encodeUserProfileToString(value: data))
 
 //        let decodedData = CodableSerializationPrettyPrinted.decodeUserProfileFromString(jsonString: Resources.PrettyPrinted.userProfileJsonString)
 //        let encodedJsonString = CodableSerializationPrettyPrinted.encodeUserProfileToString(value: decodedData)

@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlinx.benchmark.Benchmark
 import kotlinx.benchmark.Scope
 import kotlinx.benchmark.State
@@ -9,32 +9,32 @@ import kotlinx.benchmark.State
 class KotlinxSerializationPrettyPrintedDecodeBenchmark {
     @Benchmark
     fun decodeLargeListFromString() {
-        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
+        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(JsonStrings.PrettyPrinted.largeList)
     }
 
     @Benchmark
     fun decodeLargeListCompactFromString() {
-        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
+        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(JsonStrings.PrettyPrinted.largeList)
     }
 
     @Benchmark
     fun decodeMacOsReleasesFromString() {
-        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
+        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(JsonStrings.PrettyPrinted.macosReleases)
     }
 
     @Benchmark
     fun decodePolymorphicGeoFromString() {
-        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
+        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(JsonStrings.PrettyPrinted.polymorphicGeo)
     }
 
     @Benchmark
     fun decodePolymorphicHtmlFromString() {
-        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
+        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(JsonStrings.PrettyPrinted.polymorphicHtml)
     }
 
     @Benchmark
     fun decodeUserProfileFromString() {
-        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
+        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(JsonStrings.PrettyPrinted.userProfile)
     }
 
 //    @Benchmark

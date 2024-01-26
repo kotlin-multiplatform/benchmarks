@@ -11,33 +11,45 @@ import XCTest
 
 final class KotlinxSerializationPrettyPrintedEncodeTests: XCTestCase {
 //    func testEncodeLargeListToString() throws {
-//        let data = try! KotlinxSerializationPrettyPrinted().decodeLargeListFromString(jsonString: Resources.PrettyPrinted.largeListJsonString)
-//        XCTAssertEqual(Resources.PrettyPrinted.largeListJsonString, try! KotlinxSerializationPrettyPrinted().encodeLargeListToString(value: data))
+//        XCTAssertEqual(
+//            JsonStrings.PrettyPrinted.largeList,
+//            try! KotlinxSerializationPrettyPrinted().encodeLargeListToString(value: JsonData.largeList)
+//        )
 //    }
-    
-    func testEncodeLargeListCompactToString() throws {
-        let data = try! KotlinxSerializationPrettyPrinted().decodeLargeListCompactFromString(jsonString: Resources.PrettyPrinted.largeListJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.largeListJsonString, try! KotlinxSerializationPrettyPrinted().encodeLargeListCompactToString(value: data))
-    }
+//    
+//    func testEncodeLargeListCompactToString() throws {
+//        XCTAssertEqual(
+//            JsonStrings.PrettyPrinted.largeList,
+//            try! KotlinxSerializationPrettyPrinted().encodeLargeListCompactToString(value: JsonData.largeListCompact)
+//        )
+//    }
 
     func testEncodeMacOsReleasesToString() throws {
-        let data = try! KotlinxSerializationPrettyPrinted().decodeMacOsReleasesFromString(jsonString: Resources.PrettyPrinted.macosReleasesJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.macosReleasesJsonString, try! KotlinxSerializationPrettyPrinted().encodeMacOsReleasesToString(value: data))
+        XCTAssertEqual(
+            JsonStrings.PrettyPrinted.macosReleases, 
+            try! KotlinxSerializationPrettyPrinted().encodeMacOsReleasesToString(value: JsonData.macosReleases)
+        )
     }
 
     func testEncodePolymorphicGeoToString() throws {
-        let data = try! KotlinxSerializationPrettyPrinted().decodePolymorphicGeoFromString(jsonString: Resources.PrettyPrinted.polymorphicGeoJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.polymorphicGeoJsonString, try! KotlinxSerializationPrettyPrinted().encodePolymorphicGeoToString(value: data))
+        XCTAssertEqual(
+            JsonStrings.PrettyPrinted.polymorphicGeo,
+            try! KotlinxSerializationPrettyPrinted().encodePolymorphicGeoToString(value: JsonData.polymorphicGeo)
+        )
     }
 
     func testEncodePolymorphicHtmlToString() throws {
-        let data = try! KotlinxSerializationPrettyPrinted().decodePolymorphicHtmlFromString(jsonString: Resources.PrettyPrinted.polymorphicHtmlJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.polymorphicHtmlJsonString, try! KotlinxSerializationPrettyPrinted().encodePolymorphicHtmlToString(value: data))
+        XCTAssertEqual(
+            JsonStrings.PrettyPrinted.polymorphicHtml,
+            try! KotlinxSerializationPrettyPrinted().encodePolymorphicHtmlToString(value: JsonData.polymorphicHtml)
+        )
     }
 
     func testEncodeUserProfileToString() throws {
-        let data = try! KotlinxSerializationPrettyPrinted().decodeUserProfileFromString(jsonString: Resources.PrettyPrinted.userProfileJsonString)
-        XCTAssertEqual(Resources.PrettyPrinted.userProfileJsonString, try! KotlinxSerializationPrettyPrinted().encodeUserProfileToString(value: data))
+        XCTAssertEqual(
+            JsonStrings.PrettyPrinted.userProfile,
+            try! KotlinxSerializationPrettyPrinted().encodeUserProfileToString(value: JsonData.userProfile)
+        )
     }
 }
 

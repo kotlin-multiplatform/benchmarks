@@ -11,6 +11,7 @@ data class MacOsReleases(
     val key: List<String>,
     val versions: List<Version>
 ) {
+    @JsonClass(generateAdapter = false)
     enum class External(private val stringValue: String) {
         BIG_SUR("Big Sur"),
         CATALINA("Catalina"),
@@ -35,6 +36,7 @@ data class MacOsReleases(
         YOSEMITE("Yosemite");
 
         companion object {
+            @Throws(NoSuchElementException::class)
             fun fromString(value: String): External = entries.first { it.stringValue == value }
         }
 

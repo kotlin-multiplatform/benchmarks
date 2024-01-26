@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -24,32 +24,32 @@ class KotlinxSerializationEncodeTest {
     @Test
     fun encodeMacOsReleasesToString() {
         assertEquals(
-            Resources.MinimisedJsonString.macosReleases,
-            KotlinxSerialization.encodeMacOsReleasesToString(Data.macosReleases)
+            JsonStrings.Minimised.macosReleases,
+            KotlinxSerialization.encodeMacOsReleasesToString(JsonData.macosReleases)
         )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicGeo,
-            KotlinxSerialization.encodePolymorphicGeoToString(Data.polymorphicGeo)
+            JsonStrings.Minimised.polymorphicGeo,
+            KotlinxSerialization.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
         )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicHtml,
-            KotlinxSerialization.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+            JsonStrings.Minimised.polymorphicHtml,
+            KotlinxSerialization.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
         )
     }
 
     @Test
     fun encodeUserProfileToString() {
         assertEquals(
-            Resources.MinimisedJsonString.userProfile,
-            KotlinxSerialization.encodeUserProfileToString(Data.userProfile)
+            JsonStrings.Minimised.userProfile,
+            KotlinxSerialization.encodeUserProfileToString(JsonData.userProfile)
         )
     }
 }

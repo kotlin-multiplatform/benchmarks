@@ -16,8 +16,8 @@ final class CodableSerializationEncodeTests: XCTestCase {
 //    }
 
     func testEncodeMacOsReleasesToString() throws {
-        let data = CodableSerialization.decodeMacOsReleasesFromString(jsonString: Resources.Minimised.macosReleasesJsonString)
-        XCTAssertEqual(Resources.Minimised.macosReleasesJsonString, CodableSerialization.encodeMacOsReleasesToString(value: data))
+        let data = CodableSerialization.decodeMacOsReleasesFromString(jsonString: Resources.MinimisedJsonString.macosReleases)
+        XCTAssertEqual(Resources.MinimisedJsonString.macosReleases, CodableSerialization.encodeMacOsReleasesToString(value: data))
 
 //        let decodedData = CodableSerialization.decodeMacOsReleasesFromString(jsonString: Resources.Minimised.macosReleasesJsonString)
 //        let encodedJsonString = CodableSerialization.encodeMacOsReleasesToString(value: decodedData)
@@ -39,8 +39,8 @@ final class CodableSerializationEncodeTests: XCTestCase {
 //    }
 
     func testEncodeUserProfileToString() throws {
-        let data = CodableSerialization.decodeUserProfileFromString(jsonString: Resources.Minimised.userProfileJsonString)
-        XCTAssertEqual(Resources.Minimised.userProfileJsonString, CodableSerialization.encodeUserProfileToString(value: data))
+        let data = CodableSerialization.decodeUserProfileFromString(jsonString: Resources.MinimisedJsonString.userProfile)
+        XCTAssertEqual(Resources.MinimisedJsonString.userProfile, CodableSerialization.encodeUserProfileToString(value: data))
 
 //        let decodedData = CodableSerialization.decodeUserProfileFromString(jsonString: Resources.Minimised.userProfileJsonString)
 //        let encodedJsonString = CodableSerialization.encodeUserProfileToString(value: decodedData)

@@ -1,6 +1,6 @@
 package kmp.benchmarks.serialization.moshi
 
-import kmp.benchmarks.serialization.Resources
+import kmp.benchmarks.serialization.JsonStrings
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -24,32 +24,32 @@ class MoshiEncodeTest {
     @Test
     fun encodeMacOsReleasesToString() {
         assertEquals(
-            Resources.MinimisedJsonString.macosReleases,
-            Moshi.encodeMacOsReleasesToString(Data.macosReleases)
+            JsonStrings.Minimised.macosReleases,
+            Moshi.encodeMacOsReleasesToString(JsonData.macosReleases)
         )
     }
 
     @Test
     fun encodePolymorphicGeoToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicGeo,
-            Moshi.encodePolymorphicGeoToString(Data.polymorphicGeo)
+            JsonStrings.Minimised.polymorphicGeo,
+            Moshi.encodePolymorphicGeoToString(JsonData.polymorphicGeo)
         )
     }
 
     @Test
     fun encodePolymorphicHtmlToString() {
         assertEquals(
-            Resources.MinimisedJsonString.polymorphicHtml,
-            Moshi.encodePolymorphicHtmlToString(Data.polymorphicHtml)
+            JsonStrings.Minimised.polymorphicHtml,
+            Moshi.encodePolymorphicHtmlToString(JsonData.polymorphicHtml)
         )
     }
 
     @Test
     fun encodeUserProfileToString() {
         assertEquals(
-            Resources.MinimisedJsonString.userProfile,
-            Moshi.encodeUserProfileToString(Data.userProfile)
+            JsonStrings.Minimised.userProfile,
+            Moshi.encodeUserProfileToString(JsonData.userProfile)
         )
     }
 }
