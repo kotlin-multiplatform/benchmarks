@@ -1,14 +1,13 @@
 import java.util.Locale
 
 plugins {
-    //trick: for the same plugin versions in all sub-modules
     alias(libs.plugins.androidApplication).apply(false)
     alias(libs.plugins.androidLibrary).apply(false)
     alias(libs.plugins.benmanesVersions)
     alias(libs.plugins.kotlinAndroid).apply(false)
     alias(libs.plugins.kotlinMultiplatform).apply(false)
-    alias(libs.plugins.kotlinxBenchmark).apply(false)
-    alias(libs.plugins.kotlinxKover).apply(false)
+//    alias(libs.plugins.kotlinxBenchmark).apply(false)
+//    alias(libs.plugins.kotlinxKover).apply(false)
 }
 
 tasks.withType<com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask> {

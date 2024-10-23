@@ -1,6 +1,7 @@
 package kmp.benchmarks.serialization.kotlinxserialization
 
 import kmp.benchmarks.serialization.JsonStrings
+import kmp.benchmarks.serialization.model.kotlinxserialization.UserProfile
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -50,6 +51,11 @@ class KotlinxSerializationEncodeTest {
         assertEquals(
             JsonStrings.Minimised.userProfile,
             KotlinxSerialization.encodeUserProfileToString(JsonData.userProfile)
+        )
+
+        assertEquals(
+            FakeData.UserProfile.jsonString,
+            KotlinxSerialization.encodeUserProfileToString(FakeData.UserProfile.data)
         )
     }
 }

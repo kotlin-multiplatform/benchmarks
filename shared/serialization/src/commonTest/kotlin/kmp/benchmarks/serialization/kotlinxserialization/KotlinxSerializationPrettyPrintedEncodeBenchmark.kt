@@ -34,6 +34,7 @@ class KotlinxSerializationPrettyPrintedEncodeBenchmark {
     @Benchmark
     fun encodeUserProfileToString() {
         KotlinxSerializationPrettyPrinted.encodeUserProfileToString(JsonData.userProfile)
+        KotlinxSerializationPrettyPrinted.encodeUserProfileToString(FakeData.UserProfile.data)
     }
 
 //    @Benchmark

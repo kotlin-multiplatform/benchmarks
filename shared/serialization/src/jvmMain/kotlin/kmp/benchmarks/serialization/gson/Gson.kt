@@ -16,7 +16,7 @@ import kmp.benchmarks.serialization.model.gson.UserProfile
 import kotlinx.datetime.LocalDate
 
 object Gson {
-    private val gson: Gson = GsonBuilder()
+    val gson: Gson = GsonBuilder()
         .registerTypeAdapter(LocalDate::class.java, LocalDateAdapter())
         .registerTypeAdapter(MacOsReleases.External::class.java, ExternalAdapter())
         .registerTypeAdapterFactory(

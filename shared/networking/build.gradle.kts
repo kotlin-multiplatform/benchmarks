@@ -24,12 +24,12 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
+            implementation(libs.kmp.common.ktor)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.client.logging)
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization.json)
-            implementation(projects.shared.networking.ktorHttpClient)
             implementation(projects.shared.serialization)
         }
         commonTest.dependencies {
@@ -39,6 +39,14 @@ kotlin {
         }
         jvmMain.dependencies {
             implementation(libs.logback.classic)
+            implementation(libs.okhttp.logging)
+            implementation(libs.retrofit)
+            implementation(libs.retrofit.gson)
+            implementation(libs.retrofit.kotlinx.serialization)
+            implementation(libs.retrofit.moshi)
+        }
+        jvmTest.dependencies {
+            implementation(libs.okhttp.mockwebserver)
         }
     }
 }
@@ -48,5 +56,9 @@ android {
     compileSdk = 34
     defaultConfig {
         minSdk = 24
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }

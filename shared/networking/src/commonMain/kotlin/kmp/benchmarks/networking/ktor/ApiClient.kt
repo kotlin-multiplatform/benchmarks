@@ -11,15 +11,15 @@ import io.ktor.http.ContentType
 import io.ktor.http.Url
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
-import kmp.benchmarks.networking.ktorhttpclient.KtorHttpClient
-import kmp.benchmarks.networking.ktorhttpclient.httpClientEngine
+import kmp.common.ktor.KtorHttpClient
+import kmp.common.ktor.httpClientEngine
 
 class ApiClient(
-    baseUrl: Url = Url("https://raw.githubusercontent.com/"),
+    baseUrl: Url = Url("https://raw.githubusercontent.com"),
     engine: HttpClientEngine = httpClientEngine(),
 ) : KtorHttpClient(engine) {
 
-    override val setupHttpClient: HttpClientConfig<*>.() -> Unit = {
+    override val configureHttpClient: HttpClientConfig<*>.() -> Unit = {
         install(ContentNegotiation) {
             json()
         }

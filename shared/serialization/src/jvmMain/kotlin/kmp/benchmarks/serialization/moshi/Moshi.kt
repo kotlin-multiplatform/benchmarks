@@ -14,7 +14,7 @@ import kmp.benchmarks.serialization.model.moshi.UserProfile
 
 @OptIn(ExperimentalStdlibApi::class)
 object Moshi {
-    private val moshi: Moshi = Moshi.Builder()
+    val moshi: Moshi = Moshi.Builder()
         .add(LocalDateAdapter())
         .add(ExternalAdapter())
         .add(
