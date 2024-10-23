@@ -1,4 +1,8 @@
 import kotlinx.benchmark.gradle.JvmBenchmarkTarget
+import kotlinx.benchmark.gradle.NativeBenchmarkTarget
+import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 
 plugins {
     alias(libs.plugins.androidLibrary)
@@ -11,10 +15,9 @@ plugins {
 
 kotlin {
     androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
         }
     }
 
@@ -65,7 +68,7 @@ benchmark {
             iterationTimeUnit = "ms"
             outputTimeUnit = "ms"
             mode = "AverageTime"
-            advanced("jvmForks", "definedByJmh")
+//            advanced("jvmForks", "definedByJmh")
         }
 //        getByName("smoke") {
 //            warmups = 5
@@ -82,5 +85,9 @@ benchmark {
         }
 //        register("iosArm64Test")
         register("macosArm64Test")
+//        register("native") {
+//            this as NativeBenchmarkTarget
+//            buildType = NativeBuildType.DEBUG
+//        }
     }
 }
