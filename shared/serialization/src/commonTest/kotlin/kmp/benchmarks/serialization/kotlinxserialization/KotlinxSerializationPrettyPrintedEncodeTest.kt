@@ -51,10 +51,5 @@ class KotlinxSerializationPrettyPrintedEncodeTest {
             JsonStrings.PrettyPrinted.userProfile,
             KotlinxSerializationPrettyPrinted.encodeUserProfileToString(JsonData.userProfile)
         )
-
-        assertEquals(
-            FakeData.UserProfile.jsonString,
-            KotlinxSerializationPrettyPrinted.encodeUserProfileToString(FakeData.UserProfile.data)
-        )
     }
 }

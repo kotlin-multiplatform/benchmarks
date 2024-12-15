@@ -36,14 +36,4 @@ class KotlinxSerializationPrettyPrintedDecodeBenchmark {
     fun decodeUserProfileFromString() {
         KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(JsonStrings.PrettyPrinted.userProfile)
     }
-
-//    @Benchmark
-//    fun combined() {
-//        KotlinxSerializationPrettyPrinted.decodeLargeListFromString(Resources.PrettyPrintedJsonString.largeList)
-//        KotlinxSerializationPrettyPrinted.decodeLargeListCompactFromString(Resources.PrettyPrintedJsonString.largeList)
-//        KotlinxSerializationPrettyPrinted.decodeMacOsReleasesFromString(Resources.PrettyPrintedJsonString.macosReleases)
-//        KotlinxSerializationPrettyPrinted.decodePolymorphicGeoFromString(Resources.PrettyPrintedJsonString.polymorphicGeo)
-//        KotlinxSerializationPrettyPrinted.decodePolymorphicHtmlFromString(Resources.PrettyPrintedJsonString.polymorphicHtml)
-//        KotlinxSerializationPrettyPrinted.decodeUserProfileFromString(Resources.PrettyPrintedJsonString.userProfile)
-//    }
 }

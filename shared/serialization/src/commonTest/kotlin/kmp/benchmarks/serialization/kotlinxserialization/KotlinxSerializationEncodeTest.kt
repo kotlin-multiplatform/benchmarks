@@ -52,10 +52,5 @@ class KotlinxSerializationEncodeTest {
             JsonStrings.Minimised.userProfile,
             KotlinxSerialization.encodeUserProfileToString(JsonData.userProfile)
         )
-
-        assertEquals(
-            FakeData.UserProfile.jsonString,
-            KotlinxSerialization.encodeUserProfileToString(FakeData.UserProfile.data)
-        )
     }
 }

@@ -36,14 +36,4 @@ class KotlinxSerializationPrettyPrintedEncodeBenchmark {
         KotlinxSerializationPrettyPrinted.encodeUserProfileToString(JsonData.userProfile)
         KotlinxSerializationPrettyPrinted.encodeUserProfileToString(FakeData.UserProfile.data)
     }
-
-//    @Benchmark
-//    fun combined() {
-//        KotlinxSerializationPrettyPrinted.encodeLargeListToString(Data.largeList)
-//        KotlinxSerializationPrettyPrinted.encodeLargeListCompactToString(Data.largeListCompact)
-//        KotlinxSerializationPrettyPrinted.encodeMacOsReleasesToString(Data.macosReleases)
-//        KotlinxSerializationPrettyPrinted.encodePolymorphicGeoToString(Data.polymorphicGeo)
-//        KotlinxSerializationPrettyPrinted.encodePolymorphicHtmlToString(Data.polymorphicHtml)
-//        KotlinxSerializationPrettyPrinted.encodeUserProfileToString(Data.userProfile)
-//    }
 }

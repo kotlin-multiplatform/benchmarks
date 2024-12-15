@@ -36,14 +36,4 @@ class KotlinxSerializationDecodeBenchmark {
     fun decodeUserProfileFromString() {
         KotlinxSerialization.decodeUserProfileFromString(JsonStrings.Minimised.userProfile)
     }
-
-//    @Benchmark
-//    fun combined() {
-//        KotlinxSerialization.decodeLargeListFromString(Resources.MinimisedJsonString.largeList)
-//        KotlinxSerialization.decodeLargeListCompactFromString(Resources.MinimisedJsonString.largeList)
-//        KotlinxSerialization.decodeMacOsReleasesFromString(Resources.MinimisedJsonString.macosReleases)
-//        KotlinxSerialization.decodePolymorphicGeoFromString(Resources.MinimisedJsonString.polymorphicGeo)
-//        KotlinxSerialization.decodePolymorphicHtmlFromString(Resources.MinimisedJsonString.polymorphicHtml)
-//        KotlinxSerialization.decodeUserProfileFromString(Resources.MinimisedJsonString.userProfile)
-//    }
 }

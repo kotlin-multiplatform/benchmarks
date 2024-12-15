@@ -36,14 +36,4 @@ class KotlinxSerializationEncodeBenchmark {
         KotlinxSerialization.encodeUserProfileToString(JsonData.userProfile)
         KotlinxSerialization.encodeUserProfileToString(FakeData.UserProfile.data)
     }
-
-//    @Benchmark
-//    fun combined() {
-//        KotlinxSerialization.encodeLargeListToString(Data.largeList)
-//        KotlinxSerialization.encodeLargeListCompactToString(Data.largeListCompact)
-//        KotlinxSerialization.encodeMacOsReleasesToString(Data.macosReleases)
-//        KotlinxSerialization.encodePolymorphicGeoToString(Data.polymorphicGeo)
-//        KotlinxSerialization.encodePolymorphicHtmlToString(Data.polymorphicHtml)
-//        KotlinxSerialization.encodeUserProfileToString(Data.userProfile)
-//    }
 }
