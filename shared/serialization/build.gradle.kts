@@ -1,8 +1,6 @@
 import kotlinx.benchmark.gradle.JvmBenchmarkTarget
-import kotlinx.benchmark.gradle.NativeBenchmarkTarget
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 
 plugins {
     alias(libs.plugins.androidLibrary)
@@ -33,7 +31,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.kotlinx.benchmark)
-            api(libs.kotlinx.serialization.json)
+            api(libs.kotlinx.serializationJson)
             api(projects.shared.serialization.model)
         }
         commonTest.dependencies {
@@ -68,7 +66,7 @@ benchmark {
             iterationTimeUnit = "ms"
             outputTimeUnit = "ms"
             mode = "AverageTime"
-//            advanced("jvmForks", "definedByJmh")
+            advanced("jvmForks", "definedByJmh")
         }
 //        getByName("smoke") {
 //            warmups = 5

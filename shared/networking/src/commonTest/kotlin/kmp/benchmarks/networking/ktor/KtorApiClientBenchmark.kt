@@ -1,4 +1,4 @@
-package kmp.benchmarks.networking.ktor.endpoints
+package kmp.benchmarks.networking.ktor
 
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
@@ -9,18 +9,23 @@ import io.ktor.http.headersOf
 import io.ktor.utils.io.ByteReadChannel
 import io.ktor.utils.io.core.use
 import kmp.benchmarks.networking.JsonStrings
-import kmp.benchmarks.networking.ktor.ApiClient
-import kmp.benchmarks.serialization.kotlinxserialization.KotlinxSerialization
+import kmp.benchmarks.networking.ktor.endpoints.largeList
+import kmp.benchmarks.networking.ktor.endpoints.macOsReleases
+import kmp.benchmarks.networking.ktor.endpoints.polymorphicGeo
+import kmp.benchmarks.networking.ktor.endpoints.polymorphicHtml
+import kmp.benchmarks.networking.ktor.endpoints.userProfile
+import kotlinx.benchmark.Benchmark
+import kotlinx.benchmark.Scope
+import kotlinx.benchmark.State
 import kotlinx.coroutines.runBlocking
-import kotlin.test.Test
-import kotlin.test.assertEquals
 import kotlin.test.fail
 
-class ApiClientTest {
+@State(Scope.Benchmark)
+class KtorApiClientTestBenchmark {
 
-    @Test
+    @Benchmark
     fun largeList() = runBlocking {
-        val apiClient = ApiClient(
+        val apiClient = KtorApiClient(
             baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
@@ -37,15 +42,12 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeLargeListFromString(JsonStrings.Minimised.largeList),
-            apiClient.use { it.largeList() }
-        )
+        apiClient.use { it.largeList() }
     }
 
-    @Test
+    @Benchmark
     fun macOsReleases() = runBlocking {
-        val apiClient = ApiClient(
+        val apiClient = KtorApiClient(
             baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
@@ -62,15 +64,12 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeMacOsReleasesFromString(JsonStrings.Minimised.macosReleases),
-            apiClient.use { it.macOsReleases() }
-        )
+        apiClient.use { it.macOsReleases() }
     }
 
-    @Test
+    @Benchmark
     fun polymorphicGeo() = runBlocking {
-        val apiClient = ApiClient(
+        val apiClient = KtorApiClient(
             baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
@@ -87,15 +86,12 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodePolymorphicGeoFromString(JsonStrings.Minimised.polymorphicGeo),
-            apiClient.use { it.polymorphicGeo() }
-        )
+        apiClient.use { it.polymorphicGeo() }
     }
 
-    @Test
+    @Benchmark
     fun polymorphicHtml() = runBlocking {
-        val apiClient = ApiClient(
+        val apiClient = KtorApiClient(
             baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
@@ -112,15 +108,12 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodePolymorphicHtmlFromString(JsonStrings.Minimised.polymorphicHtml),
-            apiClient.use { it.polymorphicHtml() }
-        )
+        apiClient.use { it.polymorphicHtml() }
     }
 
-    @Test
+    @Benchmark
     fun userProfile() = runBlocking {
-        val apiClient = ApiClient(
+        val apiClient = KtorApiClient(
             baseUrl = Url("https://fake.url"),
             engine = MockEngine { request ->
                 when {
@@ -137,9 +130,6 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeUserProfileFromString(JsonStrings.Minimised.userProfile),
-            apiClient.use { it.userProfile() }
-        )
+        apiClient.use { it.userProfile() }
     }
 }

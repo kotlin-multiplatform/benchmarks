@@ -1,33 +1,36 @@
-package kmp.benchmarks.networking.retrofit.kotlinxserialization
+package kmp.benchmarks.networking.retrofit.moshi
 
 import kmp.benchmarks.networking.JsonStrings
-import kmp.benchmarks.serialization.kotlinxserialization.KotlinxSerialization
+import kmp.benchmarks.serialization.moshi.Moshi
+import kotlinx.benchmark.Benchmark
+import kotlinx.benchmark.Scope
+import kotlinx.benchmark.Setup
+import kotlinx.benchmark.State
+import kotlinx.benchmark.TearDown
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import java.net.HttpURLConnection
-import kotlin.test.AfterTest
-import kotlin.test.BeforeTest
-import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class ApiClientTest {
+@State(Scope.Benchmark)
+class RetrofitMoshiApiClientTestBenchmark {
     private val mockWebServer = MockWebServer()
-    private lateinit var apiClient: ApiClient
+    private lateinit var apiClient: RetrofitMoshiApiClient
 
-    @BeforeTest
+    @Setup
     fun setup() {
         mockWebServer.start()
 
-        apiClient = ApiClient(mockWebServer.url("/"))
+        apiClient = RetrofitMoshiApiClient(mockWebServer.url("/"))
     }
 
-    @AfterTest
+    @TearDown
     fun teardown() {
         mockWebServer.shutdown()
     }
 
-    @Test
+    @Benchmark
     fun largeList() = runBlocking {
         mockWebServer.enqueue(
             MockResponse().apply {
@@ -37,13 +40,10 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeLargeListFromString(JsonStrings.Minimised.largeList),
-            apiClient.apiService.largeList()
-        )
+        apiClient.apiService.largeList()
     }
 
-    @Test
+    @Benchmark
     fun macOsReleases() = runBlocking {
         mockWebServer.enqueue(
             MockResponse().apply {
@@ -53,13 +53,10 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeMacOsReleasesFromString(JsonStrings.Minimised.macosReleases),
-            apiClient.apiService.macOsReleases()
-        )
+        apiClient.apiService.macOsReleases()
     }
 
-    @Test
+    @Benchmark
     fun polymorphicGeo() = runBlocking {
         mockWebServer.enqueue(
             MockResponse().apply {
@@ -69,13 +66,10 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodePolymorphicGeoFromString(JsonStrings.Minimised.polymorphicGeo),
-            apiClient.apiService.polymorphicGeo()
-        )
+        apiClient.apiService.polymorphicGeo()
     }
 
-    @Test
+    @Benchmark
     fun polymorphicHtml() = runBlocking {
         mockWebServer.enqueue(
             MockResponse().apply {
@@ -85,13 +79,10 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodePolymorphicHtmlFromString(JsonStrings.Minimised.polymorphicHtml),
-            apiClient.apiService.polymorphicHtml()
-        )
+        apiClient.apiService.polymorphicHtml()
     }
 
-    @Test
+    @Benchmark
     fun userProfile() = runBlocking {
         mockWebServer.enqueue(
             MockResponse().apply {
@@ -101,9 +92,6 @@ class ApiClientTest {
             }
         )
 
-        assertEquals(
-            KotlinxSerialization.decodeUserProfileFromString(JsonStrings.Minimised.userProfile),
-            apiClient.apiService.userProfile()
-        )
+        apiClient.apiService.userProfile()
     }
 }

@@ -1,8 +1,6 @@
 import kotlinx.benchmark.gradle.JvmBenchmarkTarget
-import kotlinx.benchmark.gradle.NativeBenchmarkTarget
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
 
 plugins {
     alias(libs.plugins.androidLibrary)
@@ -31,26 +29,26 @@ kotlin {
 
     sourceSets {
         commonMain.dependencies {
-            implementation(libs.kmp.common.ktor)
+            implementation(libs.kmp.commonKtor)
             implementation(libs.kotlinx.benchmark)
             implementation(libs.kotlinx.datetime)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.ktor.client.content.negotiation)
-            implementation(libs.ktor.client.logging)
-            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.kotlinx.serializationJson)
+            implementation(libs.ktor.clientContentNegotiation)
+            implementation(libs.ktor.clientLogging)
+            implementation(libs.ktor.serializationKotlinxJson)
             implementation(projects.shared.serialization)
         }
         commonTest.dependencies {
             implementation(libs.goncalossilva.resources)
             implementation(libs.kotlin.test)
-            implementation(libs.ktor.client.mock)
+            implementation(libs.ktor.clientMock)
         }
         jvmMain.dependencies {
             implementation(libs.logback.classic)
             implementation(libs.okhttp.logging)
             implementation(libs.retrofit)
             implementation(libs.retrofit.gson)
-            implementation(libs.retrofit.kotlinx.serialization)
+            implementation(libs.retrofit.kotlinxSerialization)
             implementation(libs.retrofit.moshi)
         }
         jvmTest.dependencies {
@@ -84,7 +82,7 @@ benchmark {
             iterationTimeUnit = "ms"
             outputTimeUnit = "ms"
             mode = "AverageTime"
-//            advanced("jvmForks", "definedByJmh")
+            advanced("jvmForks", "definedByJmh")
         }
 //        getByName("smoke") {
 //            warmups = 5

@@ -11,15 +11,15 @@ import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class ApiClientTest {
+class RetrofitMoshiApiClientTest {
     private val mockWebServer = MockWebServer()
-    private lateinit var apiClient: ApiClient
+    private lateinit var apiClient: RetrofitMoshiApiClient
 
     @BeforeTest
     fun setup() {
         mockWebServer.start()
 
-        apiClient = ApiClient(mockWebServer.url("/"))
+        apiClient = RetrofitMoshiApiClient(mockWebServer.url("/"))
     }
 
     @AfterTest

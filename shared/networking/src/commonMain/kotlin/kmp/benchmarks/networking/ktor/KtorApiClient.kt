@@ -14,7 +14,15 @@ import io.ktor.serialization.kotlinx.json.json
 import kmp.common.ktor.KtorHttpClient
 import kmp.common.ktor.httpClientEngine
 
-class ApiClient(
+//interface ApiService {
+//    suspend fun largeList(): List<GithubPush.Normal>
+//    suspend fun macOsReleases(): MacOsReleases
+//    suspend fun polymorphicGeo(): List<GeoJSONObject>
+//    suspend fun polymorphicHtml(): List<HtmlChunk>
+//    suspend fun userProfile(): UserProfile
+//}
+
+class KtorApiClient(
     baseUrl: Url = Url("https://raw.githubusercontent.com"),
     engine: HttpClientEngine = httpClientEngine(),
 ) : KtorHttpClient(engine) {

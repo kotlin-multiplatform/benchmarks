@@ -1,3 +1,6 @@
+import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinMultiplatform)
@@ -7,10 +10,9 @@ plugins {
 
 kotlin {
     androidTarget {
-        compilations.all {
-            kotlinOptions {
-                jvmTarget = "1.8"
-            }
+        @OptIn(ExperimentalKotlinGradlePluginApi::class)
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
         }
     }
 
@@ -26,7 +28,7 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api(libs.kotlinx.datetime)
-            api(libs.kotlinx.serialization.core)
+            api(libs.kotlinx.serializationCore)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -52,5 +54,5 @@ android {
 }
 
 dependencies {
-    add("kspJvm", libs.moshi.kotlin.codegen.get())
+    add("kspJvm", libs.moshi.kotlinCodegen.get())
 }

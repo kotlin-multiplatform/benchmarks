@@ -1,17 +1,18 @@
-package kmp.benchmarks.networking.retrofit.gson
+package kmp.benchmarks.networking.retrofit.kotlinxserialization
 
-import kmp.benchmarks.serialization.gson.Gson
-import kmp.benchmarks.serialization.model.gson.GeoJSONObject
-import kmp.benchmarks.serialization.model.gson.GithubPush
-import kmp.benchmarks.serialization.model.gson.HtmlChunk
-import kmp.benchmarks.serialization.model.gson.MacOsReleases
-import kmp.benchmarks.serialization.model.gson.UserProfile
+import kmp.benchmarks.serialization.model.kotlinxserialization.GeoJSONObject
+import kmp.benchmarks.serialization.model.kotlinxserialization.GithubPush
+import kmp.benchmarks.serialization.model.kotlinxserialization.HtmlChunk
+import kmp.benchmarks.serialization.model.kotlinxserialization.MacOsReleases
+import kmp.benchmarks.serialization.model.kotlinxserialization.UserProfile
+import kotlinx.serialization.json.Json
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrl
+import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import retrofit2.http.GET
 
 interface ApiService {
@@ -31,7 +32,7 @@ interface ApiService {
     suspend fun userProfile(): UserProfile
 }
 
-class ApiClient(
+class RetrofitKotlinxSerializationApiClient(
     baseUrl: HttpUrl = "https://raw.githubusercontent.com".toHttpUrl()
 ) {
     private val client: OkHttpClient by lazy {
@@ -48,7 +49,7 @@ class ApiClient(
         Retrofit.Builder()
             .baseUrl(baseUrl)
             .client(client)
-            .addConverterFactory(GsonConverterFactory.create(Gson.gson))
+            .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
             .build()
     }
 
