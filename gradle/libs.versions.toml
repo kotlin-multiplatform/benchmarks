@@ -1,13 +1,12 @@
 [versions]
-agp = "8.5.2"
-allopen = "0.4.9"
+android-gradlePlugin = "8.5.2"
 androidx-activityCompose = "1.9.3"
 benmanes-versions = "0.51.0"
 compose-bom = "2024.12.01"
 compose-material3 = "1.3.1"
 goncalossilva-resources = "0.9.0"
 gson = "2.11.0"
-kmp-common = "0.1-SNAPSHOT-5"
+kmp-common = "0.1-SNAPSHOT-6"
 kotlin = "2.0.21"
 kotlinx-benchmark = "0.4.12"
 kotlinx-coroutines = "1.9.0"
@@ -15,7 +14,7 @@ kotlinx-datetime = "0.6.1"
 kotlinx-kover = "0.7.5"
 kotlinx-serialization = "1.7.3"
 ksp = "2.0.21-1.0.25"
-ktor = "3.0.0"
+ktor = "3.0.2"
 logback = "1.5.11"
 moshi = "1.15.1"
 okhttp = "4.12.0"
@@ -59,16 +58,15 @@ retrofit-kotlinxSerialization = { module = "com.squareup.retrofit2:converter-kot
 retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit"  }
 
 [plugins]
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
-benmanesVersions = { id = "com.github.ben-manes.versions", version.ref = "benmanes-versions" }
-composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-goncalossilvaResources = { id = "com.goncalossilva.resources", version.ref = "goncalossilva-resources" }
-kotlinAllOpen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
-kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-kotlinxBenchmark = { id = "org.jetbrains.kotlinx.benchmark", version.ref = "kotlinx-benchmark" }
-kotlinxKover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kotlinx-kover" }
+android-application = { id = "com.android.application", version.ref = "android-gradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "android-gradlePlugin" }
+benmanes-versions = { id = "com.github.ben-manes.versions", version.ref = "benmanes-versions" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+goncalossilva-resources = { id = "com.goncalossilva.resources", version.ref = "goncalossilva-resources" }
+kotlin-allOpen = { id = "org.jetbrains.kotlin.plugin.allopen", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlinx-benchmark = { id = "org.jetbrains.kotlinx.benchmark", version.ref = "kotlinx-benchmark" }
+kotlinx-kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kotlinx-kover" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

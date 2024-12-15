@@ -3,12 +3,12 @@ import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    alias(libs.plugins.androidLibrary)
-    alias(libs.plugins.goncalossilvaResources)
-    alias(libs.plugins.kotlinAllOpen)
-    alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.kotlinSerialization)
-    alias(libs.plugins.kotlinxBenchmark)
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.goncalossilva.resources)
+    alias(libs.plugins.kotlin.allOpen)
+    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlinx.benchmark)
 }
 
 kotlin {
